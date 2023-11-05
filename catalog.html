@@ -1,0 +1,3927 @@
+<!DOCTYPE html><html lang="ru"><head itemscope="" itemtype="http://schema.org/WPHeader">
+	<title itemprop="headline">Закупки по отраслям и регионам</title>
+	
+<meta charset="UTF-8">
+
+<script type="text/javascript" async="" id="topmailru-code" src="js/code.js"></script><script async="" src="js/tag.js"></script><script>
+	window.Bc_isDevMode = 0;
+	window.Bc_isTestMode = 0;
+	window.Bc_moduleName = '';
+	window.Bc_isLoggedIn = 0;
+	window.Bc_employeeRole = 'admin';
+	window.Bc_isSearchTemplate = 0;
+		window.Bc_isNewSearchTender = 0;
+
+			window.Bc_isTc = false;
+	
+	</script>
+
+<script type="text/tpl" id="js-tpl-form.field.treeSelect.item">    <div class="tree_item js-item-@:=o.id:@" @:if(o.hidden){:@style="display:none;"@:}:@>
+    <div class="tree_item__wrapper">
+        @:if(!o.isLeaf){:@<span class="icon expand js-itemId-@:=o.id:@"></span>@:}:@
+        @:if(o.isLeafAmongParents){:@<span class="icon narrow"></span>@:}:@
+        <label class="tree_item_data @:=o.isLeaf?'no_childs':'':@ @:=o.selectable?'':'unselectable':@">
+
+            <input
+                type="@:=o.multiSelect?'checkbox':'radio':@"
+                value="@:=o.id:@"
+				default="@:=o.attribs ? o.attribs.default : '' :@"
+                class="tree_input js-itemId-@:=o.id:@"
+                @:if(o.disabled || !o.selectable){:@disabled@:}:@
+            >
+
+            <b class="expand_link expand @:=o.isLeaf?'no_childs':'':@ js-item-toggle js-itemId-@:=o.id:@">
+				<span
+					@:if(o.background){:@
+						style="background: @:=o.background:@"
+					@:}:@
+				>@:=o.name:@</span>
+			</b>
+        </label>
+    </div>
+	<div class="tree_childs_container js-item-@:=o.id:@-box" style="display: none">
+		<div class="tree_items_container js-item-@:=o.id:@-childsBox"></div>
+	</div>
+	<div style="clear: both;"></div>
+</div>
+</script>
+			<link rel="stylesheet" href="css/jquery-ui-1.8.21.custom.css" type="text/css" media="screen">
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui-1.11.1.min.js"></script>
+
+	
+			<link href="css/base-desktop.css" rel="stylesheet" type="text/css">	
+	<script src="js/deployData.js"></script>
+
+<script src="js/Bico.js"></script><script src="js/general.js"></script>
+	<script src="files/login.js"></script>
+
+
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="/css/default/ie.css" />
+	<![endif]-->
+
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/css/default/ie7.css" />
+	<script>
+		$(function() {
+			var zIndexNumber = 500;
+			$('form div').each(function() {
+				$(this).css('zIndex', zIndexNumber);
+				zIndexNumber -= 5;
+			});
+		});
+	</script>
+	<![endif]-->
+
+	<script async="" src="js/api.js"></script>
+
+<meta property="og:title" content="Тендеры и закупки по отраслям и регионам ">
+
+
+<!--Canonical-->
+
+	<link rel="canonical" href="https:///catalog/">
+	
+
+
+<meta property="og:image" content="images/logo.png">
+
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="201">
+<meta property="og:image:height" content="56">
+
+<meta property="og:url" content="https://www.bicotender.ru/catalog/">
+<meta property="og:type" content="website">
+	<meta name="robots" content="noyaca">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="yandex-verification" content="7d5289175f4a206a">
+
+			<link href="css/main-desktop.css" rel="stylesheet" type="text/css">	
+			<link href="css/print.css" rel="stylesheet" type="text/css" media="print">	
+	<link href="css/catalog.css" media="screen" rel="stylesheet" type="text/css">
+<link href="css/list-desktop.css" media="screen" rel="stylesheet" type="text/css">
+	<script>
+				document.domain = 'bicotender.ru';
+	</script>
+	
+	<!--Пиксели-->
+	<script>(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-196344-a3gz2';</script>
+	<script>(window.Image ? (new Image()) : document.createElement('img')).src = 'https://mc.yandex.ru/pixel/9072531404925633156';</script>
+	<script>(window.Image ? (new Image()) : document.createElement('img')).src = 'https://top-fwz1.mail.ru/tracker?id=2948245;e=RG%3';</script>
+	<!--Пиксели-->
+	<meta name="google" content="notranslate">
+</head>
+<body class="" itemscope="" itemtype="https://schema.org/WebPage">
+<div id="global-preloader"></div>
+<div id="veil"></div>
+<div id="container">
+			<div id="header">
+							<div id="bannerGetFullAccess"></div>
+						<div class="content">
+				<div class="hd1">
+					<div id="clock">
+											</div>
+					<div class="header-list-main">
+						<div class="header-list">
+															<ul>
+	<li>
+        <a href="/help.html">
+            <i></i>
+            <span class="line"></span>
+            <span>Как работать в системе?</span>
+        </a>
+    </li>
+	<li>
+        <a href="/questions.html">
+          <i></i>
+          <span class="line"></span>
+          <span>Задать вопрос эксперту</span>
+        </a>
+    </li>
+
+
+
+</ul> 
+							
+						</div>
+
+											</div>
+				</div>
+				<div class="clear"></div>
+				<div class="hd2">
+	<div class="logo">
+		<a href="/">
+			<img src="images/logo.png" alt="поисковая система тендеров">
+		</a>
+		</div>
+		<div class="hd2_2">
+
+			Первая и самая продвинутая поисковая система закупок
+
+			<div class="tndsearch ">
+				
+				<form name="search" id="searchForm" action="/tender/search/" method="get">
+					<dl class="search_element_wrapper">
+						<dt></dt>
+						<dd id="search_element">
+							<input type="hidden" name="keywordsStrict" value="0">
+							<input type="hidden" name="smartSearch" value="0">
+							<input type="hidden" name="regionPreference" value="0">
+							<input type="text" name="keywords" placeholder="Введите слова для поиска" data-widget="tender/SearchHistoryAutocomplete" data-widget-config="{" onselectaction":"submit"}"="" id="keywords_lite" value="">
+						</dd>
+					</dl>
+					<input type="submit" value="НАЙТИ" id="searchTenders">
+<!--					<input type="button" onclick='searchLanguage();' value="НАЙТИ" id="searchTenders" >-->
+					<input type="hidden" value="1" name="submit">
+				</form>
+				<div class="tndsearch-bottom">
+					<div class="tndsearch-bottom-left">
+						Например, <a class="example" href="/regions/sankt-peterburg.html">тендеры Талаской области</a>, <a href="/katalog/otrasly.html">тендеры по отраслям</a>					</div>
+										<div class="tndsearch-bottom-right">
+						<a href="/tender/search/">+ Расширенный поиск</a>
+					</div>
+				</div>
+				
+			</div>
+			<nav class="main-nav" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+				<ul class="main-nav__list" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="Promo.html">Возможности системы</a>
+						<meta itemprop="name" content="Возможности системы">
+					</li>
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="catalog.html">Каталог закупок</a>
+						<meta itemprop="name" content="Аналитика">
+					</li>
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="subscribe.html">Рассылка с тендерами</a>
+						<meta itemprop="name" content="Новости в тендерах">
+					</li>
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="analytics.html">Аналитика</a>
+						<meta itemprop="name" content="Аналитика">
+					</li>
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="help.html">Справки</a>
+						<meta itemprop="name" content="Справки">
+					</li>
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="about.html">О компании</a>
+						<meta itemprop="name" content="О компании">
+					</li>
+					<li class="main-nav__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+						<a itemprop="url" href="contacts.html">Контакты</a>
+						<meta itemprop="name" content="Контакты">
+					</li>
+				</ul>
+			</nav>
+
+	</div>
+	</div>
+
+<script>
+
+</script>
+			</div>
+		</div>
+		<div id="middle" class="js-middle ">
+		<div id="left">
+			<div class="scroll-left-sidebar" data-widget="Floating" data-secret-id="secret" data-container-selector=".js-middle">
+				<div class="content">
+
+	<!--noindex-->
+			<div class="enter_lk">Вход в личный кабинет</div>
+
+	<div class="infoblok login">
+					<div class="zag">Личный кабинет<div></div></div>
+
+		<form action="/login/" method="post" name="loginForm">
+			<dl>
+				<dt id="login-label">
+					<label for="login">Логин:</label>
+				</dt>
+				<dd id="login-element">
+					<input type="text" id="login" name="login" value="">
+				</dd>
+				<dt id="pswd-label">
+					<label for="password">Пароль:</label>
+				</dt>
+				<dd id="pswd-element">
+					<input type="password" id="password" name="password"><span class="toggle-password icon-eye"></span>
+				</dd>
+
+			</dl>
+			<label for="remember">
+				<input type="checkbox" id="remember" name="remember" checked="checked"> запомнить меня
+			</label> <br><br>
+			<input class="lkb" type="submit" value="Вход">
+			<div class="sub right">
+				<i></i><a href="/registration/restore/">Забыли пароль?</a>
+			</div>
+							<div class="sub flat-button-wrapper-reg">
+					<a href="/registration" data-widget="site/registration/Popup" data-form-class="Default_Form_Registration_LeftColumnPopup" class="flat-button" style="color: #ffffff">Регистрация</a>				</div>
+					</form>
+	</div>
+	<!--/noindex-->
+																<div class="infoblok menuServLeft">
+						<div class="zag">Поставщикам в помощь</div>
+<noindex>
+<ul class="privat tenderHelpLeft" itemscope="" itemtype="http://schema.org/WPSideBar">
+
+	<li class="allSupport min">
+		<a href="https://www.minfin.kg/" itemprop="url">
+			<i style="background: url(images/bitrix_16.jpg) 100% 10% no-repeat;"></i>
+			<div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Министерство финансов</div>
+		</a>
+	</li>
+	<noindex>
+		<li class="allSupport min">
+			<a href="http://www.kazna.gov.kg/" itemprop="url">
+				<i></i>
+				<div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Центральное казначейство</div>
+			</a>
+		</li>
+		<li class="legalAssistance min">
+			<a href="https://ucmfkr.okmot.kg/" itemprop="url">
+				<i></i><div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Учебный центр</div>
+			</a>
+		</li>
+		<li class="registrationECP min">
+			<a href="https://eec.eaeunion.org/" itemprop="url">
+				<i></i><div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Информационный ресурс</div>
+			</a>
+		</li>
+		<li class="finansHelp min">
+			<a href="http://cbd.minjust.gov.kg/" itemprop="url">
+				<i></i><div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Министерство юститции</div>
+			</a>
+		</li>
+</noindex></ul>
+</noindex>					</div>
+				</div>
+							</div>
+		</div>
+		<div id="general">
+			<div id="center">
+								<div class="content">
+
+
+
+<div class="js-widget-Floating floating-block js-widget-Informer informer-wrapper" id="js-Informer" onclick="return {" style":{"zindex":999}}"="">
+						<script>
+				$(function() { Bc.yaVisitParams({"ab_tenderListPaginatorBlocker":"old"}); });
+			</script>
+								<script>
+				$(function() { Bc.yaVisitParams({"ab_registrationCallBackForms":"shortForm"}); });
+			</script>
+			</div>										<link href="css/catalog-tender.css" rel="stylesheet" type="text/css">	<div class="path">
+	<span itemprop="itemListElement">
+		<a itemprop="item" href="/index.html" title="Главная">
+			<span itemprop="name">Главная</span>
+		</a>
+		</span> |
+		<span>
+		<span itemprop="name" title="Тендеры по отраслям и регионам">Государственные закупки по отраслям и регионам</span>
+	</span>
+	</div>
+
+	<div class="block-info">
+		<div class="block-info__tags tags-info">
+			<ul class="tags-info__list">
+				<li class="tags-info__item tags-info__item--active" data-tab="tab_01">По отраслям</li>
+				<li class="tags-info__item" data-tab="tab_02">По регионам</li>
+			</ul>
+			<div class="tabs-info__body">
+				<div class="block-info__gray-block block-info__gray-block--top">
+					<h1 class="block-info__head">Каталог государственных и коммерческих закупок</h1>
+				</div>
+				<div id="tab_01" class="tabs-info__block tabs-info__block--active">
+
+	<div class="block-info__gray-block block-info__gray-block--bottom">
+		<div class="block-info__head2">Закупки по отраслям</div>
+	</div>
+
+<ul class="tenders-list ">
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					IT, компьютеры, связь											<span class="amount">
+							41 023						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/it-kompyutery-svyaz/" data-tree-type="field">
+							IT, компьютеры, связь						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_web-internet/">
+								Web, Интернет																	<span class="amount">32 092								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_drugoe/">
+								Другое																	<span class="amount">250								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_zaschita-informacii/">
+								Защита информации																	<span class="amount">11 324								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_kabelnoe-televidenie/">
+								Кабельное телевидение																	<span class="amount">4 240								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_kompyutery-komplektuyuschie-orgtehnika-seti-i-setevoe-oborudovanie/">
+								Компьютеры, комплектующие, оргтехника, сети и сетевое оборудование																	<span class="amount">4 770								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_programmnoe-obespechenie/">
+								Программное обеспечение																	<span class="amount">4 228								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_radiosvyaz/">
+								Радиосвязь																	<span class="amount">27 939								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_sputnikovoe-televidenie/">
+								Спутниковое телевидение																	<span class="amount">2 314								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_telefoniya/">
+								Телефония																	<span class="amount">53 477								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/it-kompyutery-svyaz_uslugi-provayderov-hosting-prochie-uslugi/">
+								Услуги провайдеров, хостинг, прочие услуги																	<span class="amount">7 814								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Безопасность											<span class="amount">
+							98 679						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/bezopasnost/" data-tree-type="field">
+							Безопасность						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bezopasnost_videonablyudenie-signalizaciya-ops-skd/">
+								Видеонаблюдение, Сигнализация, ОПС, СКД																	<span class="amount">10 437								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bezopasnost_drugoe/">
+								Другое																	<span class="amount">16 759								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bezopasnost_ohrana-i-oborudovanie/">
+								Охрана и оборудование																	<span class="amount">34 048								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bezopasnost_protivopozharnaya-bezopasnost/">
+								Противопожарная безопасность																	<span class="amount">57 250								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Бизнес, финансы, страхование, маркетинг и реклама											<span class="amount">
+							85 521						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama/" data-tree-type="field">
+							Бизнес, финансы, страхование, маркетинг и реклама						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_bankovskoe-delo/">
+								Банковское дело																	<span class="amount">41 212								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_buhgalterskiy-uchet-ocenka-audit/">
+								Бухгалтерский учет, оценка, аудит																	<span class="amount">93 081								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_drugoe/">
+								Другое																	<span class="amount">3 319								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_reklama-pr-marketing/">
+								Реклама, PR, Маркетинг																	<span class="amount">2 469								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_strahovanie/">
+								Страхование																	<span class="amount">15 025								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_suvenirnaya-produkciya/">
+								Сувенирная продукция																	<span class="amount">9 564								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/biznes-finansy-strahovanie-marketing-i-reklama_yuridicheskie-uslugi-konsalting/">
+								Юридические услуги, консалтинг																	<span class="amount">3 041								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Бумажное производство, тара и упаковка											<span class="amount">
+							40 428						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/bumazhnoe-proizvodstvo-tara-i-upakovka/" data-tree-type="field">
+							Бумажное производство, тара и упаковка						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bumazhnoe-proizvodstvo-tara-i-upakovka_bumazhnoe-proizvodstvo/">
+								Бумажное производство																	<span class="amount">34 130								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bumazhnoe-proizvodstvo-tara-i-upakovka_drugoe/">
+								Другое																	<span class="amount">907								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bumazhnoe-proizvodstvo-tara-i-upakovka_oborudovanie-dlya-bumazhnoy-promyshlennosti/">
+								Оборудование для бумажной промышленности																	<span class="amount">7 370								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bumazhnoe-proizvodstvo-tara-i-upakovka_tara/">
+								Тара																	<span class="amount">6 868								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/bumazhnoe-proizvodstvo-tara-i-upakovka_upakovka/">
+								Упаковка																	<span class="amount">3 376								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Деревообработка, лес											<span class="amount">
+							18 924						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/derevoobrabotka-les/" data-tree-type="field">
+							Деревообработка, лес						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/derevoobrabotka-les_derevyannye-izdeliya-i-konstrukcii/">
+								Деревянные изделия и конструкции																	<span class="amount">4 571								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/derevoobrabotka-les_drugoe/">
+								Другое																	<span class="amount">16 423								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/derevoobrabotka-les_lesopilomaterialy/">
+								Лесопиломатериалы																	<span class="amount">15 495								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/derevoobrabotka-les_oborudovanie-i-tehnika/">
+								Оборудование и техника																	<span class="amount">8 543								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Другое											<span class="amount">
+							530						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/drugoe/" data-tree-type="field">
+							Другое						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/drugoe_drugoe/">
+								Другое																	<span class="amount">50 851								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Издательство, полиграфия											<span class="amount">
+							7 319						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/izdatelstvo-poligrafiya/" data-tree-type="field">
+							Издательство, полиграфия						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/izdatelstvo-poligrafiya_drugoe/">
+								Другое																	<span class="amount">1 025								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/izdatelstvo-poligrafiya_knigi-zhurnaly-broshyury/">
+								Книги, журналы, брошюры																	<span class="amount">2 230								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/izdatelstvo-poligrafiya_pechatnye-materialy/">
+								Печатные материалы																	<span class="amount">9 647								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Легкая промышленность											<span class="amount">
+							17 735						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/legkaya-promyshlennost/" data-tree-type="field">
+							Легкая промышленность						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_galantereynaya-produkciya-tkani/">
+								Галантерейная продукция, ткани																	<span class="amount">1 110								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_drugoe/">
+								Другое																	<span class="amount">2 721								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_kinofotomaterialy-muzykalnye-instrumenty/">
+								Кинофотоматериалы, музыкальные инструменты																	<span class="amount">9 268								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_kosmetika-i-ukrasheniya/">
+								Косметика и украшения																	<span class="amount">6 719								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_myagkiy-inventar-i-postelnye-prinadlezhnosti/">
+								Мягкий инвентарь и постельные принадлежности																	<span class="amount">5 016								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_odezhda-i-obuv/">
+								Одежда и обувь																	<span class="amount">6 554								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_tovary-dlya-detey/">
+								Товары для детей																	<span class="amount">6 326								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/legkaya-promyshlennost_hozyaystvennye-izdeliya/">
+								Хозяйственные изделия																	<span class="amount">9 738								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Машиностроение											<span class="amount">
+							95 308						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/mashinostroenie/" data-tree-type="field">
+							Машиностроение						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_avia-i-kosmicheskoe-mashinostroenie/">
+								Авиа и космическое машиностроение																	<span class="amount">1 042								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_avtomobilestroenie/">
+								Автомобилестроение																	<span class="amount">1 039								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_detali-zapchasti-instrumenty/">
+								Детали, запчасти, инструменты																	<span class="amount">6 527								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_drugoe/">
+								Другое																	<span class="amount">1 352								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_kotlostroenie-teploobmennoe-oborudovanie/">
+								Котлостроение, теплообменное оборудование																	<span class="amount">5 438								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_lifty-i-podemnotransportnoe-oborudovanie/">
+								Лифты и подъемно-транспортное оборудование																	<span class="amount">14 662								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_lokomotivostroenie-i-mashinostroenie/">
+								Локомотивостроение и машиностроение																	<span class="amount">6 740								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_promyshlennoe-mashinostroenie/">
+								Промышленное машиностроение																	<span class="amount">15 476								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_remont-obsluzhivanie-puskonaladochnye-raboty/">
+								Ремонт, обслуживание, пуско-наладочные работы																	<span class="amount">26 221								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/mashinostroenie_sudostroenie/">
+								Судостроение																	<span class="amount">1 022								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Медицина, фармакология											<span class="amount">
+							147 164						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/medicina-farmakologiya/" data-tree-type="field">
+							Медицина, фармакология						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/medicina-farmakologiya_veterinariya/">
+								Ветеринария																	<span class="amount">14 942								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/medicina-farmakologiya_drugoe/">
+								Другое																	<span class="amount">43 955								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/medicina-farmakologiya_lekarstvennye-preparaty-vitaminy-rashodnye-materialy/">
+								Лекарственные препараты, витамины, расходные материалы																	<span class="amount">75 037								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/medicina-farmakologiya_medicinskoe-oborudovanie-obsluzhivanie-issledovaniya/">
+								Медицинское оборудование, обслуживание, исследования																	<span class="amount">36 607								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Металлы, металлоизделия											<span class="amount">
+							129 041						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/metally-metalloizdeliya/" data-tree-type="field">
+							Металлы, металлоизделия						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/metally-metalloizdeliya_drugoe/">
+								Другое																	<span class="amount">919								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/metally-metalloizdeliya_liteynoe-proizvodstvo/">
+								Литейное производство																	<span class="amount">2 448								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/metally-metalloizdeliya_metalloizdeliya-i-metallokonstrukcii/">
+								Металлоизделия и металлоконструкции																	<span class="amount">82 127								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/metally-metalloizdeliya_metallolom-i-metalloobrabotka/">
+								Металлолом и металлообработка																	<span class="amount">35 695								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/metally-metalloizdeliya_metally/">
+								Металлы																	<span class="amount">53 756								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Наука, исследования, образование											<span class="amount">
+							45 269						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/nauka-issledovaniya-obrazovanie/" data-tree-type="field">
+							Наука, исследования, образование						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/nauka-issledovaniya-obrazovanie_drugoe/">
+								Другое																	<span class="amount">52								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/nauka-issledovaniya-obrazovanie_laboratornoe-oborudovanie-i-materialy/">
+								Лабораторное оборудование и материалы																	<span class="amount">4 820								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/nauka-issledovaniya-obrazovanie_nauchnye-issledovaniya-i-razrabotki/">
+								Научные исследования и разработки																	<span class="amount">16 704								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/nauka-issledovaniya-obrazovanie_uslugi/">
+								Услуги																	<span class="amount">16 993								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/nauka-issledovaniya-obrazovanie_uslugi-laboratoriy-za-isklucheniem-medicinskih/">
+								Услуги лабораторий (за исключением медицинских)																	<span class="amount">23 322								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Офис, дом											<span class="amount">
+							32 930						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/ofis-dom/" data-tree-type="field">
+							Офис, дом						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_bytovaya-tehnika/">
+								Бытовая техника																	<span class="amount">4 091								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_drugoe/">
+								Другое																	<span class="amount">269								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_interery-dizayn/">
+								Интерьеры, дизайн																	<span class="amount">3 329								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_kancelyarskie-prinadlezhnosti/">
+								Канцелярские принадлежности																	<span class="amount">4 531								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_mebel/">
+								Мебель																	<span class="amount">4 626								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_oborudovanie/">
+								Оборудование																	<span class="amount">5 392								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ofis-dom_uslugi/">
+								Услуги																	<span class="amount">19 245								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Перевозки, логистика, таможня											<span class="amount">
+							95 086						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/perevozki-logistika-tamozhnya/" data-tree-type="field">
+							Перевозки, логистика, таможня						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/perevozki-logistika-tamozhnya_drugoe/">
+								Другое																	<span class="amount">70								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/perevozki-logistika-tamozhnya_sklad/">
+								Склад																	<span class="amount">19 485								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/perevozki-logistika-tamozhnya_tamozhennye-uslugi/">
+								Таможенные услуги																	<span class="amount">1 076								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/perevozki-logistika-tamozhnya_ekspeditorskie-uslugi-logistika/">
+								Экспедиторские услуги, логистика																	<span class="amount">14 361								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Продовольствие, пищевая промышленность											<span class="amount">
+							231 101						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost/" data-tree-type="field">
+							Продовольствие, пищевая промышленность						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_detskoe-i-dieticheskoe-pitanie/">
+								Детское и диетическое питание																	<span class="amount">58 839								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_drugoe/">
+								Другое																	<span class="amount">234								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_napitki/">
+								Напитки																	<span class="amount">3 116								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_oborudovanie-dlya-proizvodstva/">
+								Оборудование для производства																	<span class="amount">31 362								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_produkty-pitaniya/">
+								Продукты питания																	<span class="amount">23 204								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_specii-i-pischevye-dobavki/">
+								Специи и пищевые добавки																	<span class="amount">50 588								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_tabachnaya-produkciya/">
+								Табачная продукция																	<span class="amount">1 640								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_uslugi-organizaciya-pitaniya/">
+								Услуги, организация питания																	<span class="amount">29 543								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Сельское хозяйство											<span class="amount">
+							26 654						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/selskoe-hozyaystvo/" data-tree-type="field">
+							Сельское хозяйство						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_agrohimiya-i-udobreniya/">
+								Агрохимия и удобрения																	<span class="amount">47 895								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_drugoe/">
+								Другое																	<span class="amount">1 165								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_zhivotnovodstvo/">
+								Животноводство																	<span class="amount">17 688								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_kormovye-dobavki-kombikorma/">
+								Кормовые добавки, комбикорма																	<span class="amount">31 330								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_rastenievodstvo/">
+								Растениеводство																	<span class="amount">15 830								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_selskohozyaystvennye-raboty/">
+								Сельскохозяйственные работы																	<span class="amount">5 012								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/selskoe-hozyaystvo_tehnika-oborudovanie-inventar/">
+								Техника, оборудование, инвентарь																	<span class="amount">15 404								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Социальные услуги											<span class="amount">
+							1 087						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/socialnie-uslugi/" data-tree-type="field">
+							Социальные услуги						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/socialnie-uslugi_ritualnie-uslugi/">
+								Ритуальные услуги																	<span class="amount">12 488								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Спорт, отдых, туризм											<span class="amount">
+							71 760						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/sport-otdyh-turizm/" data-tree-type="field">
+							Спорт, отдых, туризм						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/sport-otdyh-turizm_drugoe/">
+								Другое																	<span class="amount">1 475								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/sport-otdyh-turizm_organizaciya-prazdnikov-i-drugih-meropriyatiy/">
+								Организация праздников и других мероприятий																	<span class="amount">40 468								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/sport-otdyh-turizm_razvlecheniya/">
+								Развлечения																	<span class="amount">470								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/sport-otdyh-turizm_sportivnoe-oborudovanie-inventar-tovary-dlya-otdyha/">
+								Спортивное оборудование, инвентарь, товары для отдыха																	<span class="amount">30 490								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/sport-otdyh-turizm_turisticheskie-uslugi-gostinicy-kurortysanatorii/">
+								Туристические услуги, гостиницы, курорты, санатории																	<span class="amount">6 412								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Строительство, недвижимость и архитектура											<span class="amount">
+							78 308						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura/" data-tree-type="field">
+							Строительство, недвижимость и архитектура						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_vodolaznye-raboty/">
+								Водолазные работы																	<span class="amount">3 635								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_dachi-kottedzhi-malye-arhitekturnye-formy/">
+								Дачи, коттеджи, малые архитектурные формы																	<span class="amount">35 772								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_demontazh-zdanii-i-sooruzhenii/">
+								Демонтаж зданий и сооружений																	<span class="amount">31 282								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_dorogi-mosty-tonneli/">
+								Дороги, мосты, тоннели																	<span class="amount">3 248								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_drugoe/">
+								Другое																	<span class="amount">3 957								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_nedvizhimost/">
+								Недвижимость																	<span class="amount">21 254								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_podgotovka-stroitelnogo-uchastka-zemelnye-raboty/">
+								Подготовка строительного участка, земельные работы																	<span class="amount">26 334								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_poly-okna-i-dveri/">
+								Полы, окна и двери																	<span class="amount">18 118								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_proektnye-raboty-geodeziya-kartografiya-inzhenernye-izyskaniya-kadastrovye-raboty/">
+								Проектные работы, геодезия, картография, инженерные изыскания, кадастровые работы																	<span class="amount">1 724								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_remontnye-i-stroitelnye-raboty/">
+								Ремонтные и строительные работы																	<span class="amount">168 765								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_stroitelnye-materialy-oborudovanie-i-instrumenty/">
+								Строительные материалы, оборудование и инструменты																	<span class="amount">120 495								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_stroitelstvo-remont-i-obsluzhivanie-zhd-putei/">
+								Строительство, ремонт и обслуживание жд путей																	<span class="amount">6 287								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_elektroenergiya/">
+								Электроэнергия																	<span class="amount">15 147								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Сырье, полуфабрикаты											<span class="amount">
+							5 983						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/syre-polufabrikaty/" data-tree-type="field">
+							Сырье, полуфабрикаты						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/syre-polufabrikaty_dobycha-poleznyh-iskopaemyh/">
+								Добыча полезных ископаемых																	<span class="amount">1 497								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/syre-polufabrikaty_dragocennye-kamni/">
+								Драгоценные камни																	<span class="amount">299								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/syre-polufabrikaty_drugoe/">
+								Другое																	<span class="amount">500								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/syre-polufabrikaty_mineraly-gornye-porody-ugol/">
+								Минералы, горные породы, уголь																	<span class="amount">43 452								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/syre-polufabrikaty_othody-proizvodstva-vtorsyre/">
+								Отходы производства, вторсырьё																	<span class="amount">6 337								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/syre-polufabrikaty_rezina-kauchuki/">
+								Резина, каучуки																	<span class="amount">12 138								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Топливо и энергетика											<span class="amount">
+							97 714						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/toplivo-i-energetika/" data-tree-type="field">
+							Топливо и энергетика						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_aromaticheskie-uglevody/">
+								Ароматические углеводы																	<span class="amount">611								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_bitumy/">
+								Битумы																	<span class="amount">14 134								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_gaz/">
+								Газ																	<span class="amount">24 739								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_goryuchesmazochnye-materialy/">
+								Горюче-смазочные материалы																	<span class="amount">4 497								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_drugoe/">
+								Другое																	<span class="amount">96								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_mazuty/">
+								Мазуты																	<span class="amount">5 766								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_masla/">
+								Масла																	<span class="amount">17 945								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_nefteprodukty/">
+								Нефтепродукты																	<span class="amount">30 429								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_oborudovanie-dlya-azs-i-neftebaz/">
+								Оборудование для АЗС и нефтебаз																	<span class="amount">4 622								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_produkty-pererabotki/">
+								Продукты переработки																	<span class="amount">1 681								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/toplivo-i-energetika_toplivo/">
+								Топливо																	<span class="amount">62 719								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Транспорт											<span class="amount">
+							23 921						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/transport/" data-tree-type="field">
+							Транспорт						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_avia-i-drugoe-bilety/">
+								Авиа и другое билеты																	<span class="amount">42 105								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_avtomobili-avtotransport-avtobusy-pricepy/">
+								Автомобили, автотранспорт, автобусы, прицепы																	<span class="amount">5 004								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_dorozhnaya-tehnika/">
+								Дорожная техника																	<span class="amount">7 658								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_dostavka/">
+								Доставка																	<span class="amount">1 639								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_drugoe/">
+								Другое																	<span class="amount">1 091								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_zapchasti-aksessuary-uslugi-avtoservisa/">
+								Запчасти, аксессуары, услуги автосервиса																	<span class="amount">1 134								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_spectransport-i-oborudovanie-dlya-perevozok/">
+								Спецтранспорт и оборудование для перевозок																	<span class="amount">17 024								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/transport_transportnye-uslugi-perevozki/">
+								Транспортные услуги, перевозки																	<span class="amount">22 607								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Химия											<span class="amount">
+							76 395						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/himiya/" data-tree-type="field">
+							Химия						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/himiya_bytovaya-himiya/">
+								Бытовая химия																	<span class="amount">64 945								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/himiya_vzryvchatye-veschestva/">
+								Взрывчатые вещества																	<span class="amount">3 193								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/himiya_drugoe/">
+								Другое																	<span class="amount">1 401								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/himiya_oborudovanie-dlya-himicheskoy-promyshlennosti/">
+								Оборудование для химической промышленности																	<span class="amount">8 715								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/himiya_himicheskie-elementy-i-soedineniya/">
+								Химические элементы и соединения																	<span class="amount">39 452								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/himiya_hranenie-i-transportirovka/">
+								Хранение и транспортировка																	<span class="amount">266								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Экология											<span class="amount">
+							24 284						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/ekologiya/" data-tree-type="field">
+							Экология						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ekologiya_blagoustroystvo-territorii-landshaftnye-raboty/">
+								Благоустройство территории, ландшафтные работы																	<span class="amount">11 645								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ekologiya_drugoe/">
+								Другое																	<span class="amount">3 563								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ekologiya_oborudovanie-i-sistemy-ochistki/">
+								Оборудование и системы очистки																	<span class="amount">7 489								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/ekologiya_pererabotka-vtorsyrya/">
+								Переработка вторсырья																	<span class="amount">7 823								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Электротехника											<span class="amount">
+							27 233						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-field/elektrotehnika/" data-tree-type="field">
+							Электротехника						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/elektrotehnika_drugoe/">
+								Другое																	<span class="amount">78								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/elektrotehnika_kabelnoprovodnikovaya-produkciya/">
+								Кабельно-проводниковая продукция																	<span class="amount">2 532								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/elektrotehnika_podstancii-transformatory-generatornye-ustanovki/">
+								Подстанции, трансформаторы, генераторные установки																	<span class="amount">5 483								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/elektrotehnika_remontmontazh-profilakticheskie-raboty/">
+								Ремонт,монтаж, профилактические работы																	<span class="amount">2 212								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/elektrotehnika_elektronnoe-oborudovanie-ustanovki/">
+								Электронное оборудование, установки																	<span class="amount">6 869								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-field/elektrotehnika_elektrotehnicheskie-izdeliya/">
+								Электротехнические изделия																	<span class="amount">8 428								</span>
+															</a>
+						</li>
+									</ul>
+					</li>
+	</ul>
+				</div>
+				<div id="tab_02" class="tabs-info__block tabs-info__block--regions">
+
+	<div class="block-info__gray-block block-info__gray-block--bottom">
+		<div class="block-info__head2">Закупки по регионам</div>
+	</div>
+
+<ul class="tenders-list ">
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					 Чуйская область											<span class="amount">
+							130 485						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/rossiya/" data-tree-type="field">
+							Чуйская область
+						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_centralnyy-fo/">
+								Аламудунский район																<span class="amount">6 622								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_dalnevostochnyy-fo/">
+								Чуйский район																<span class="amount">15 226								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_dnr/">
+								Жайылский район																	<span class="amount">16 097								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_zaporozhskaya-oblast/">
+								Кеминский район																<span class="amount">2 355								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_lnr/">
+								Московский район																<span class="amount">11 027								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_privolzhskiy-fo/">
+								Панфиловский район																	<span class="amount">62 192								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_severozapadnyy-fo/">
+								Сокулукский район																	<span class="amount">7 262								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/rossiya_severokavkazskiy-fo/">
+								Ысык-Атинский район																	<span class="amount">21 625								</span>
+															</a>
+						</li>
+
+									</ul>
+					</li>
+
+
+
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					 Джалал-Абадская область										<span class="amount">
+							154 947						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/armeniya/" data-tree-type="field">
+							Джалал-Абадская область					</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_erevan/">
+								Аксыйский район																	<span class="amount">22 198								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-aragacotn/">
+								Ала-Букинский район																<span class="amount">15 677								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-ararat/">
+								Базар-Коргонский район																	<span class="amount">11 124								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-armavir/">
+								Чаткальский район																	<span class="amount">16 788								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-vayoc-dzor/">
+								Ноокенский район																	<span class="amount">12 421								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-gegarkunik/">
+								Сузакский район																	<span class="amount">15 754								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-kotayk/">
+								Тогуз-Тороуский район																	<span class="amount">29 903								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/armeniya_provinciya-lori/">
+								Токтогульский район																	<span class="amount">26 426								</span>
+															</a>
+						</li>
+
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Баткенская область											<span class="amount">
+							115 845						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/belarus/" data-tree-type="field">
+							Баткенская область						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/belarus_brestskaya-oblast/">
+								Баткенский район																	<span class="amount">30 156								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/belarus_vitebskaya-oblast/">
+								Кадамжайский район																<span class="amount">54 189								</span>
+															</a>
+						</li>
+						<li class="sub-list__item">
+							<a href="/catalog/by-region/belarus_vitebskaya-oblast/">
+								Лейлекский район																<span class="amount">31 189								</span>
+															</a>
+						</li>
+
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Нарынская область											<span class="amount">
+							98 926						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/evropa/" data-tree-type="field">
+							Нарынская область						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/evropa_avstriya/">
+								Ак-Талинский район																<span class="amount">14 575								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/evropa_albaniya/">
+								Ат-Башынский район																	<span class="amount">26 415								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/evropa_andorra/">
+								Джумгальский район																	<span class="amount">34 562								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/evropa_belarus/">
+								Кочкорский район																	<span class="amount">26 325								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/evropa_belgiya/">
+								Нарынский район																<span class="amount">21 236								</span>
+															</a>
+						</li>
+
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Таласская область									<span class="amount">
+							100 150						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/kazahstan/" data-tree-type="field">
+							Таласская область						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kazahstan_abayskaya-oblast/">
+								Бакай-Атинский район																	<span class="amount">13 833								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kazahstan_akmolinskaya-oblast/">
+								Кара-Бууринский район																<span class="amount">29 154								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kazahstan_aktyubinskaya-oblast/">
+								Манасский район																<span class="amount">26 687								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kazahstan_almatinskaya-oblast/">
+								Таласский район																	<span class="amount">42 293								</span>
+															</a>
+						</li>
+
+									</ul>
+					</li>
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Иссык-Кульская область											<span class="amount">
+							206 600						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/kirgiziya/" data-tree-type="field">
+							Иссык-Кульская область						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kirgiziya_batkenskaya-oblast/">
+								Ак-Суйский район																<span class="amount">32 223								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kirgiziya_bishkek/">
+								Жети-Огузский район																	<span class="amount">49 980								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kirgiziya_osh/">
+								Тонский район																	<span class="amount">15 032								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kirgiziya_dzhalalabadskaya-oblast/">
+								Тюпский район															<span class="amount">22 235								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/kirgiziya_issykkulskaya-oblast/">
+								Иссык-Кульский район																	<span class="amount">44 944								</span>
+															</a>
+						</li>
+
+									</ul>
+					</li>
+
+					<li class="tenders-list__item ">
+							<span class="trigger">
+					Ошская область											<span class="amount">
+							190 350						</span>
+									</span>
+				<ul class="tenders-list__sub-list sub-list">
+					<li class="sub-list__item sub-list__item--main ">
+						<a href="/catalog/by-region/moldova/" data-tree-type="field">
+							Ошская область						</a>
+					</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/moldova_kishinev/">
+								Алайский район																	<span class="amount">14 515								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/moldova_pridnestrove/">
+								Араванский район																	<span class="amount">32 047								</span>
+															</a>
+						</li>
+											<li class="sub-list__item">
+							<a href="/catalog/by-region/moldova_tiraspol/">
+								Чон-Алайский район																	<span class="amount">21 189								</span>
+															</a>
+						</li>
+					<li class="sub-list__item">
+						<a href="/catalog/by-region/moldova_tiraspol/">
+							Кара-Кулжинский район																<span class="amount">10 845								</span>
+						</a>
+					</li>
+					<li class="sub-list__item">
+						<a href="/catalog/by-region/moldova_tiraspol/">
+							Кара-Сууский район																<span class="amount">9 115								</span>
+						</a>
+					</li>
+
+					<li class="sub-list__item">
+						<a href="/catalog/by-region/moldova_tiraspol/">
+							Ноокатский район															<span class="amount">34 521								</span>
+						</a>
+					</li>
+
+					<li class="sub-list__item">
+						<a href="/catalog/by-region/moldova_tiraspol/">
+							Узгенский район																<span class="amount">38 789								</span>
+						</a>
+					</li>
+
+									</ul>
+					</li>
+
+
+
+
+					
+	</ul>
+				</div>
+				<div id="bottom-block-margin">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/general_1.js"></script>
+
+
+
+
+	<div class="tender_search_result_block">
+										<span class="note">Активных контрактов: <span class="number">3784</span></span>
+																<br><span class="note">Закупок найдено <span class="number">167 545</span></span>
+												</div>
+
+			<div class="smart_filter_wrap_block" data-widget="tender/QuickSearchForm" data-authorisation-needed="true">
+    <!--noindex--><form id="tender_search" name="tender_search" fieldsconfig.no_exclude_by_lots.includeif="" fieldsconfig.no_exclude_by_positions.includeif="1" fieldsconfig.sourceurl.includeif="" fieldsconfig.tradetype.value="" isquicksearch="1" method="get" action="/tender/search/" class=" js-widget-Form" data-field-name="" data-field-type="form" data-form-id="tenderSearch"><div class="smart_filter_row group block-blue-background">
+
+	<div class="smart_filter_left_col">
+		<div class="smart_filter_search_field form_element_type">
+			<div class="labels">
+				<label>Ключевые слова:</label>
+			</div>
+			<div class="controls">
+
+<input type="text" name="keywords" id="keywords" value="" placeholder="Введите слова, по которым вы хотите найти тендеры!" data-field-name="keywords" data-field-type="text">			</div>
+		</div>
+
+					<div class="smart_filter_second_row group">
+				<div class="smart_filter_show_search_form">
+					<span class="smart_filter_show_search_form_title" data-action="openFullSearch">Показать все поля поиска</span>
+				</div>
+				<div class="smart_filter_type_tender form_element_type">
+					<div class="labels">
+						<label>Тип закупок:</label>
+					</div>
+					<div class="controls">
+						<div class="tree_info_block smart_filter_type_tender_select_type select_type_block">
+
+
+
+
+<div data-field-name="type_id" data-field-full-name="type_id[]" data-field-type="selectTree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"type_id[]","inputlabel":"\u0422\u0438\u043f="" \u0442\u0435\u043d\u0434\u0435\u0440\u0430","data":[{"id":1,"parent":0,"name":"\u041a\u043e\u043d\u043a\u0443\u0440\u0441"},{"id":2,"parent":0,"name":"\u0410\u0443\u043a\u0446\u0438\u043e\u043d"},{"id":3,"parent":0,"name":"\u0417\u0430\u043f\u0440\u043e\u0441="" \u043a\u043e\u0442\u0438\u0440\u043e\u0432\u043e\u043a"},{"id":4,"parent":0,"name":"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0439="" \u0430\u0443\u043a\u0446\u0438\u043e\u043d"},{"id":5,"parent":0,"name":"\u0411\u0438\u0440\u0436\u0430"},{"id":6,"parent":0,"name":"\u041e\u0442\u0431\u043e\u0440"},{"id":7,"parent":0,"name":"\u0418\u0437\u0432\u0435\u0449\u0435\u043d\u0438\u0435="" \u043e="" \u0437\u0430\u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043e\u0432\u0430\u043d\u043d\u043e\u0441\u0442\u0438"},{"id":8,"parent":0,"name":"\u0414\u0440\u0443\u0433\u043e\u0435"},{"id":9,"parent":0,"name":"\u041d\u0435="" \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d"},{"id":10,"parent":0,"name":"\u0415\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439="" \u043f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a"},{"id":11,"parent":0,"name":"\u0417\u0430\u043f\u0440\u043e\u0441="" \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0439"},{"id":12,"parent":0,"name":"\u0410\u043d\u0430\u043b\u0438\u0437="" \u0446\u0435\u043d"},{"id":13,"parent":0,"name":"\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435="" \u0434\u0435\u043b\u0430\u0442\u044c="" \u043e\u0444\u0435\u0440\u0442\u044b"},{"id":14,"parent":0,"name":"\u041c\u0430\u043b\u0430\u044f="" \u0437\u0430\u043a\u0443\u043f\u043a\u0430"},{"id":15,"parent":0,"name":"\u0417\u0430\u043a\u0440\u044b\u0442\u0430\u044f="" \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430"},{"id":16,"parent":0,"name":"\u0427\u0430\u0441\u0442\u043d\u043e\u0435="" \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0435"},{"id":17,"parent":0,"name":"\u0417\u0430\u043a\u0443\u043f\u043a\u0430="" \u0443="" \u0430\u043a\u043a\u0440\u0435\u0434\u0438\u0442\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e="" \u043f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a\u0430"},{"id":18,"parent":0,"name":"\u041f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0435="" \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435"},{"id":19,"parent":0,"name":"\u0417\u0430\u043f\u0440\u043e\u0441="" \u0446\u0435\u043d"},{"id":20,"parent":0,"name":"\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u044b\u0439="" \u043b\u0438\u0441\u0442"},{"id":21,"parent":0,"name":"\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u044b\u0439="" \u043b\u0438\u0441\u0442="" \u0441="" \u043f\u0435\u0440\u0435\u0442\u043e\u0440\u0436\u043a\u043e\u0439"}],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"type_id","ajaxqueryurl":"","ajaxqueryoptions":[],"ajaxportionqueryurl":"","ajaxlistfilterurl":"","disabled":false,"listtotreeparams":{"parentindex":"parent","idindex":"id","rootid":0},"ismodal":false}"="" id="type_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+	<div class="smart_filter_right_col">
+					<div class="form_element_type smart_filter_region_field">
+				<div class="labels">Регион:</div>
+				<div class="controls">
+
+
+
+
+<div data-field-name="region_id" data-field-full-name="region_id[]" data-field-type="regionTree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"region_id[]","inputlabel":"\u0420\u0435\u0433\u0438\u043e\u043d","data":[],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"region_id","ajaxqueryurl":"\="" ajax\="" regiontree\="" ?issite="1&quot;,&quot;ajaxQueryOptions&quot;:[],&quot;ajaxPortionQueryUrl&quot;:&quot;&quot;,&quot;ajaxListFilterUrl&quot;:&quot;&quot;,&quot;disabled&quot;:false,&quot;listToTreeParams&quot;:{&quot;parentIndex&quot;:&quot;parent&quot;,&quot;idIndex&quot;:&quot;id&quot;,&quot;rootId&quot;:0},&quot;isModal&quot;:false}&quot;" id="region_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+				</div>
+			</div>
+
+					<div class="service_button_block">
+				<ul class="service_button_block_items">
+
+					<li class="service_button_block_item" data-widget="tooltip" title="Экспорт в Excel. В таблицу excel будет экспортировано.">
+													<a class="service_button_block_link item_it_1" data-action="authorisationNeeded"></a>
+											</li>
+
+						<li class="service_button_block_item" data-widget="tooltip" title="Сохранить параметры поиска">
+							<a class="service_button_block_link item_it_2" data-action="saveSearch"></a>
+						</li>
+						<li class="service_button_block_item" data-widget="tooltip" title="Сохранить в рассылку">
+							<a class="service_button_block_link item_it_3" data-action="saveToSubscribe"></a>
+						</li>
+										<li class="service_button_block_item" data-widget="tooltip" title="Печать">
+						<a class="service_button_block_link item_it_4" data-action="print"></a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="smart_filter_second_row group">
+				<div class="smart_filter_active_checkbox_block form_element_type">
+					<div class="controls">
+
+						<input type="checkbox" name="status_id[]" value="3" id="chckbox_active_field" class="chckbox_active_field">
+						<label for="chckbox_active_field" class="chckbox_active_title">Активный</label>
+					</div>
+				</div>
+				<div class="smart_filter_quantity_with_page form_element_type">
+					<div class="labels">
+						<label>
+							Показать на странице:
+						</label>
+					</div>
+					<div class="controls">
+
+<select name="on_page" id="on_page" data-field-name="on_page" data-field-type="select">
+    <option value="10" label="10">10</option>
+    <option value="20" label="20" selected="selected">20</option>
+    <option value="50" label="50">50</option>
+    <option value="100" label="100">100</option>
+</select>					</div>
+				</div>
+			</div>
+
+		<div class="submit-block">
+			<input type="submit" name="submit" value="найти" class="smart_filter_submit_button">
+		</div>
+	</div>
+</div>
+</form><!--/noindex-->
+	<div data-full-search-box="1" style="display: none">
+		<!--noindex--><form id="tender_search" name="tender_search" fieldsconfig.no_exclude_by_lots.includeif="" fieldsconfig.no_exclude_by_positions.includeif="1" fieldsconfig.sourceurl.includeif="" fieldsconfig.tradetype.value="" submit="" method="get" action="/tender/search/" class=" js-widget-Form" data-field-name="" data-field-type="form" data-form-id="tenderSearch">
+
+
+<div class="social-likes article-tpl__block grey-box">
+	<h2 class="head-second">Поделиться</h2>
+	<div class="article-tpl__list list-share">
+		<script src="js/share.js"></script>
+					<script type="text/javascript" src="js/share.js" charset="utf-8" async="async"></script>
+				<div class="ya-share2" data-curtain="" data-size="l" data-shape="round" data-services="vkontakte,telegram,whatsapp,viber"></div>
+	</div>
+</div>
+	</div>
+
+
+<div class="element-group bottom-separator">
+	<div class="control-group">
+		<div class="labels">
+			Ключевые слова:
+		</div>
+		<div class="controls">
+
+<input type="text" name="keywords" id="keywords" value="" placeholder="Введите слова, по которым вы хотите найти тендеры!" data-field-name="keywords" data-field-type="text">		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+		</div>
+		<div class="controls">
+
+            <div style="float:left;">
+                <label for="no_search_by_positions">
+
+<input type="hidden" name="no_search_by_positions" value="0"><input type="checkbox" name="no_search_by_positions" id="no_search_by_positions" value="1" data-field-name="no_search_by_positions" data-field-type="checkbox">Не искать по позициям                </label><br>
+
+                <label for="keywordsStrict">
+
+<input type="hidden" name="keywordsStrict" value="0"><input type="checkbox" name="keywordsStrict" id="keywordsStrict" value="1" data-field-name="keywordsStrict" data-field-type="checkbox">Искать все слова в одних закупках                </label>
+            </div>
+
+			<div class="howToSearch" style="float:right; width: 285px;">
+				<span></span>
+				<a onclick="$(this).next().slideToggle('fast')">Как искать по ключевым словам?</a>
+				<div id="howsearch" class="popover" style="display:none; width: 490px;" onclick="$(this).slideToggle('fast')">
+				  <div class="action right delete js-subformListItemAction-remove" title="Удалить">
+					  <i class="icon-close"></i>
+				  </div>
+					<div class="arrow"></div>
+
+					<table class="table-tips" style="font-size: 12px; border-color:gray;" cellpadding="5" cellspacing="0" width="490">
+						<tbody>
+						<tr>
+							<td style="text-align: center;">
+								<b>Как искать?</b>
+							</td>
+							<td width="145" style="text-align: center;">
+								<b>Примеры</b>
+							</td>
+							<td style="text-align: center;">
+								<b>Что найдем</b>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Ищем закупки по одному слову</td>
+							<td>жилого</td>
+							<td>жилье<br>жилой<br>жилого</td>
+						</tr>
+						<tr>
+							<td>жилого<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>.</b></span></td>
+							<td>жилого</td>
+						</tr>
+						<tr>
+							<td rowspan="2">
+								Ищем тендеры по словосочетаниям
+							</td>
+							<td>строительство корпусов</td>
+							<td>
+								Тендеры на строительство жилых домов
+								<p style="margin:0px;padding: 0px;" align="center">+</p>
+								Тендеры на ремонт корпусов больницы
+							</td>
+						</tr>
+						<tr>
+							<td>
+								строительство<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>-</b></span>корпусов
+							</td>
+							<td>
+								Тендеры на строительство корпусов (производственных, лабораторных, спальных и так далее)
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2">
+								Задаем порядок следования ключевых слов
+							</td>
+							<td>
+								строительство<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>&lt;</b></span>ремонт
+							</td>
+							<td>
+								Тендеры на строительство, облуживание и ремонт
+							</td>
+						</tr>
+						<tr>
+							<td>
+								ремонт<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>&lt;</b></span>строительство
+							</td>
+							<td>
+								Тендеры на ремонт со строительством
+								<p style="margin:0px;padding: 0px;" align="center">+</p>
+								Тендеры на ремонт строительного оборудования и др.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Задаем расстояние между ключевыми словами
+							</td>
+							<td>
+								<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>[</b></span>строительство жилого<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>]2</b></span>
+							</td>
+							<td>
+								Строительство <span title="2 слова" style="border-bottom: 1px dotted gray;cursor: help;  display: inline; width: 0px; height: 0px; float: none; background:none;">многоквартирного высотного</span> жилого дома
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Символ * ("звездочка") заменяет собой любое количество символов в слове и может использоваться совместно с другими модификаторами
+							</td>
+							<td>
+								[проект<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>*</b></span> мол<span style="color:red; display: inline; width: 0px; height: 0px; float: none; background:none;"><b>*</b></span>]2
+							</td>
+							<td>
+								проектирование улучшенной системы молниезащиты<br>+<br>
+								молодежных проектов
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Исключить слова -->
+	<div class="control-group">
+		<div class="labels">
+			Исключить слова:
+		</div>
+		<div class="controls">
+
+<input type="text" name="nokeywords" id="nokeywords" value="" placeholder="Слова, которые будут исключены из поиска" data-field-name="nokeywords" data-field-type="text">		</div>
+	</div>
+
+    <div class="control-group">
+        <div class="labels">
+        </div>
+        <div class="controls">
+            <label for="no_exclude_by_positions">
+
+<input type="hidden" name="no_exclude_by_positions" value="0"><input type="checkbox" name="no_exclude_by_positions" id="no_exclude_by_positions" value="1" checked="checked" data-field-name="no_exclude_by_positions" data-field-type="checkbox">Не исключать по позициям            </label>
+        </div>
+    </div>
+</div>
+
+<div class="element-group bottom-separator">
+	<div class="control-group">
+		<div class="labels">
+			Поиск слов в документации:
+		</div>
+		<div class="controls">
+
+<input type="text" name="documentationKeywords" id="documentationKeywords" value="" placeholder="Cлова, которые хотите найти только в документации тендера" data-field-name="documentationKeywords" data-field-type="text">            <div class="howToSearch" style="float:right; width:90px;">
+				<span></span>
+				<a onclick="$(this).next().slideToggle('fast')">Подсказка</a>
+				<div id="howsearch" class="popover" style="display:none; width: 110px;" onclick="$(this).slideToggle('fast')">
+					<div class="action right delete js-subformListItemAction-remove" title="Удалить">
+						<i class="icon-close"></i>
+					</div>
+					<div class="arrow"></div>
+					<p>Поиск по документации работает в активных закупках</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+			Исключить слова из документации:
+		</div>
+		<div class="controls">
+
+<input type="text" name="nodocumentationKeywords" id="nodocumentationKeywords" value="" placeholder="Слова, которые будут исключены из поиска по документации" data-field-name="nodocumentationKeywords" data-field-type="text">		</div>
+	</div>
+</div>
+
+<div class="element-group bottom-separator">
+	<div class="control-group">
+		<div class="labels">
+			Регион:
+		</div>
+		<div class="controls">
+
+
+
+
+<div data-field-name="region_id" data-field-full-name="region_id[]" data-field-type="regionTree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"region_id[]","inputlabel":"\u0420\u0435\u0433\u0438\u043e\u043d","data":[],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"region_id","ajaxqueryurl":"\="" ajax\="" regiontree\="" ?issite="1&quot;,&quot;ajaxQueryOptions&quot;:[],&quot;ajaxPortionQueryUrl&quot;:&quot;&quot;,&quot;ajaxListFilterUrl&quot;:&quot;&quot;,&quot;disabled&quot;:false,&quot;listToTreeParams&quot;:{&quot;parentIndex&quot;:&quot;parent&quot;,&quot;idIndex&quot;:&quot;id&quot;,&quot;rootId&quot;:0},&quot;isModal&quot;:false}&quot;" id="region_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+
+
+	<div class="control-group">
+		<div class="labels">
+
+		</div>
+		<div class="controls">
+			<div class="howToSearch" style="float:right; width:280px;">
+				<span></span>
+				<a onclick="$(this).next().slideToggle('fast')">Подсказка – поиск тендеров по регионам</a>
+				<div id="howsearch" class="popover" style="display:none; width: 400px;" onclick="$(this).slideToggle('fast')">
+					<div class="action right delete js-subformListItemAction-remove" title="Удалить">
+						<i class="icon-close"></i>
+					</div>
+					<div class="arrow"></div>
+					<p>Регионы представлены в виде выпадающего иерархического списка: страна, округ, регион и город. Кликните на + и отметьте «галочкой» нужные регионы.</p>
+					<p>Не знаете, в каком регионе/округе находится ваш город? Введите его название в строку поиска, расположенную над списком регионов, а система покажет варианты названий, подсвечивая их.</p>
+					<p>При поиске тендеров в нескольких регионах, один из которых – ваш, отметьте галочкой поле «Показывать тендеры моего региона выше (мой регион - г. Москва)» - и в списке найденных тендеров вы увидите первыми тендеры вашего региона, если они опубликованы позже других. Если же ваши тендеры объявлены раньше других тендеров, к примеру, неделю назад, то они появятся ниже, независимо от того, поставили вы галочку или нет.</p>
+					<p>Функционал «Искать вокруг» поможет найти тендеры близлежащих населенных пунктов. Укажите километры, и система найдет тендеры населенных пунктов, расположенных в радиусе заданного расстояния. Для того чтобы найти тендеры, проходящие не только в этих населенных пунктах, но и в их родительских регионах (если регион проведения тендера не определен с точностью до населенного пункта), отметьте галочкой «Включая родительский регион».</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Искать вокруг -->
+	<div class="control-group">
+		<div class="labels">
+			Искать вокруг:
+		</div>
+		<div class="controls">
+
+<select name="regionRadius" id="regionRadius" data-field-name="regionRadius" data-field-type="select">
+    <option value="0" label="0 km" selected="selected">0 km</option>
+    <option value="10" label="10 km">10 km</option>
+    <option value="20" label="20 km">20 km</option>
+    <option value="30" label="30 km">30 km</option>
+    <option value="40" label="40 km">40 km</option>
+    <option value="50" label="50 km">50 km</option>
+    <option value="60" label="60 km">60 km</option>
+    <option value="70" label="70 km">70 km</option>
+    <option value="80" label="80 km">80 km</option>
+    <option value="90" label="90 km">90 km</option>
+    <option value="100" label="100 km">100 km</option>
+    <option value="110" label="110 km">110 km</option>
+    <option value="120" label="120 km">120 km</option>
+    <option value="130" label="130 km">130 km</option>
+    <option value="140" label="140 km">140 km</option>
+    <option value="150" label="150 km">150 km</option>
+</select>		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+		</div>
+		<div class="controls">
+			<label for="includeAllRegion">
+
+<input type="hidden" name="includeAllRegion" value="0"><input type="checkbox" name="includeAllRegion" id="includeAllRegion" value="1" data-field-name="includeAllRegion" data-field-type="checkbox">Включая родительский регион			</label>
+		</div>
+	</div>
+
+    <div class="control-group">
+        <div class="labels">
+            Регион поставки:
+        </div>
+        <div class="controls">
+
+
+
+
+<div data-field-name="applyingRegion_id" data-field-full-name="applyingRegion_id[]" data-field-type="regionTree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"applyingregion_id[]","inputlabel":"\u0420\u0435\u0433\u0438\u043e\u043d="" \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438","data":[],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"applyingregion_id","ajaxqueryurl":"\="" ajax\="" regiontree\="" ?issite="1&quot;,&quot;ajaxQueryOptions&quot;:[],&quot;ajaxPortionQueryUrl&quot;:&quot;&quot;,&quot;ajaxListFilterUrl&quot;:&quot;&quot;,&quot;disabled&quot;:false,&quot;listToTreeParams&quot;:{&quot;parentIndex&quot;:&quot;parent&quot;,&quot;idIndex&quot;:&quot;id&quot;,&quot;rootId&quot;:0},&quot;isModal&quot;:false}&quot;" id="applyingRegion_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="element-group bottom-separator">
+	<div class="control-group">
+		<div class="labels">
+			Отрасль:
+		</div>
+		<div class="controls">
+
+
+
+
+<div data-field-name="field_id" data-field-full-name="field_id[]" data-field-type="fieldTree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"field_id[]","inputlabel":"\u041e\u0442\u0440\u0430\u0441\u043b\u044c","data":[],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"field_id","ajaxqueryurl":"\="" ajax\="" fieldtree\="" ","ajaxqueryoptions":[],"ajaxportionqueryurl":"","ajaxlistfilterurl":"","disabled":false,"listtotreeparams":{"parentindex":"parent","idindex":"id","rootid":0},"ismodal":false}"="" id="field_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+		<div class="control-group">
+		<div class="labels">
+		</div>
+		<div class="controls">
+			<label for="multifields">
+
+<input type="hidden" name="multifields" value="0"><input type="checkbox" name="multifields" id="multifields" value="1" data-field-name="multifields" data-field-type="checkbox">Искать по возможным отраслям			</label>
+
+			<div class="howToSearch" style="float:right; width:280px;">
+				<span></span>
+				<a onclick="$(this).next().slideToggle('fast')">Подсказка – поиск тендеров по отраслям</a>
+				<div id="howsearch" class="popover" style="display:none; width: 400px;" onclick="$(this).slideToggle('fast')">
+					<div class="action right delete js-subformListItemAction-remove" title="Удалить">
+						<i class="icon-close"></i>
+					</div>
+					<div class="arrow"></div>
+					<p>Выберите и отметьте «галочкой» в выпадающем списке отрасль и подотрасли, либо введите первые буквы названия отрасли в строку поиска, расположенную над списком отраслей, а система покажет варианты отраслей.</p>
+					<p>Помимо основной отрасли, у тендеров может быть несколько возможных. Поставьте галочку «Искать по возможным отраслям», и поиск будет осуществляться в том числе по им.</p>
+					<p>Для того чтобы система нашла наиболее подходящие тендеры, вместе с указанием параметров по отрасли введите и ключевые слова.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+<div class="element-group bottom-separator">
+	<div class="control-group">
+		<div class="labels">
+			ОКПД-2:
+		</div>
+		<div class="controls">
+
+
+
+
+<div data-field-name="okpd2_id" data-field-full-name="okpd2_id[]" data-field-type="okpd2Tree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"okpd2_id[]","inputlabel":"\u041e\u041a\u041f\u0414-2","data":[],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"okpd2_id","ajaxqueryurl":"\="" ajax\="" ajax-okpd2-list\="" ","ajaxqueryoptions":[],"ajaxportionqueryurl":"\="" ajax-okpd2-portion-list\="" ","ajaxlistfilterurl":"\="" ajax-okpd2-list-filter\="" ","disabled":false,"listtotreeparams":{"parentindex":"parent","idindex":"id","rootid":0},"ismodal":true}"="" id="okpd2_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="element-group bottom-separator">
+	<div class="control-group">
+		<div class="labels">
+			Заказчик или организатор:
+		</div>
+		<div class="controls">
+
+<input type="text" name="company[name]" id="company-name" value="" placeholder="Наименование заказчика или организатора" showcheckbox="1" data-field-name="name" data-field-type="text">
+				<div class="howToSearch" style="float:right; width:280px;">
+					<span></span>
+					<a onclick="$(this).next().slideToggle('fast')">Подсказка – поиск заказчика или организатора</a>
+					<div id="howsearch" class="popover" style="display:none; width: 400px;" onclick="$(this).slideToggle('fast')">
+						<div class="action right delete js-subformListItemAction-remove" title="Удалить">
+							<i class="icon-close"></i>
+						</div>
+						<div class="arrow"></div>
+						Детальные примеры поиска описаны в подсказке к полю "Ключевые слова"
+					</div>
+				</div>
+
+			<label for="company-keywordsStrict">
+
+<input type="hidden" name="company[excludeName]" value="0"><input type="checkbox" name="company[excludeName]" id="company-excludeName" value="1" data-field-name="excludeName" data-field-type="checkbox">				Исключить наименование заказчика
+<input type="hidden" name="company[keywordsStrict]" value="0"><input type="checkbox" name="company[keywordsStrict]" id="company-keywordsStrict" value="1" data-field-name="keywordsStrict" data-field-type="checkbox">				Строгое соответствие			</label>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+			ИНН/БИН:
+		</div>
+		<div class="controls">
+
+<input type="text" name="company[inn]" id="company-inn" value="" placeholder="Разделенные пробелами ИНН/БИН/УНП/ЕГРПОУ заказчика или организатора" showcheckbox="1" data-field-name="inn" data-field-type="delimiterSeparated">		</div>
+	</div>
+
+	<!-- Цена контракта от\до -->
+	<div class="control-group from-to">
+		<div class="labels">
+			Цена контракта от:
+		</div>
+		<div class="controls">
+
+<input type="text" name="costRub[from]" id="costRub-from" value="" placeholder="Минимальная" valueview="Bc_Form_Element_Tender_Currency::getHintForCostItem" data-mask-type="price" data-field-name="from" data-field-type="text"><label>до:</label>
+<input type="text" name="costRub[to]" id="costRub-to" value="" placeholder="Максимальная" valueview="Bc_Form_Element_Tender_Currency::getHintForCostItem" data-mask-type="price" data-field-name="to" data-field-type="text"><label>
+			Валюта:</label>
+<select name="costRub[currency]" id="costRub-currency" showinfromto="1" addtohint="" data-meta="{" 1":{"prepositional":"рублях"},"2":{"prepositional":"долларах"},"3":{"prepositional":"евро"},"4":{"prepositional":"тенге"},"5":{"prepositional":"гривнах"},"14":{"prepositional":"белорусских="" рублях"}}"="" data-widget="form/Currency" style="width: fit-content" data-field-name="currency" data-field-type="tenderCurrency">
+    <option value="1" label="RU" selected="selected">RU</option>
+    <option value="2" label="US">US</option>
+    <option value="3" label="EU">EU</option>
+    <option value="4" label="KZ">KZ</option>
+    <option value="5" label="UA">UA</option>
+    <option value="14" label="BY">BY</option>
+</select>		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+		</div>
+		<div class="controls">
+			<label for="costRub-onlyInSelectedCurrency">
+
+<input type="hidden" name="costRub[onlyInSelectedCurrency]" value="0"><input type="checkbox" name="costRub[onlyInSelectedCurrency]" id="costRub-onlyInSelectedCurrency" value="1" data-field-name="onlyInSelectedCurrency" data-field-type="checkbox">Только вР<span data-currency-prepositional-name="1">Сомах</span>			</label>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+		</div>
+		<div class="controls">
+			<label for="costRub-withZero">
+
+<input type="hidden" name="costRub[withZero]" value="0"><input type="checkbox" name="costRub[withZero]" id="costRub-withZero" value="1" data-field-name="withZero" data-field-type="checkbox">Включая тендеры без цены			</label>
+		</div>
+	</div>
+
+	<!-- Аванс -->
+	<!--<div class="control-group from-to ">
+		<div class="labels">
+			<?/*=$this->element->prepaymentAbs->from->getLabel()*/?>:
+		</div>
+		<div class="controls">
+			<?/*=$this->element->prepaymentAbs->from*/?><label><?/*=$this->element->prepaymentAbs->to->getLabel()*/?>:</label><?/*=$this->element->prepaymentAbs->to*/?>
+		</div>
+	</div>-->
+	<div class="control-group from-to">
+		<div class="labels">
+			Аванс (%) от:
+		</div>
+		<div class="controls">
+
+<input type="text" name="prepaymentPercent[from]" id="prepaymentPercent-from" value="" data-field-name="from" data-field-type="text"><label>до:</label>
+<input type="text" name="prepaymentPercent[to]" id="prepaymentPercent-to" value="" data-field-name="to" data-field-type="text">		</div>
+	</div>
+
+	<!-- Дата начала от\до -->
+	<div class="control-group from-to">
+		<div class="labels">
+			Дата начала от:
+		</div>
+		<div class="controls">
+
+<input type="text" name="loadTime[from]" id="loadTime-from" value="" class=" js-widget-DateTimePicker" onclick="return {" workstarttime":"09:00:00","workendtime":"18:00:00","showtimepicker":false}"="" data-field-name="from" data-field-type="date"><label>до:</label>
+<input type="text" name="loadTime[to]" id="loadTime-to" value="" class=" js-widget-DateTimePicker" onclick="return {" workstarttime":"09:00:00","workendtime":"18:00:00","showtimepicker":false}"="" data-field-name="to" data-field-type="date">		</div>
+	</div>
+
+	<!-- Дата окончания от\до -->
+	<div class="control-group from-to">
+		<div class="labels">
+			Дата окончания от:
+		</div>
+		<div class="controls">
+
+<input type="text" name="finishDate[from]" id="finishDate-from" value="" usetimezone="1" timezonepreservemidnight="1" relativepath="finishDate.from" formmethod="get" class=" js-widget-DateTimePicker" onclick="return {" workstarttime":"09:00:00","workendtime":"18:00:00","showtimepicker":true}"="" data-field-name="from" data-field-type="datetime"><label>до:</label>
+<input type="text" name="finishDate[to]" id="finishDate-to" value="" usetimezone="1" timezonepreservemidnight="1" relativepath="finishDate.to" formmethod="get" class=" js-widget-DateTimePicker" onclick="return {" workstarttime":"09:00:00","workendtime":"18:00:00","showtimepicker":true}"="" data-field-name="to" data-field-type="datetime">		</div>
+	</div>
+
+
+
+
+	</div>
+
+<div class="element-group">
+	<div class="control-group">
+		<div class="labels">
+			Статус тендера:
+		</div>
+		<div class="controls">
+
+<label for="status_id-3"><input type="checkbox" name="status_id[]" id="status_id-3" value="3" data-field-name="status_id" data-field-type="multiCheckbox"><span class="form__caption"><span title="Заявки на участие принимаются">Активный</span></span></label><br><label for="status_id-4"><input type="checkbox" name="status_id[]" id="status_id-4" value="4" data-field-name="status_id" data-field-type="multiCheckbox"><span class="form__caption"><span title="Завершен срок подачи заявок">Завершенный</span></span></label><br><label for="status_id-5"><input type="checkbox" name="status_id[]" id="status_id-5" value="5" data-field-name="status_id" data-field-type="multiCheckbox"><span class="form__caption"><span title="Победитель известен или торги не состоялись">С результатом</span></span></label><br><label for="status_id-8"><input type="checkbox" name="status_id[]" id="status_id-8" value="8" data-field-name="status_id" data-field-type="multiCheckbox"><span class="form__caption">План закупок/план-график</span></label>		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+			Тип тендера:
+		</div>
+		<div class="controls">
+
+
+
+
+<div data-field-name="type_id" data-field-full-name="type_id[]" data-field-type="selectTree" data-place-holder="" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"type_id[]","inputlabel":"\u0422\u0438\u043f="" \u0442\u0435\u043d\u0434\u0435\u0440\u0430","data":[{"id":1,"parent":0,"name":"\u041a\u043e\u043d\u043a\u0443\u0440\u0441"},{"id":2,"parent":0,"name":"\u0410\u0443\u043a\u0446\u0438\u043e\u043d"},{"id":3,"parent":0,"name":"\u0417\u0430\u043f\u0440\u043e\u0441="" \u043a\u043e\u0442\u0438\u0440\u043e\u0432\u043e\u043a"},{"id":4,"parent":0,"name":"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0439="" \u0430\u0443\u043a\u0446\u0438\u043e\u043d"},{"id":5,"parent":0,"name":"\u0411\u0438\u0440\u0436\u0430"},{"id":6,"parent":0,"name":"\u041e\u0442\u0431\u043e\u0440"},{"id":7,"parent":0,"name":"\u0418\u0437\u0432\u0435\u0449\u0435\u043d\u0438\u0435="" \u043e="" \u0437\u0430\u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043e\u0432\u0430\u043d\u043d\u043e\u0441\u0442\u0438"},{"id":8,"parent":0,"name":"\u0414\u0440\u0443\u0433\u043e\u0435"},{"id":9,"parent":0,"name":"\u041d\u0435="" \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d"},{"id":10,"parent":0,"name":"\u0415\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439="" \u043f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a"},{"id":11,"parent":0,"name":"\u0417\u0430\u043f\u0440\u043e\u0441="" \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0439"},{"id":12,"parent":0,"name":"\u0410\u043d\u0430\u043b\u0438\u0437="" \u0446\u0435\u043d"},{"id":13,"parent":0,"name":"\u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435="" \u0434\u0435\u043b\u0430\u0442\u044c="" \u043e\u0444\u0435\u0440\u0442\u044b"},{"id":14,"parent":0,"name":"\u041c\u0430\u043b\u0430\u044f="" \u0437\u0430\u043a\u0443\u043f\u043a\u0430"},{"id":15,"parent":0,"name":"\u0417\u0430\u043a\u0440\u044b\u0442\u0430\u044f="" \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430"},{"id":16,"parent":0,"name":"\u0427\u0430\u0441\u0442\u043d\u043e\u0435="" \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0435"},{"id":17,"parent":0,"name":"\u0417\u0430\u043a\u0443\u043f\u043a\u0430="" \u0443="" \u0430\u043a\u043a\u0440\u0435\u0434\u0438\u0442\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e="" \u043f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a\u0430"},{"id":18,"parent":0,"name":"\u041f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0435="" \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435"},{"id":19,"parent":0,"name":"\u0417\u0430\u043f\u0440\u043e\u0441="" \u0446\u0435\u043d"},{"id":20,"parent":0,"name":"\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u044b\u0439="" \u043b\u0438\u0441\u0442"},{"id":21,"parent":0,"name":"\u041a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u044b\u0439="" \u043b\u0438\u0441\u0442="" \u0441="" \u043f\u0435\u0440\u0435\u0442\u043e\u0440\u0436\u043a\u043e\u0439"}],"multiselect":true,"quickdeselect":true,"usefilter":true,"id":"type_id","ajaxqueryurl":"","ajaxqueryoptions":[],"ajaxportionqueryurl":"","ajaxlistfilterurl":"","disabled":false,"listtotreeparams":{"parentindex":"parent","idindex":"id","rootid":0},"ismodal":false}"="" id="type_id">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder"></div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+										<div class="filter-block">
+					<input class="filter" type="text" placeholder="Поиск по списку...">
+
+					<div class="js-filter-error error-block" style="display: none;"></div>
+				</div>
+						<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+
+	<div class="control-group field-name-tradeType">
+		<div class="labels">
+			Тип процедуры:
+		</div>
+		<div class="controls">
+
+<label for="tradeType-1"><input type="checkbox" name="tradeType[]" id="tradeType-1" value="1" data-field-name="tradeType" data-field-type="multiCheckbox"><span class="form__caption">Закупка</span></label> Р <label for="tradeType-2"><input type="checkbox" name="tradeType[]" id="tradeType-2" value="2" data-field-name="tradeType" data-field-type="multiCheckbox"><span class="form__caption">Продажа</span></label> Р <label for="tradeType-3"><input type="checkbox" name="tradeType[]" id="tradeType-3" value="3" data-field-name="tradeType" data-field-type="multiCheckbox"><span class="form__caption">Аренда</span></label>		</div>
+	</div>
+
+
+	<div class="control-group">
+		<div class="labels">
+			Вид спроса:
+		</div>
+		<div class="controls">
+
+<label for="tag-gos"><input type="checkbox" name="tag[]" id="tag-gos" value="gos" data-field-name="tag" data-field-type="multiCheckbox"><span class="form__caption">Государственный</span></label> Р <label for="tag-kom"><input type="checkbox" name="tag[]" id="tag-kom" value="kom" data-field-name="tag" data-field-type="multiCheckbox"><span class="form__caption">Коммерческий</span></label>		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="labels">
+			Законы:
+		</div>
+		<div class="controls">
+
+<label for="laws-1"><input type="checkbox" name="laws[]" id="laws-1" value="1" showcheckbox="1" data-field-name="laws" data-field-type="tenderLaws"><span class="form__caption">44-ФЗ</span></label> Р <label for="laws-2"><input type="checkbox" name="laws[]" id="laws-2" value="2" showcheckbox="1" data-field-name="laws" data-field-type="tenderLaws"><span class="form__caption">223-ФЗ</span></label> Р <label for="laws-4"><input type="checkbox" name="laws[]" id="laws-4" value="4" showcheckbox="1" data-field-name="laws" data-field-type="tenderLaws"><span class="form__caption">ПП РФ 615</span></label> Р <label for="laws-3"><input type="checkbox" name="laws[]" id="laws-3" value="3" showcheckbox="1" data-field-name="laws" data-field-type="tenderLaws"><span class="form__caption">Коммерческие</span></label>		</div>
+	</div>
+
+    <div class="control-group">
+        <div class="labels">
+			Преимущества:
+        </div>
+        <div class="controls">
+
+
+
+
+<div data-field-name="withPreference" data-field-full-name="withPreference[]" data-field-type="withPreference" data-place-holder="СМП, СОНО и другие" class="js-widget-FormElementTreeSelect form-element-tree" onclick="return {" value":[],"inputname":"withpreference[]","inputlabel":"\u041f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430","data":[{"id":1,"name":"\u0421="" \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u0430\u043c\u0438"},{"id":2,"name":"\u0411\u0435\u0437="" \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432"},{"id":0,"name":"\u041d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e"}],"multiselect":true,"quickdeselect":true,"usefilter":false,"id":"withpreference","ajaxqueryurl":"","ajaxqueryoptions":[],"ajaxportionqueryurl":"","ajaxlistfilterurl":"","disabled":false,"listtotreeparams":{"parentindex":"parent","idindex":"id","rootid":-1},"ismodal":false}"="" id="withPreference">
+
+	<div class="js-resultBox tree_info_block">
+		<div class="select-tree-place-holder">СМП, СОНО и другие</div>	</div>
+	<div class="js-dataBox">
+			</div>
+
+	<div class="js-tree_items_wrapper tree-popup" style="display: none">
+		<div class="js-tree-container tree_items_wrapper js-item-0-box tree_items_list">
+			<div class="js-overlay overlay overlay-white hidden"></div>
+							<div class="toggler js-toggler-wrapper">
+					<div class="js-toggler">
+						<a href="#" class="select-all" data-state="1">Выделить все</a> \
+						<a href="#" class="select-all" data-state="0">Снять выделение</a>
+					</div>
+									</div>
+									<div class="tree_items_container js-item-0-childsBox"></div>
+		</div>
+	</div>
+</div>
+        </div>
+    </div>
+
+            <div class="control-group">
+            <div class="labels">
+                Источник:
+            </div>
+            <div class="controls">
+
+<input type="text" name="sourceUrl" id="sourceUrl" value="" showcheckbox="1" placeholder="Например: zakupki.gov.ru" data-field-name="sourceUrl" data-field-type="tenderSourceUrl">
+<input type="hidden" name="excludeSourceUrl" value="0"><input type="checkbox" name="excludeSourceUrl" id="excludeSourceUrl" value="1" data-field-name="excludeSourceUrl" data-field-type="checkbox">				Исключить источник            </div>
+        </div>
+
+	<!-- Номер заявки -->
+	<div class="control-group">
+		<div class="labels">
+			Номера тендеров (через пробел):
+		</div>
+		<div class="controls">
+
+<input type="text" name="tender_id" id="tender_id" value="" placeholder="Введите номер тендера" data-field-name="tender_id" data-field-type="delimiterSeparated">		</div>
+	</div>
+
+    <div class="control-group">
+        <div class="labels">
+			Номер на источнике:
+        </div>
+        <div class="controls">
+
+<input type="text" name="srcNoticeNumber" id="srcNoticeNumber" value="" showcheckbox="1" placeholder="Например на zakupki.gov.ru или goszakup.gov.kz" data-field-name="srcNoticeNumber" data-field-type="delimiterSeparated">			<div class="howToSearch" style="float:right">
+				<span></span>
+				<a onclick="$(this).next().slideToggle('fast')">подсказка - номер на источнике</a>
+				<div id="howsearch" class="popover" style="display:none; width: 400px;" onclick="$(this).slideToggle('fast')">
+					<div class="arrow"></div>
+					<p style="font-size: 12px">
+						В этом поле можно ввести номера извещений, тендеров или объявлений через запятую,<br>
+						с таких источников, как например: <a href="https://zakupki.gov.ru/" target="_blank">zakupki.gov.ru</a>, <a href="https://goszakup.gov.kz/" target="_blank">goszakup.gov.kz</a> или любых площадок,<br>
+						которые работают с этими источниками и имеют в качестве идентификатора номера из этих источников
+					</p>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<!-- Показывать на странице -->
+<div class="control-group">
+	<div class="labels">
+		<label>Показывать на странице</label>
+	</div>
+	<div class="controls">
+
+<label for="on_page-10"><input type="radio" name="on_page" id="on_page-10" value="10" data-field-name="on_page" data-field-type="radio"><span class="form__caption">10</span></label> <label for="on_page-20"><input type="radio" name="on_page" id="on_page-20" value="20" checked="checked" data-field-name="on_page" data-field-type="radio"><span class="form__caption">20</span></label> <label for="on_page-50"><input type="radio" name="on_page" id="on_page-50" value="50" data-field-name="on_page" data-field-type="radio"><span class="form__caption">50</span></label> <label for="on_page-100"><input type="radio" name="on_page" id="on_page-100" value="100" data-field-name="on_page" data-field-type="radio"><span class="form__caption">100 тендеров</span></label>
+	</div>
+</div>
+
+    <div class="control-group">
+        <div class="labels">
+            <label>Сортировка по</label>
+        </div>
+        <div class="controls">
+
+<select name="order" id="order" data-field-name="order" data-field-type="tenderSortTree">
+    <option value="bcNewness DESC" label="Дате добавления (по убыванию)" selected="selected">Дате добавления (по убыванию)</option>
+    <option value="bcNewness ASC" label="Дате добавления (по возрастанию)">Дате добавления (по возрастанию)</option>
+    <option value="bcCost DESC" label="Цене (по убыванию)">Цене (по убыванию)</option>
+    <option value="bcCost ASC" label="Цене (по возрастанию)">Цене (по возрастанию)</option>
+    <option value="bcFinishDate DESC" label="Дате окончания (по убыванию)">Дате окончания (по убыванию)</option>
+    <option value="bcFinishDate ASC" label="Дате окончания (по возрастанию)">Дате окончания (по возрастанию)</option>
+    <option value="bcHitCount DESC" label="Кол-ву ключевых слов (по убыванию)">Кол-ву ключевых слов (по убыванию)</option>
+    <option value="bcHitCount ASC" label="Кол-ву ключевых слов (по возрастанию)">Кол-ву ключевых слов (по возрастанию)</option>
+    <option value="bcHitCountUniq DESC" label="Кол-ву уникальных слов (по убыванию)">Кол-ву уникальных слов (по убыванию)</option>
+    <option value="bcHitCountUniq ASC" label="Кол-ву уникальных слов (по возрастанию)">Кол-ву уникальных слов (по возрастанию)</option>
+</select>        </div>
+    </div>
+
+<div class="control-group">
+	<div class="labels">
+	</div>
+	<div class="controls">
+		<label for="show_expiration">
+			<input type="hidden" name="show_expiration" value="0">
+			<input type="checkbox" id="show_expiration" name="show_expiration">Отображать срок выполнения контракта или поставки товара</label>
+	</div>
+</div>
+
+<!-- ИСКАТЬ -->
+<div class="submit-block text-align-center">
+
+<input type="submit" name="submit" id="submit" value="Искать" data-field-name="submit" data-field-type="submit">
+<input type="reset" name="reset" id="reset" value="Сбросить параметры поиска" class="js-do-reset-current-form" data-field-name="reset" data-field-type="reset"></div>
+
+	 		<!-- ТЕКСТ ПОСЛЕ ФОРМЫ -->
+		<h2>Поиск тендеров в «Расширенном режиме»</h2>
+
+ 		<p>Расширенный поиск – незаменимый инструмент для быстрого и точного поиска закупок. Искать государственные и коммерческие тендеры можно по различным параметрам: ключевым словам, названию региона, отрасли, номеру заявки, типу тендера, названию и ИНН заказчика, цене контракта, дате начала и окончания показа. Кроме того, система учитывает морфологию слов, понимает семантику и старается исправить ваши опечатки и ошибки в запросе. </p>
+
+		<p></p>
+
+		<p>Хотите ежедневно получать актуальную информацию о тендерах? Зарегистрируйтесь и самостоятельно или с помощью персонального менеджера настроите рассылку, и вы будете первыми узнавать обо всех тендерах из вашей отрасли. Это тоже бесплатно.</p>
+	</form><!--/noindex-->	</div>
+
+	<div data-save-as-search-box="1" style="display: none">
+		<!--noindex--><form  class=" js-widget-Form" data-field-name="" data-field-type="form" onsubmit="bookmarkParameters($('#captionfavText').val(),$('#conditionsfav').data('conditions'), 'fav');return false;" method="post" action="">
+<div class="bookmark">
+    <span id="conditionsfav" data-conditions="{" offertenders":false,"prepaymentpercent":{"from":null},"submit":1,"onpage":50,"cachekey":"tender.catalog","cachetags":["tender.catalog"],"cachetime":2160000,"controller":"catalog","action":"index","module":"default"}"=""></span>
+
+	<div id="status-message-fav"></div>
+	<span id="favForm">
+	<dl>
+		<dt>
+		<label><span class="dot">*</span>
+			Название шаблона поиска:
+		</label>
+		</dt>
+		<dd>
+
+<input type="text" name="caption" id="captionfavText" value="" data-field-name="caption" data-field-type="text">					</dd>
+		<div class="clear"></div>
+		<div class="small muted">Сохранив запрос, вы сможете снова воспользоваться им для поиска тендеров.</div>
+		<dd>
+			<div style="display:none;padding-bottom: 10px;" class="wait" id="progressfav">Обработка запроса.</div>
+
+<input type="submit" name="submit" id="submit" value="Сохранить" data-field-name="submit" data-field-type="submit">
+<input type="reset" name="reset" id="reset" value="Отменить" onclick="cancelBookmarkForm(this); return false;" data-field-name="reset" data-field-type="reset">		</dd>
+		<div class="clear"></div>
+	</dl>
+	</span>
+</div></form><!--/noindex-->	</div>
+
+	<div data-save-as-subscribe-box="1" style="display: none">
+		<!--noindex--><form  class=" js-widget-Form" data-field-name="" data-field-type="form" onsubmit="bookmarkParameters($('#captionsubscribeText').val(),$('#conditionssubscribe').data('conditions'), 'subscribe');return false;" method="post" action="">
+<div class="bookmark">
+    <span id="conditionssubscribe" data-conditions="{" offertenders":false,"prepaymentpercent":{"from":null},"submit":1,"onpage":50,"cachekey":"tender.catalog","cachetags":["tender.catalog"],"cachetime":2160000,"controller":"catalog","action":"index","module":"default"}"=""></span>
+
+	<div id="status-message-subscribe"></div>
+	<span id="subscribeForm">
+	<dl>
+		<dt>
+		<label><span class="dot">*</span>
+			Название новой рассылки:
+		</label>
+		</dt>
+		<dd>
+
+<input type="text" name="caption" id="captionsubscribeText" value="" data-field-name="caption" data-field-type="text">					</dd>
+		<div class="clear"></div>
+		<div class="small muted">Сохранив запрос в качестве параметра для  рассылки, вы сможете получать информацию о новых тендерах на свой электронный адрес и просматривать ее в Личном кабинете.</div>
+		<dd>
+			<div style="display:none;padding-bottom: 10px;" class="wait" id="progresssubscribe">Обработка запроса.</div>
+
+<input type="submit" name="submit" id="submit" value="Сохранить" data-field-name="submit" data-field-type="submit">
+<input type="reset" name="reset" id="reset" value="Отменить" onclick="cancelBookmarkForm(this); return false;" data-field-name="reset" data-field-type="reset">		</dd>
+		<div class="clear"></div>
+	</dl>
+	</span>
+</div></form><!--/noindex-->	</div>
+</div>
+
+<ul data-widget="Sort" data-widget-config="{" key":"order"}"="" class="search_sort hide-for-print">
+    <li>Сортировать по:</li>
+
+        <li class="current desc" data-value="bcNewness" data-next-order="ASC" title="Будут показаны сначала старые">
+            <span>Дате добавления</span>
+        </li>
+
+        <li class="asc" data-value="bcCost" data-next-order="DESC" title="Будут показаны сначала более дорогие">
+            <span>Цене</span>
+        </li>
+
+        <li class="asc" data-value="bcFinishDate" data-next-order="DESC" title="Будут отсортированы по дате окончания подачи заявки">
+            <span>Дате окончания</span>
+        </li>
+	</ul><div class="inactive-popup">
+	<div class="popup-block">
+		<span class="cancel" data-action="close"></span>
+		<img src="images/blocked.svg">
+		<div class="popup-title"><span>Внимание!</span></div>
+					<p>В рамках Вашего тарифа доступ к базе коммерческих тендеров ограничен. Для получения полной информации обо всех коммерческих тендерах свяжитесь с Вашим менеджером и подключите другой тариф.</p>
+			<a href="" class="send-inactive">Отправить заявку</a>
+			</div>
+</div><table class="tender-list">
+    <thead>
+	<tr>
+		<th>Название</th>
+				<th>Тип тендера</th>
+		<th>
+			<!-- <div class="select">
+				<a href="#"><i class="high"></i></a>
+				<a href="#"><i class="low"></i></a>
+			</div> -->
+			Цена
+		</th>
+		<th>
+			<!-- <div class="select">
+				<a href="#"><i class="high"></i></a>
+				<a href="#"><i class="low"></i></a>
+			</div> -->
+			Период показа
+		</th>
+        		    <th>Регион</th>
+        		            <th>Отрасли</th>
+        	</tr>
+</thead>    <tbody>
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082604</div>					<a title="Тендер на поставку гимнастических скамеек" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082604.html" rel="link" target="_blank">
+						Поставка гимнастических скамеек					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Не определен<br>#256082604			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">20 000 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				6 дней			</b>
+			<br>
+            26.10.2023            <br>
+			02.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Центральный Фо " href="/catalog/by-region/rossiya_centralnyy-fo/"> Центральный ФО</a> / <a title="Тендеры в Тверской области " href="/catalog/by-region/rossiya_centralnyy-fo_tverskaya-oblast/">Тверская область</a> / <a title="Тендеры в Твери " href="/catalog/by-region/rossiya_centralnyy-fo_tverskaya-oblast_tver/">Тверь</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области спорта, отдыха и туризма " href="/catalog/by-field/sport-otdyh-turizm/">Спорт, отдых, туризм</a> / <a title="Тендеры на спортивное оборудование, инвентарь, товары для отдыха " href="/catalog/by-field/sport-otdyh-turizm_sportivnoe-oborudovanie-inventar-tovary-dlya-otdyha/">Спортивное оборудование, инвентарь, товары для отдыха</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082596</div>					<a title="Тендер оказание услуг по обеспечению участия занимающихся гбу до сшор имени а.с. рахлина в тренировочных мероприятиях в ленинградской области, за пределами санкт-петербурга и ленинградской области и в спортивных соревнованиях за пределами санкт-петербурга и ленинградской области в 2024 году." oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082596.html" rel="link" target="_blank">
+						Оказание услуг по обеспечению участия занимающихся ГБУ ДО СШОР имени А.С. Рахлина в тренировочных мероприятиях в Ленинградской области, за пределами Санкт-Петербурга и Ленинградской области и в спортивных соревнованиях за пределами Санкт-Петербурга и Ле...					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Электронный аукцион<br>#256082596			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">15 367 220 Сом</b>
+
+									<div data-widget="tooltip" title="Обеспечение заявки<noindex> — это установленное в закупке количество денежных средств, которые блокируются на спецсчете участника в качестве гарантии его участия и достоверности предоставляемой информации.</noindex>" style="margin-top: 5px;"><i>Обеспечение заявки:</i><br><b>153 672 Сом</b></div>
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Западный Фо " href="/catalog/by-region/rossiya_severozapadnyy-fo/">Северо-западный ФО</a> / <a title="Тендеры в Санкт-Петербурга " href="/catalog/by-region/rossiya_severozapadnyy-fo_sanktpeterburg/"> г. Санкт-Петербург</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области спорта, отдыха и туризма " href="/catalog/by-field/sport-otdyh-turizm/">Спорт, отдых, туризм</a> / <a title="Тендеры на организацию праздников и других мероприятий " href="/catalog/by-field/sport-otdyh-turizm_organizaciya-prazdnikov-i-drugih-meropriyatiy/">Организация праздников и других мероприятий</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082595</div>					<a title="Тендер на поставку периодической печати на 1 полугодие 2024 г." oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082595.html" rel="link" target="_blank">
+						Поставка периодической печати на 1 полугодие 2024 г.					</a>
+				</div>
+									<br>
+
+
+                            <img src="images/icons-prepayment.png" alt="Тендер с авансом" title="Тендер с авансом" style="margin-right: 4px;">
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Малая закупка<br>#256082595			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">597 094 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				23 часа			</b>
+			<br>
+            26.10.2023            <br>
+			27.10.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Дальневосточный Фо " href="/catalog/by-region/rossiya_dalnevostochnyy-fo/">Дальневосточный ФО</a> / <a title="Тендеры в Камчатского края " href="/catalog/by-region/rossiya_dalnevostochnyy-fo_kamchatskiy-kray/">Камчатский край</a> / <a title="Тендеры в Тиличиках " href="/catalog/by-region/rossiya_dalnevostochnyy-fo_kamchatskiy-kray_tilichiki/">Тиличики</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры на полиграфию и издательство
+ " href="/catalog/by-field/izdatelstvo-poligrafiya/">Издательство, полиграфия</a> / <a title="Тендеры на книги, журналы, брошюры " href="/catalog/by-field/izdatelstvo-poligrafiya_knigi-zhurnaly-broshyury/">Книги, журналы, брошюры</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082594</div>					<a title="Тендер оказание услуг по обеспечению участия занимающихся гбу до сшор имени а.с. рахлина в тренировочных мероприятиях в ленинградской области, за пределами санкт-петербурга и ленинградской области и в спортивных соревнованиях за пределами санкт-петербурга и ленинградской области в 2024 году." oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082594.html" rel="link" target="_blank">
+						Оказание услуг по обеспечению участия занимающихся ГБУ ДО СШОР имени А.С. Рахлина в тренировочных мероприятиях в Ленинградской области, за пределами Санкт-Петербурга и Ленинградской области и в спортивных соревнованиях за пределами Санкт-Петербурга и Ле...					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Электронный аукцион<br>#256082594			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">15 367 220 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Западный Фо " href="/catalog/by-region/rossiya_severozapadnyy-fo/">Северо-западный ФО</a> / <a title="Тендеры в Санкт-Петербурга " href="/catalog/by-region/rossiya_severozapadnyy-fo_sanktpeterburg/"> г. Санкт-Петербург</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+									</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082593</div>					<a title="Тендер на поставку технических средств реабилитации – трости белые для обеспечения получателей в 2023 году (в рамках соц.программ) (ф)" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082593.html" rel="link" target="_blank">
+						Поставка технических средств реабилитации – трости белые для обеспечения получателей в 2023 году (в рамках соц.программ) (ф)					</a>
+				</div>
+									<br>
+
+                            <img src="images/icons-cmp.png" alt="Преимущества СМП, СОНО и др." title="Преимущества СМП, СОНО и др." style="margin-right: 4px;">
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Электронный аукцион<br>#256082593			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">40 598 Сом</b>
+														<div data-widget="tooltip" title="Обеспечение исполнения контракта<noindex> - это залог, который направлен на добросовестное исполнение поставщиком (подрядчиком, исполнителем) своих обязательств по контракту.</noindex>" style="margin-top: 5px;"><i>Обеспечение контракта:</i><br><b>10%</b></div>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Кавказский Фо " href="/catalog/by-region/rossiya_severokavkazskiy-fo/">Северо-Кавказский ФО</a> / <a title="Тендеры в Кабардино-Балкарской республики " href="/catalog/by-region/rossiya_severokavkazskiy-fo_kabardinobalkarskaya-respublika/">Кабардино-Балкарская республика</a> / <a title="Тендеры в Нальчике " href="/catalog/by-region/rossiya_severokavkazskiy-fo_kabardinobalkarskaya-respublika_nalchik/">Нальчик</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в легкой промышленности " href="/catalog/by-field/legkaya-promyshlennost/">Легкая промышленность</a> / <a title="Тендеры на хозяйственные изделия " href="/catalog/by-field/legkaya-promyshlennost_hozyaystvennye-izdeliya/">Хозяйственные изделия</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082592</div>					<a title="Тендер предоставление неисключительного права использования программы для эвм " ас="" "кабинет="" уц"="" или="" эквивалент,="" программы="" для="" эвм="" "скзи"="" и="" оказание="" услуг,="" с="" целью="" выпуска="" сертификатов="" ключа="" проверки="" электронной="" подписи,="" в="" том="" числе="" методом="" загрузки="" запроса"="" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082592.html" rel="link" target="_blank">
+						ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО «ФОРВАРД ЭНЕРГО» объявляет тендер: Предоставление неисключительного права использования программы для ЭВМ "АС "Кабинет УЦ" или эквивалент, программы для ЭВМ "СКЗИ" и оказание услуг, с целью выпуска сертификатов ключа прове...					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос предложений<br>#256082592			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">2 028 100 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				17 дней			</b>
+			<br>
+            26.10.2023            <br>
+			13.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Центральный Фо " href="/catalog/by-region/rossiya_centralnyy-fo/"> Центральный ФО</a> / <a title="Тендеры в Москвы " href="/catalog/by-region/rossiya_centralnyy-fo_moskva/"> г. Москва</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области ИТ, связи и компьютерной техники " href="/catalog/by-field/it-kompyutery-svyaz/">IT, компьютеры, связь</a> / <a title="Тендеры на разработку программного обеспечения " href="/catalog/by-field/it-kompyutery-svyaz_programmnoe-obespechenie/">Программное обеспечение</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082591</div>					<a title="Тендер на поставку технических средств реабилитации – трости белые для обеспечения получателей в 2023 году (в рамках соц.программ) (ф)" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082591.html" rel="link" target="_blank">
+						ОТДЕЛЕНИЕ ФОНДА ПЕНСИОННОГО И СОЦИАЛЬНОГО СТРАХОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ ПО КАБАРДИНО-БАЛКАРСКОЙ РЕСПУБЛИКЕ объявляет тендер: Поставка технических средств реабилитации – трости белые для обеспечения получателей в 2023 году (в рамках соц.программ) (ф)					</a>
+				</div>
+									<br>
+
+                            <img src="images/icons-cmp.png" alt="Преимущества СМП, СОНО и др." title="Преимущества СМП, СОНО и др." style="margin-right: 4px;">
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Электронный аукцион<br>#256082591			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">40 598 Сом</b>
+														<div data-widget="tooltip" title="Обеспечение исполнения контракта<noindex> - это залог, который направлен на добросовестное исполнение поставщиком (подрядчиком, исполнителем) своих обязательств по контракту.</noindex>" style="margin-top: 5px;"><i>Обеспечение контракта:</i><br><b>10%</b></div>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Кавказский Фо " href="/catalog/by-region/rossiya_severokavkazskiy-fo/">Северо-Кавказский ФО</a> / <a title="Тендеры в Кабардино-Балкарской республики " href="/catalog/by-region/rossiya_severokavkazskiy-fo_kabardinobalkarskaya-respublika/">Кабардино-Балкарская республика</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в легкой промышленности " href="/catalog/by-field/legkaya-promyshlennost/">Легкая промышленность</a> / <a title="Тендеры на хозяйственные изделия " href="/catalog/by-field/legkaya-promyshlennost_hozyaystvennye-izdeliya/">Хозяйственные изделия</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082590</div>					<a title="Тендер техническое пультовое обслуживание средств передачи сигнала тревожных сообщений в подразделения войск национальной гвардии" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082590.html" rel="link" target="_blank">
+						ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "ТЕХНИКУМ ТРАНСПОРТА Г.ОРСКА ИМЕНИ ГЕРОЯ РОССИИ С.А. СОЛНЕЧНИКОВА" объявляет тендер: Техническое пультовое обслуживание средств передачи сигнала тревожных сообщений в подразделения в...					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Единственный поставщик<br>#256082590			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">105 600 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				17 минут			</b>
+			<br>
+            26.10.2023            <br>
+			27.10.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Приволжский Фо " href="/catalog/by-region/rossiya_privolzhskiy-fo/">Приволжский ФО</a> / <a title="Тендеры в Оренбургской области " href="/catalog/by-region/rossiya_privolzhskiy-fo_orenburgskaya-oblast/">Оренбургская область</a> / <a title="Тендеры в Орске " href="/catalog/by-region/rossiya_privolzhskiy-fo_orenburgskaya-oblast_orsk/">Орск</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области безопасность " href="/catalog/by-field/bezopasnost/">Безопасность</a> / <a title="Тендеры на охрану и оборудование " href="/catalog/by-field/bezopasnost_ohrana-i-oborudovanie/">Охрана и оборудование</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082589</div>					<a title="Тендер оказание услуг по информационно-технологическому сопровождению программы «1с:бухгалтерия»" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082589.html" rel="link" target="_blank">
+						ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ТЕЛЕРАДИОКОМПАНИЯ "ЩЁЛКОВО" объявляет тендер: Оказание услуг по информационно-технологическому сопровождению программы «1С:Бухгалтерия»					</a>
+				</div>
+									<br>
+
+                            <img src="images/icons-cmp.png" alt="Преимущества СМП, СОНО и др." title="Преимущества СМП, СОНО и др." style="margin-right: 4px;">
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос котировок<br>#256082589			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">38 652 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				6 дней			</b>
+			<br>
+            26.10.2023            <br>
+			02.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Центральный Фо " href="/catalog/by-region/rossiya_centralnyy-fo/"> Центральный ФО</a> / <a title="Тендеры в Московской области " href="/catalog/by-region/rossiya_centralnyy-fo_moskovskaya-oblast/">Московская область</a> / <a title="Тендеры в Щёлкове " href="/catalog/by-region/rossiya_centralnyy-fo_moskovskaya-oblast_schelkovo/">Щелково</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области ИТ, связи и компьютерной техники " href="/catalog/by-field/it-kompyutery-svyaz/">IT, компьютеры, связь</a> / <a title="Тендеры на разработку программного обеспечения " href="/catalog/by-field/it-kompyutery-svyaz_programmnoe-obespechenie/">Программное обеспечение</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082587</div>					<a title="Тендер предоставление в аренду земельного участка с кадастровым номером 09:08:0020103:1601 (земельный участок с кадастровым номером 09:08:0020103:1601" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082587.html" rel="link" target="_blank">
+						предоставление в аренду земельного участка с кадастровым номером 09:08:0020103:1601 (земельный участок с кадастровым номером 09:08:0020103:1601					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Не определен<br>#256082587			</div>
+		</td>
+					<td class="sm-row" align="center">
+				<div>
+					<a onclick="showAuthorization('cantViewDocumentation', '/tender256082587.html'); return false">См. док.</a>				</div>
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				31 день			</b>
+			<br>
+            26.10.2023            <br>
+			27.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Кавказский Фо " href="/catalog/by-region/rossiya_severokavkazskiy-fo/">Северо-Кавказский ФО</a> / <a title="Тендеры в Карачаево-Черкесской республики " href="/catalog/by-region/rossiya_severokavkazskiy-fo_karachaevocherkesskaya-respublika/">Карачаево-Черкесская республика</a> / <a title="Тендеры в Черкесске " href="/catalog/by-region/rossiya_severokavkazskiy-fo_karachaevocherkesskaya-respublika_cherkessk/">Черкесск</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры на строительство, недвижимость и архитектурные работы " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura/">Строительство, недвижимость и архитектура</a> / <a title="Тендеры на недвижимость " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_nedvizhimost/">Недвижимость</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082588</div>					<a title="Тендер предоставление в аренду земельного участка с кадастровым номером 09:08:0020103:1603 (земельный участок с кадастровым номером 09:08:0020103:1603" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082588.html" rel="link" target="_blank">
+						предоставление в аренду земельного участка с кадастровым номером 09:08:0020103:1603 (земельный участок с кадастровым номером 09:08:0020103:1603					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Не определен<br>#256082588			</div>
+		</td>
+					<td class="sm-row" align="center">
+				<div>
+					<a onclick="showAuthorization('cantViewDocumentation', '/tender256082588.html'); return false">См. док.</a>				</div>
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				31 день			</b>
+			<br>
+            26.10.2023            <br>
+			27.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Кавказский Фо " href="/catalog/by-region/rossiya_severokavkazskiy-fo/">Северо-Кавказский ФО</a> / <a title="Тендеры в Карачаево-Черкесской республики " href="/catalog/by-region/rossiya_severokavkazskiy-fo_karachaevocherkesskaya-respublika/">Карачаево-Черкесская республика</a> / <a title="Тендеры в Черкесске " href="/catalog/by-region/rossiya_severokavkazskiy-fo_karachaevocherkesskaya-respublika_cherkessk/">Черкесск</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры на строительство, недвижимость и архитектурные работы " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura/">Строительство, недвижимость и архитектура</a> / <a title="Тендеры на недвижимость " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_nedvizhimost/">Недвижимость</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082586</div>					<a title="Тендер на поставку канцелярских товаров" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082586.html" rel="link" target="_blank">
+						Поставка канцелярских товаров					</a>
+				</div>
+									<br>
+
+                            <img src="images/icons-cmp.png" alt="Преимущества СМП, СОНО и др." title="Преимущества СМП, СОНО и др." style="margin-right: 4px;">
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос котировок<br>#256082586			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">28 485 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Уральский Фо " href="/catalog/by-region/rossiya_uralskiy-fo/">Уральский ФО</a> / <a title="Тендеры в Челябинской области " href="/catalog/by-region/rossiya_uralskiy-fo_chelyabinskaya-oblast/">Челябинская область</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры на обеспечение офисов и дома " href="/catalog/by-field/ofis-dom/">Офис, дом</a> / <a title="Тендеры на канцелярские принадлежности " href="/catalog/by-field/ofis-dom_kancelyarskie-prinadlezhnosti/">Канцелярские принадлежности</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082583</div>					<a title="Тендер смесь строительная" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082583.html" rel="link" target="_blank">
+						Приобретение штукатурка на гипсовой. Внимательно ознакомиться с тех. спецификацией!					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос предложений<br>#256082583			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">11 250 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Казахстане " href="/catalog/by-region/kazahstan/">Казахстан</a> / <a title="Тендеры в Кызылординской области " href="/catalog/by-region/kazahstan_kyzylordinskaya-oblast/">Кызылординская область</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры на строительство, недвижимость и архитектурные работы " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura/">Строительство, недвижимость и архитектура</a> / <a title="Тендеры на строительные материалы, оборудование и инструменты " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_stroitelnye-materialy-oborudovanie-i-instrumenty/">Строительные материалы, оборудование и инструменты</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082581</div>					<a title="Тендер аппарат сварочный" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082581.html" rel="link" target="_blank">
+						Приобретение Аппарат сварочный					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос предложений<br>#256082581			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">103 000 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				10 дней			</b>
+			<br>
+            26.10.2023            <br>
+			06.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Казахстане " href="/catalog/by-region/kazahstan/">Казахстан</a> / <a title="Тендеры в Восточно-Казахстанской области " href="/catalog/by-region/kazahstan_vostochnokazahstanskaya-oblast/">Восточно-Казахстанская область</a> / <a title="Тендеры в Риддёре " href="/tender/search/?region_id=5553&amp;submit=1">Риддер</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в машиностроении " href="/catalog/by-field/mashinostroenie/">Машиностроение</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082582</div>					<a title="Тендер полотно сетчатое полотно сетчатое мяч мяч мяч секундомер скакалка игра часы шахматы шарик палатка канат" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082582.html" rel="link" target="_blank">
+						Приобретение спортивных товаров для ГУ "Дворового клуба " Шалкарского района					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос предложений<br>#256082582			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">4 321 410 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Казахстане " href="/catalog/by-region/kazahstan/">Казахстан</a> / <a title="Тендеры в Актюбинской области " href="/catalog/by-region/kazahstan_aktyubinskaya-oblast/">Актюбинская область</a> / <a title="Тендеры в Шалкаре " href="/tender/search/?region_id=5574&amp;submit=1">Шалкар</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области спорта, отдыха и туризма " href="/catalog/by-field/sport-otdyh-turizm/">Спорт, отдых, туризм</a> / <a title="Тендеры на спортивное оборудование, инвентарь, товары для отдыха " href="/catalog/by-field/sport-otdyh-turizm_sportivnoe-oborudovanie-inventar-tovary-dlya-otdyha/">Спортивное оборудование, инвентарь, товары для отдыха</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082580</div>					<a title="Тендер перчатки" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082580.html" rel="link" target="_blank">
+						Товары для школы (перчатки)					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос предложений<br>#256082580			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">21 000 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Казахстане " href="/catalog/by-region/kazahstan/">Казахстан</a> / <a title="Тендеры в Алма-Аты " href="/catalog/by-region/kazahstan_almaata/">Г. Алма-Ата</a> / <a title="Тендеры в Алматы " href="/tender/search/?region_id=5530&amp;submit=1">Алматы</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+									</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082579</div>					<a title="Тендер оказание услуг по организации питания обучающихся бпоу во «череповецкий химико-технологический колледж» (0110342300020)" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082579.html" rel="link" target="_blank">
+						Оказание услуг по организации питания обучающихся БПОУ ВО «Череповецкий химико-технологический колледж» (0110342300020)					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Малая закупка<br>#256082579			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">530 900 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				4 дня			</b>
+			<br>
+            26.10.2023            <br>
+			31.10.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Северо-Западный Фо " href="/catalog/by-region/rossiya_severozapadnyy-fo/">Северо-западный ФО</a> / <a title="Тендеры в Вологодской области " href="/catalog/by-region/rossiya_severozapadnyy-fo_vologodskaya-oblast/">Вологодская область</a> / <a title="Тендеры в Череповце " href="/catalog/by-region/rossiya_severozapadnyy-fo_vologodskaya-oblast_cherepovec/">Череповец</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в пищевой промышленности и продовольствии " href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost/">Продовольствие, пищевая промышленность</a> / <a href="/catalog/by-field/prodovolstvie-pischevaya-promyshlennost_uslugi-organizaciya-pitaniya/">Услуги, организация питания</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082578</div>					<a title="Тендер инструмент металлорежущий на 2024г (закупка осуществляется согласно указанных сроков поставки на условиях отсрочки платежа 90 календарных дней)" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082578.html" rel="link" target="_blank">
+						АО "МИХАЙЛОВСКИЙ ГОК ИМ. А.В. ВАРИЧЕВА" объявляет тендер: Инструмент металлорежущий на 2024г (Закупка осуществляется согласно указанных сроков поставки на условиях отсрочки платежа 90 календарных дней)					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос предложений<br>#256082578			</div>
+		</td>
+					<td class="sm-row" align="center">
+				<div>
+					<a onclick="showAuthorization('cantViewDocumentation', '/tender256082578.html'); return false">См. док.</a>				</div>
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Центральный Фо " href="/catalog/by-region/rossiya_centralnyy-fo/"> Центральный ФО</a> / <a title="Тендеры в Курской области " href="/catalog/by-region/rossiya_centralnyy-fo_kurskaya-oblast/">Курская область</a> / <a title="Тендеры в Железногорске " href="/catalog/by-region/rossiya_centralnyy-fo_kurskaya-oblast_zheleznogorsk/">Железногорск</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры на строительство, недвижимость и архитектурные работы " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura/">Строительство, недвижимость и архитектура</a> / <a title="Тендеры на строительные материалы, оборудование и инструменты " href="/catalog/by-field/stroitelstvo-nedvizhimost-i-arhitektura_stroitelnye-materialy-oborudovanie-i-instrumenty/">Строительные материалы, оборудование и инструменты</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082577</div>					<a title="Тендер выполнение работ по устройству автоматической установки пожарной сигнализации и системы оповещения людей о пожаре 2-го типа в мау до дюсш-2 по адресу: г. москва, г. троицк, сиреневый бульвар д.17" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082577.html" rel="link" target="_blank">
+						Выполнение работ по устройству автоматической установки пожарной сигнализации и системы оповещения людей о пожаре 2-го типа в МАУ ДО ДЮСШ-2 по адресу: г. Москва, г. Троицк, Сиреневый бульвар д.17					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Запрос котировок<br>#256082577			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">170 298 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				7 дней			</b>
+			<br>
+            26.10.2023            <br>
+			03.11.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в России " href="/tender/search/?region_id=1&amp;submit=1"> Россия</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в области безопасность " href="/catalog/by-field/bezopasnost/">Безопасность</a> / <a title="Тендеры на видеонаблюдение, сигнализацию, ОПС, СКД " href="/catalog/by-field/bezopasnost_videonablyudenie-signalizaciya-ops-skd/">Видеонаблюдение, Сигнализация, ОПС, СКД</a>				</div>
+			</td>
+			</tr>
+
+
+		<tr>
+				<td class="sm-row" data-title="Название">
+			<div>
+										<div>
+					<div>Тендер №256082576</div>					<a title="Тендер на поставку детской мебели и набора развивающих игр" oncopy="showNoCopyDialog();	return false;" class="mark-link  unvisited" href="/tender256082576.html" rel="link" target="_blank">
+						Поставка детской мебели и набора развивающих игр					</a>
+				</div>
+									<br>
+
+
+
+						</div>
+		</td>
+				<td class="sm-row" align="center" data-title="Тип тендера">
+			<div>
+				Малая закупка<br>#256082576			</div>
+		</td>
+					<td class="sm-row" align="center" data-title="Начальная цена">
+
+				<div>
+											<b data-widget="tooltip" title="Начальная (максимальная) цена контракта<noindex> – это предельное значение цены, которое указывается в извещении о проведении закупки, документации о закупке.</noindex>">151 097 Сом</b>
+
+								</div>
+
+			</td>
+				<td class="sm-row" align="center" data-title="Период показа">
+			<div>
+			<b class="tenderTime">
+				3 дня			</b>
+			<br>
+            26.10.2023            <br>
+			30.10.2023			</div>
+		</td>
+		                        <td class="sm-row" align="center" data-title="Регион">
+				<div>
+					<a title="Тендеры в Центральный Фо " href="/catalog/by-region/rossiya_centralnyy-fo/"> Центральный ФО</a> / <a title="Тендеры в Московской области " href="/catalog/by-region/rossiya_centralnyy-fo_moskovskaya-oblast/">Московская область</a>				</div>
+			</td>
+
+		                                    <td class="sm-row" align="center" data-title="Отрасли">
+				<div>
+					<a title="Тендеры в легкой промышленности " href="/catalog/by-field/legkaya-promyshlennost/">Легкая промышленность</a> / <a title="Тендеры на товары для детей " href="/catalog/by-field/legkaya-promyshlennost_tovary-dlya-detey/">Товары для детей</a>				</div>
+			</td>
+			</tr>
+
+
+
+
+    </tbody>
+</table>
+
+<script src="js/catalog.js"></script>																<br><br>
+															</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="print-only">
+	<table>
+		<tbody><tr>
+			<td><img src="images/logo.png" width="100" alt="BiCoTender - поисковая система тендеров"></td>
+			<td><strong>KCK</strong> Первая и самая продвинутая поисковая система закупок
+			</td>
+			<td>
+					<span>Москва ул.Марксистская, д.34<br>
+					<strong>Телефон:</strong> (495) 660-06-03, <strong>e-mail:</strong> bico@bico.su<br>
+					</span>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<div id="footer">
+	<div class="content" itemscope="" itemtype="http://schema.org/WPFooter">
+		<meta itemprop="copyrightYear" content="2023">
+		<meta itemprop="copyrightHolder" content="Группа компаний KCK">
+
+
+		<nav itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+			<ul itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+				<li itemprop="itemListElement" itemscope="" itemtype="о нас">
+					<a itemprop="url" href="/about.html">О компании</a>
+					<meta itemprop="name" content="О компании">
+				</li>
+				<li itemprop="itemListElement" itemscope="" itemtype="https://keremetbank.kg/">
+					<a itemprop="url" href="https://keremetbank.kg/">Наши партнеры</a>
+					<meta itemprop="name" content="Наши партнеры">
+				</li>
+				<li itemprop="itemListElement" itemscope="" itemtype="news">
+					<a itemprop="url" href="/news.html">Новости</a>
+					<meta itemprop="name" content="Новости">
+				</li>
+
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a itemprop="url" href="/service.html">Услуги</a>
+					<meta itemprop="name" content="Услуги">
+				</li>
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a itemprop="url" href="https://eurasiangroup.org/ru/kyrgyzskaya-respublika">Законодательство</a>
+					<meta itemprop="name" content="Законодательство">
+				</li>
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a itemprop="url" href="/opinion.html?is_video=bc_null">Отзывы</a>
+					<meta itemprop="name" content="Отзывы">
+				</li>
+
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a itemprop="url" href="/catalog/">Каталог тендеров</a>
+					<meta itemprop="name" content="Каталог тендеров">
+				</li>
+
+
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a itemprop="url" href="https://www.gov.kg/ru/gov/s/2">Наши спонсоры</a>
+					<meta itemprop="name" content="Наши спонсоры">
+				</li>
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a itemprop="url" href="/about.html">Партнерам</a>
+					<meta itemprop="name" content="Партнерам">
+				</li>
+
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+					<a href="/analytics.html">Аналитика</a>
+					<meta itemprop="name" content="Аналитика">
+				</li>
+
+			</ul>
+		</nav>
+
+		
+
+        <!-- Yandex.Metrika counter -->
+<!--<script src="//mc.yandex.ru/metrika/watch.js"></script>-->
+<script>
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	try {
+		window.yandexMetricId = 165421;
+		ym(window.yandexMetricId, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	} catch(e) { Bc.logError(e); }
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/165421" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Analytics -->
+<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-3990525-2');
+	ga('send', 'pageview');
+</script>
+<script async="" src="js/analytics.js"></script>
+<!-- End Google Analytics -->
+
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">
+	var _tmr = window._tmr || (window._tmr = []);
+	_tmr.push({id: "3124546", type: "pageView", start: (new Date()).getTime()});
+	(function (d, w, id) {
+		if (d.getElementById(id)) return;
+		var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+		ts.src = "https://top-fwz1.mail.ru/js/code.js";
+		var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+		if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+	})(document, window, "topmailru-code");
+
+
+<script src="js/general_2.js"></script>
+<script src="js/search.js"></script>
+<!-- Код тега ремаркетинга Google -->
+<script>
+	/* <![CDATA[ */
+	// var google_conversion_id = 938817930;
+	// var google_custom_params = window.google_tag_params;
+	// var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<!--<script  async
+	src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+	<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt=""
+			 src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/938817930/?guid=ON&script=0"/>
+	</div>
+</noscript>-->
+<script>(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=P6nYoTjuFw/3WbZ57FKxIMJwTAL/duugoQn1ATAeItUPeGSFze74OOqVsG7bNJrC8isIOlqG*DPZXYbspXpuMgLdD0OU5n9gJf4QXZyy/UQ*O6*f/ZYEsdhKYpGkNIv16HFoAkQYBchn3qX*Uup6tbALqohkeRF7povbzz/TV84-&pixel_id=1000091016';</script>
+<!-- Rating@Mail.ru counter -->
+<script>
+	var _tmr = window._tmr || (window._tmr = []);
+	_tmr.push({id: "2948245", type: "pageView", start: (new Date()).getTime(), pid: "USER_ID"});
+	(function (d, w, id) {
+		if (d.getElementById(id)) return;
+		var ts = d.createElement("script");
+		ts.type = "text/javascript";
+		ts.async = true;
+		ts.id = id;
+		ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+		var f = function () {
+			var s = d.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(ts, s);
+		};
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else {
+			f();
+		}
+	})(document, window, "topmailru-code");
+</script>
+<noscript>
+	<div>
+		<img src="//top-fwz1.mail.ru/counter?id=2948245;js=na" style="border:0;position:absolute;left:-9999px;" alt=""/>
+	</div>
+</noscript>
+<!-- //Rating@Mail.ru counter -->
+<!-- Rating@Mail.ru counter dynamic remarketing appendix -->
+<script>
+	var _tmr = _tmr || [];
+	_tmr.push({
+		type: 'itemView',
+		productid: 'VALUE',
+		pagetype: 'VALUE',
+		list: 'VALUE',
+		totalvalue: 'VALUE'
+	});
+</script>
+<!-- // Rating@Mail.ru counter dynamic remarketing appendix -->
+<div class="social-fixed">
+	<div class="social-fixed-head">Связаться с нами:</div>
+	<div class="social-fixed-list">
+		<a href="https://t.me/Bicotender_Egor" target="_blank" class="s_telegram" title="Написать нам в Telegram"></a>
+		<a href="https://api.whatsapp.com/send?phone=79669990726" target="_blank" class="s_whatsup" title="Написать нам в WhatsApp"></a>
+		<a href="viber://chat?number=%2B79669990726" target="_blank" class="s_viber" title="Написать нам в Viber"></a>
+	</div>
+</div>
+	<!-- BEGIN JIVOSITE CODE -->
+	<!--			<script>-->
+	<!--				(function(){ var widget_id = 'w46c96Krg7';var d=document;var w=window;function l(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code3.jivosite.com/script/widget/'+widget_id ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);} if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);} else{w.addEventListener('load',l,false);}}})();-->
+	<!--			</script>-->
+	<!-- END JIVOSITE CODE -->
+
+	<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type="text/javascript">
+		(function () {
+			document.jivositeloaded = 0;
+			var widget_id = 'w46c96Krg7';
+			var d = document;
+			var w = window;
+
+			function l() {
+				var s = d.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = '//code.jivosite.com/script/widget/' + widget_id;
+				var ss = document.getElementsByTagName('script')[0];
+				ss.parentNode.insertBefore(s, ss);
+			}//эта строка обычная для кода JivoSite
+			function zy() {
+				//удаляем EventListeners
+				if (w.detachEvent) {//поддержка IE8
+					w.detachEvent('onscroll', zy);
+					w.detachEvent('onmousemove', zy);
+					w.detachEvent('ontouchmove', zy);   
+					w.detachEvent('onresize', zy);
+				} else {
+					w.removeEventListener("scroll", zy, false);
+					w.removeEventListener("mousemove", zy, false);
+					w.removeEventListener("touchmove", zy, false);
+					w.removeEventListener("resize", zy, false);
+				}
+				//запускаем функцию загрузки JivoSite
+				if (d.readyState == 'complete') {
+					l();
+				} else {
+					if (w.attachEvent) {
+						w.attachEvent('onload', l);
+					} else {
+						w.addEventListener('load', l, false);
+					}
+				}
+				//Устанавливаем куку по которой отличаем первый и второй хит
+				var cookie_date = new Date();
+				cookie_date.setTime(cookie_date.getTime() + 60 * 60 * 28 * 1000); //24 часа для Москвы
+				d.cookie = "JivoSiteLoaded=1;path=/;expires=" + cookie_date.toGMTString();
+			}
+
+			if (d.cookie.search('JivoSiteLoaded') < 0) {//проверяем, первый ли это визит на наш сайт, если да, то назначаем EventListeners на события прокрутки, изменения размера окна браузера и скроллинга на ПК и мобильных устройствах, для отложенной загрузке JivoSite.
+				if (w.attachEvent) {// поддержка IE8
+					w.attachEvent('onscroll', zy);
+					w.attachEvent('onmousemove', zy);
+					w.attachEvent('ontouchmove', zy);
+					w.attachEvent('onresize', zy);
+				} else {
+					w.addEventListener("scroll", zy, {capture: false, passive: true});
+					w.addEventListener("mousemove", zy, {capture: false, passive: true});
+					w.addEventListener("touchmove", zy, {capture: false, passive: true});
+					w.addEventListener("resize", zy, {capture: false, passive: true});
+				}
+			} else {
+				zy();
+			}
+		})();</script>
+	<!-- {/literal} END JIVOSITE CODE -->
+			
+<script type="text/tpl" id="js-tpl-client.getFullAccess">	<div class="offer_yellow__header">
+		Полный доступ к системе!
+	</div>
+	<div class="offer_yellow__text">
+		<nobr>3 дня доступа</nobr> <nobr>ко всем</nobr> возможностям <nobr>портала Bicotender</nobr>
+	</div>
+	<div class="offer_yellow__buttonset">
+		<button class="yes-button">
+			<span>Получить доступ</span>
+		</button>
+		<button type="button" class="close-button" role="button" title="Close">
+			<span class="close"></span>
+		</button>
+	</div>
+</script>		<span data-widget="tc/settings/Verify" data-widget-config="{" typedialog":"offer"}"="">
+		</span>
+	
+
+
+
+</body></html>
