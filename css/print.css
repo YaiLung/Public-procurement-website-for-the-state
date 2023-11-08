@@ -1,0 +1,120 @@
+body {height:auto !important;}
+#general { margin-left: 0px; }
+#header { margin-bottom:0px; margin-top: 20px; height:0px; height: 70px; }
+#middle {padding-bottom:0px;}
+/* правая/левая колонки */
+#left { display:none; }
+#right {display:none;}
+#right { margin-top: 60px; }
+
+#footer { display:none; }
+
+.hd1 { display:none; }
+.hd2_2:before {content: "www.bicotender.ru -"; }
+
+.logo { padding-top:0px; position:relative;}
+.tndsearch { display:none; }
+.hd2_2 ul { display:none; }
+
+#clock { display:none; }
+.header-list ul
+
+/* банеры */
+iframe { display:none; }
+
+a { text-decoration:none; }
+
+form { display:none; }
+
+/* иконка печати */
+.print-page { display:none; }
+
+/* лайки */
+.social-likes_single-w { display: none; }
+
+
+/* ===== Список тендеров ===== */
+.tender-list {
+	width:100%;
+	border:1px solid #D9D9D9;
+	border-collapse:collapse;
+}
+.tender-list td {
+	border:1px solid #D9D9D9;
+	padding:3px;
+	vertical-align:top;
+}
+.tender-list th {
+	text-align:left;
+}
+
+/* ===== Карточка тендера ===== */
+
+#top_menu { display: none; }
+
+#authBlock { display:none; }
+.cervicesButtons { display:none; }
+
+.TenderInfoblok { display:none; }
+.TenderInfoblok.stat { display: inline-block !important; }
+
+.TenderInfoblok.stat dd:last-child, .TenderInfoblok.stat dt.doc-all { display:none; }
+
+.tenderDate { font-size: 11px; padding: 0 0 10px 0px; }
+
+.zag-tender { font-size: 16px; font-weight:bold; padding-bottom: 15px; }
+
+.card-tend { margin-bottom: 20px; }
+.tender-just-do-it {display:none;}
+.zag { font-size:16px; }
+#center .zag { border-bottom:none; }
+#center .zag a { text-decoration:none; }
+
+/* блок с печатью, лайками и т.п. */
+.tools-block { display:none; }
+.social-likes {display:none;}
+.social-likes-tender {display:none;}
+/* *** */
+
+					/* ===== Каталог тендеров ===== */
+.TendersCatalog { width: 48%; float: left; margin: 0px 5px 25px 5px; border-collapse: collapse; border: 2px solid white; }
+.tendersCatalog {width: 48%; float: left; margin: 0px 5px 25px 5px; border-collapse: collapse; border: 2px solid white;}
+.tendersCatalog td {padding:3px;}
+.tendersCatalog tr {border-bottom:1px solid #f5f5f5;}
+.tendersCatalog th {text-align:left;}
+.specify { display:none; }
+.tender-action.serp { display:none; }
+/* *** */
+
+					/* ===== SERP ===== */
+.buttonSearchTender { display:none; }
+.alist, .pgs { display:none; }
+
+/* *** */
+
+.quest_form.innerHelp {display:none;}
+
+/* кнопки */
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+.bigButton,
+.button-primary,
+.ui-priority-secondary,
+.btn-large,
+.button-danger,
+.btn { display:none; }
+
+.print-only {
+	display:block;
+	padding:10px;
+	margin-top:10px;
+	border-top:1px solid #ccc;
+}
+.print-only table {width:100%; border:none; border-spacing:0; border-collapse:collapse;}
+.print-only table tr td:first-child {width:100px;}
+.print-only table tr td:nth-child(2) {padding:0 10px; text-align:center;}
+.print-only table tr td:last-child {white-space:nowrap;}
+.print-only img {float:left;}
+.print-only span {float:right;}
