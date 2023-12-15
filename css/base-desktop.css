@@ -2112,16 +2112,6 @@ input[type="text"].hasDatepicker:disabled {
 }
 .company-picker .company-list-result-holder table thead th,
 .company-picker .company-list-result-holder table tfoot th {
-	/*background: url("../images/sep.png") no-repeat right center;
-	border: none;
-	color: #666;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 14px;
-	padding: 0 5px;
-	text-align: center;
-	vertical-align: middle;*/
-
 	height: auto;
 	font-size: 14px;
 	color: #fff;
@@ -2455,10 +2445,7 @@ div .element-group.client-requirement {
 	width: 32px;
 }
 
-/*.gridConfigurePanel table.columnList tr.active td {*/
-/*	background: #e9e7e7;*/
-/*	font-weight: bold;*/
-/*}*/
+
 
 .gridConfigurePanel table.columnList tr[data-edit-row-tr] td {
 	background: none;
@@ -2855,12 +2842,7 @@ div .element-group.client-requirement {
 	overflow-x: hidden;
 }
 
-/*.tree-popup {
-	display: block;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}*/
+
 
 .tree-popup .tree_items_list > .tree_items_container {
 	max-height: 260px;
