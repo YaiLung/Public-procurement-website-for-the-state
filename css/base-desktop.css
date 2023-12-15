@@ -35,12 +35,7 @@ a[href] {
 
 .mark-link:visited, .mark-link a:visited, a.visited { color: #800080; }
 
-/*
-a[href]:hover {
-	color: #014d90;
-	text-decoration: underline;
-}
-*/
+
 
 .left { float: left; }
 .right { float: right; }
@@ -426,17 +421,7 @@ form.private_chat   div.labels {
 .custom-google-translater.open {
 	overflow: visible;
 }
-/*
-.custom-google-translater:after {
-	content: '';
-	top: calc(50% + 3px);
-	right: 10px;
-	position: absolute;
-	border: 5px solid transparent;
-	border-top: 5px solid #fff;
-	transform: translateY(-50%);
-}
-*/
+
 .custom-google-translater:hover {
 	cursor: pointer;
 }
@@ -583,20 +568,7 @@ form.private_chat   div.labels {
 	padding: 6px 12px;
 	font-size: 14px;
 }
-/*.ua-panel-wrapper table td.green {
-	background: rgba(7, 171, 0, 0.32941176470588235);
-}
-.ua-panel-wrapper table td.green > a {
-	color: #329a00;
-	text-decoration: none;
-}
-.ua-panel-wrapper table td.red {
-	background: rgba(234, 0, 0, 0.32941176470588235);
-}
-.ua-panel-wrapper table td.red > a {
-	color: #9a0000;
-	text-decoration: none;
-}*/
+
 .ua-panel-wrapper button.close-ua {
 	content: 'x';
 }
@@ -709,30 +681,7 @@ h1:empty {
 	padding: 10px 12px;
 }
 
-/* Новогодний логотип */
-.new-year {
-	background-image: url("../images/logo-new-year.gif");
-	background-position: center;
-	background-size: 230px auto;
-	background-repeat: no-repeat;
-}
 
-#logo-bico.new-year {
-	top: 8px;
-	left: 6px;
-	height: 73px;
-	width: 230px;
-}
-
-.logo.new-year {
-	margin: 13px 0 0 18px;
-	height: 73px;
-	width: 230px;
-}
-
-.new-year img {
-	visibility: hidden;
-}
 
 @media screen and (min-width: 751px) and (max-width: 1100px) {
 	.logo.new-year {
