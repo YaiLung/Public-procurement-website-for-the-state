@@ -1,15 +1,4 @@
-/*!
- * jQuery UI CSS Framework 1.8.21
- *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Theming/API
- */
 
-/* Layout helpers
-----------------------------------*/
 
 .ui-helper-hidden { display: none; }
 .ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
@@ -19,43 +8,22 @@
 .ui-helper-clearfix { zoom: 1; }
 .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
 
-/* Interaction Cues
-----------------------------------*/
+
 .ui-state-disabled { cursor: default !important; }
 
 
-/* Icons
-----------------------------------*/
 
-/* states and images */
 .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
 
 
-/* Misc visuals
-----------------------------------*/
 
-/* Overlays */
 .ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 
 .ui-front {
 	z-index: 100;
 }
 
-/*!
- * jQuery UI CSS Framework 1.8.21
- *
- * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Theming/API
- *
- * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Helvetica,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=2px&bgColorHeader=dddddd&bgTextureHeader=03_highlight_soft.png&bgImgOpacityHeader=50&borderColorHeader=dddddd&fcHeader=444444&iconColorHeader=005aaa&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=dddddd&fcContent=444444&iconColorContent=aa0000&bgColorDefault=f6f6f6&bgTextureDefault=03_highlight_soft.png&bgImgOpacityDefault=100&borderColorDefault=dddddd&fcDefault=005aaa&iconColorDefault=666666&bgColorHover=005aaa&bgTextureHover=03_highlight_soft.png&bgImgOpacityHover=25&borderColorHover=005aaa&fcHover=ffffff&iconColorHover=ffffff&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=dddddd&fcActive=aa0000&iconColorActive=454545&bgColorHighlight=ffffff&bgTextureHighlight=01_flat.png&bgImgOpacityHighlight=55&borderColorHighlight=cccccc&fcHighlight=444444&iconColorHighlight=005aaa&bgColorError=ffffff&bgTextureError=01_flat.png&bgImgOpacityError=55&borderColorError=aa0000&fcError=222222&iconColorError=aa0000&bgColorOverlay=eeeeee&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=80&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=60&thicknessShadow=4px&offsetTopShadow=-4px&offsetLeftShadow=-4px&cornerRadiusShadow=0px
- */
 
-
-/* Component containers
-----------------------------------*/
 
 .ui-widget { font-family: Helvetica, Arial, sans-serif; }
 .ui-widget-content {
@@ -68,11 +36,10 @@
 	box-sizing: content-box;
 }
 .ui-widget-content a { color: #444444; }
-/*.ui-widget-header { border: 1px solid #dddddd; background: #dddddd url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x; color: #444444; font-weight: bold; }*/
+
 .ui-widget-header a { color: #444444; }
 
-/* Interaction states
-----------------------------------*/
+
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {}
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #005aaa; text-decoration: none; }
