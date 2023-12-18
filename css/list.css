@@ -162,14 +162,6 @@
 	width: 100px;
 }
 
-/* ---- Для тарифа базовый/базовый регион ---- */
-/*
-.tender-list tr.inactive, .tender-list tr.inactive td a {cursor: not-allowed;}
-.tender-list tr.inactive td a {pointer-events: none;}
-.tender-list tr.inactive td {opacity: 0.3;}
-.tender-list tr.inactive td a, .tender-list tr.inactive td a:visited {color:#555555 !important;}
-.tender-list tr.inactive td .tooltip {display: none!important;}
-*/
 
 .inactive-popup {
 	display: none;
