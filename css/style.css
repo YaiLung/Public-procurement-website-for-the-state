@@ -306,76 +306,7 @@ a {
 	text-align: left;
 }
 
-/*
 
-
-.fixed_menu {
-	
-}
-.fixed_menu ul {
-	list-style-type:none;
-	top:15%;
-	min-height:100%;
-	height:100%;
-	position:absolute;
-	left:-10px;
-	z-index:2;
-	
-}
-.fixed_menu {
-	position:fixed;
-	height:100%;
-	border-left:10px solid #bebebe;
-	left:0;
-	top:0;
-	z-index:2;
-}
-.fixed_menu ul li {
-	text-align:center;
-	display:block;
-	float:left;
-	height:15%;
-	vertical-align:middle;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	transform-origin: left top 0;
-	width:140px;
-	
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
-	box-sizing:border-box;
-}
-.fixed_menu ul li:hover {
-	
-}
-.fixed_menu ul li a {
-	text-decoration:none;
-	display:block;
-	width:100%;
-	border-top:10px solid transparent;
-	font-weight:300;
-	text-transform:uppercase;
-	color:#bcbcbc;
-	font-size:12px;
-	padding-top:10px;
-}
-.fixed_menu ul li a:hover, .fixed_menu ul li a.active {
-	color:#222222;
-	border-top:10px solid #161616;
-}
-.fixed_menu ul li.first {
-	text-align:left;
-}
-
-
-
-
-*/
 .form_block {
 	text-align: center;
 }
@@ -1622,14 +1553,7 @@ div.form_wrapper > span.time {
 .b__advantages__item:hover {
 	z-index: 5;
 }
-/*.b__advantages__item[data-widget-block="six"]:hover, 
-.b__advantages__item[data-widget-block="five"]:hover,
-.b__advantages__item[data-widget-block="fird"]:hover,
-.b__advantages__item[data-widget-block="fourth"]:hover {
-	width:400px;
-	height:400px;
-}
-*/
+
 .border_back {
 	position: absolute;
 	right: 0;
