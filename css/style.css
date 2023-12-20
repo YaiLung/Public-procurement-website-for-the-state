@@ -1333,9 +1333,9 @@ div.form_wrapper > span.time {
 .b__advantages__item__percent {
 	font-size: 120px;
 	font-weight: 700;
-	/*	background: url(../images/back_percent.jpg) no-repeat;*/
+
 	background-position: left center;
-	/* -webkit-background-clip обрезает фон элемента по контуру текста */
+
 	-webkit-transition: all 0.1s ease-in;
 	-moz-transition: all 0.1s ease-in;
 	-o-transition: all 0.1s ease-in;
@@ -1345,14 +1345,14 @@ div.form_wrapper > span.time {
 	background: -webkit-linear-gradient(transparent, transparent),
 		url(../images/back_percent.jpg) no-repeat;
 	background-size: 1200px 777px;
-	-webkit-text-fill-color: transparent; /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
+	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	background: -o-linear-gradient(transparent, transparent);
 }
 .b__advantages__item__percent.item__percent__second {
 	background: -webkit-linear-gradient(transparent, transparent),
 		url(../images/percent_1.jpg) no-repeat;
-	-webkit-text-fill-color: transparent; /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
+	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	background-size: 1200px 777px;
 	background-position: -150px bottom;
@@ -2753,7 +2753,7 @@ is-animated .item__percent__second.animated {
 		right: -15%;
 		top: 20%;
 	}
-	
+
 	.rightCol .button_block {
 		bottom: 95px;
 	}
