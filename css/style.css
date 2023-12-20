@@ -1433,30 +1433,17 @@ div.form_wrapper > span.time {
 	top: -60%;
 	left: -30%;
 }
-/*.item__fourth:hover svg {
-    top: -13%;
-    left: -46%;
-}*/
+
 .item__second svg {
 	top: -10%;
 	left: -52%;
 }
-/*.item__second:hover svg {
-    top: -8%;
-    left: -39%;
-}*/
+
 .item__fird svg {
 	top: -50%;
 	right: -437px;
 }
-/*.item__five:hover svg {
-    top: 2%;
-    right: -30%;
-}*/
-/*.item__fird:hover svg {
-    top: -12%;
-    right: -200px;
-}*/
+
 .item__five svg {
 	top: -50%;
 	right: -75%;
@@ -1465,10 +1452,7 @@ div.form_wrapper > span.time {
 	top: -50%;
 	right: -437px;
 }
-/*.item__six:hover svg {
-    top: -12%;
-    right: -200px;
-}*/
+
 
 .b__advantages__item[data-widget-block="five"] svg {
 	width: 100%;
@@ -1485,15 +1469,7 @@ div.form_wrapper > span.time {
 	right: -20%;
 	top: 20%;
 } /*
-.b__advantages__item:hover .item__percent__second {
-	left:-27%;
-}
-.b__advantages__item:hover .item__percent__fourth {
-	left:-50%;
-	
-}
-.b__advantages__item:hover .item__percent__fird, .b__advantages__item:hover .item__percent__six {
-	right:-50%;
+
 }*/
 .b__advantages__item:hover {
 	background: #98cbeb;
@@ -1517,10 +1493,7 @@ div.form_wrapper > span.time {
 	width: 260px;
 	background: transparent;
 }
-/*.b__advantages__item[data-widget-block="second"]:hover {
-	width:540px;
-	height:540px;
-}*/
+
 .b__advantages__item[data-widget-block="second"] {
 	width: 400px;
 	height: 400px;
@@ -1578,19 +1551,7 @@ div.form_wrapper > span.time {
 	transform: none !important;
 	z-index: initial;
 }
-/*
-.item__percent__second {
-	-webkit-animation-duration: 7s;
-    -moz-animation-duration: 7s;
-    -o-animation-duration: 7s;
-     animation-duration: 7s; 
-	 -webkit-animation-name: fadeInLeftBig!important;
-    -moz-animation-name: fadeInLeftBig!important;
-    -o-animation-name: fadeInLeftBig!important;
-    animation-name: fadeInLeftBig!important;
-}
 
-*/
 .-show-from-right::before {
 	transform-origin: right center;
 	transform: scale(0, 1);
@@ -2359,56 +2320,7 @@ is-animated .item__percent__second.animated {
 		height: 220px;
 	}
 
-	/*	.b__advantages__item[data-widget-block="second"]:hover {
-		width:440px;
-		height:440px;
-		background:#98cbeb;
-	}
-
-	.b__advantages__item[data-widget-block="fourth"]:hover {
-		width:300px;
-		height:300px;
-		background:#ececec;
-	}
-	.b__advantages__item[data-widget-block="fird"]:hover {
-		width:300px;
-		height:300px;
-		background:#f4f8f9;
-	}
-	.b__advantages__item[data-widget-block="five"]:hover {
-		width:300px;
-		height:300px;
-		background:#f4f8f9;
-	}
-	.b__advantages__item[data-widget-block="six"]:hover {
-		width:300px;
-		height:300px;
-		background:#ececec;
-	}
-	*/
-	/*.item__six:hover svg, .item__fird:hover svg {
-		top: -26%;
-		right: -316px;
-	}
-	.item__five:hover {
-		z-index:inherit;
-	}
-	.item__five:hover svg {
-		top: -25%;
-		right: -50%;
-	}
-	.item__fourth:hover svg {
-		top: -30%;
-		left: -33%;
-	}
-	.item__five svg {
-		top: -60%;
-		
-	}
-	.item__second:hover svg {
-		top: -24%;
-		left: -20%;
-	}*/
+	
 }
 @media screen and (max-width: 1280px) {
 	.first_ld_block {
