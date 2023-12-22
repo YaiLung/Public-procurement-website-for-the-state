@@ -154,64 +154,7 @@ $(document).ready(function() {
 	 
 	
 	
-  
-        // Boolean - If we should show the scale at all
-        showScale: true,
-
-        // Boolean - If we want to override with a hard coded scale
-        scaleOverride: false,
-
-        // ** Required if scaleOverride is true **
-        // Number - The number of steps in a hard coded scale
-        scaleSteps: 1,
-        // Number - The value jump in the hard coded scale
-        scaleStepWidth: null,
-        // Number - The scale starting value
-        scaleStartValue: null,
-
-        // String - Colour of the scale line
-        scaleLineColor: "rgba(0,0,0,0)",
-
-        // Number - Pixel width of the scale line
-        scaleLineWidth: 0,
-
-        // Boolean - Whether to show labels on the scale
-        scaleShowLabels: false,
-
-        // Interpolated JS string - can access value
-        scaleLabel: "<%=value%>",
-
-        // Boolean - Whether the scale should stick to integers, not floats even if drawing space is there
-        scaleIntegersOnly: false,
-
-        // Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-        scaleBeginAtZero: false,
-
-        // String - Scale label font declaration for the scale label
-        scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-
-        // Number - Scale label font size in pixels
-        scaleFontSize: 12,
-
-        // String - Scale label font weight style
-        scaleFontStyle: "normal",
-
-        // String - Scale label font colour
-        scaleFontColor: "#666",
-
-        // Boolean - whether or not the chart should be responsive and resize when the browser does.
-        responsive: true,
-
-        // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-        maintainAspectRatio: true,
-
-        // Boolean - Determines whether to draw tooltips on the canvas or not
-        showTooltips: false,
-
-        // Function - Determines whether to execute the customTooltips function instead of drawing the built in tooltips (See [Advanced - External Tooltips](#advanced-usage-custom-tooltips))
-        customTooltips: false,
-
-        // Array - Array of string names to attach tooltip events
+  es to attach tooltip events
         tooltipEvents: ["mousemove", "touchstart", "touchmove"],
 
         // String - Tooltip background colour
