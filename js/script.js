@@ -154,25 +154,7 @@ $(document).ready(function() {
 	 
 	
 	
-  /*  Chart.defaults.global = {
-
-        // Boolean - Whether to animate the chart
-        animation: true,
-
-        // Number - Number of animation steps
-        animationSteps: 100,
-
-        // String - Animation easing effect
-        // Possible effects are:
-        // [easeInOutQuart, linear, easeOutBounce, easeInBack, easeInOutQuad,
-        //  easeOutQuart, easeOutQuad, easeInOutBounce, easeOutSine, easeInOutCubic,
-        //  easeInExpo, easeInOutBack, easeInCirc, easeInOutElastic, easeOutBack,
-        //  easeInQuad, easeInOutExpo, easeInQuart, easeOutQuint, easeInOutCirc,
-        //  easeInSine, easeOutExpo, easeOutCirc, easeOutCubic, easeInQuint,
-        //  easeInElastic, easeInOutSine, easeInOutQuint, easeInBounce,
-        //  easeOutElastic, easeInCubic]
-        animationEasing: "easeInOutCubic",
-
+  
         // Boolean - If we should show the scale at all
         showScale: true,
 
