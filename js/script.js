@@ -154,34 +154,8 @@ $(document).ready(function() {
 	 
 	
 	
-  
-    // BEGIN LINE CHART ============================================
-/*setTimeout(function(){
-	
 
-    var lineGraphData = {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept","Oct","Nov","Dec"],
-        datasets: [ {
-            label: "",
-            fillColor: "#ffdce6",
-            strokeColor: "#ffdce6",
-            pointColor: "transparent",
-            pointStrokeColor: "transparent",
-            pointHighlightFill: "transparent",
-            pointHighlightStroke: "transparent",
-            data: [5, 40, 20, 30, 56, 80, 190, 210, 100, 134, 160, 130]
-        },
-				  {
-            label: "",
-            fillColor: "#ed7a5b",
-            strokeColor: "#ed7a5b",
-            pointColor: "transparent",
-            pointStrokeColor: "transparent",
-            pointHighlightFill: "transparent",
-            pointHighlightStroke: "transparent",
-            data: [10, 29, 20, 25, 46, 50, 100, 120, 50, 30, 33, 20]
-        },
-				    {
+      {
             label: "",
             fillColor: "transparent",
             strokeColor: "#ed6c3b",
