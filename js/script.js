@@ -17,7 +17,7 @@ $(document).ready(function(){
 		topValueFillingBlocks[topValueFillingBlocks.length] = topValue;
 	});
 
-	//add the .focus class to the first service item
+
 	fillingBlocks.eq(0).addClass('focus');
 
 	$(window).on('scroll', function(){
@@ -103,25 +103,8 @@ var pathObj = {
         }
     }
 }; 
- 
- 
 
-	
-
-
-
-
-
-
-
-			
 $(document).ready(function() {
-    
-
-	
-	
-	
-	
 	$('#callback').click(function(e) {
     var $message = $('#popup');
  
@@ -144,43 +127,6 @@ $(document).ready(function() {
  
     e.preventDefault();
 });
-	
-		
-
-
-	
-	
-	
-	 
-	
-	
-
-    : 1,
-
-        //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-        pointHitDetectionRadius: 20,
-
-        //Boolean - Whether to show a stroke for datasets
-        datasetStroke: true,
-
-        //Number - Pixel width of dataset stroke
-        datasetStrokeWidth: 2,
-
-        //Boolean - Whether to fill the dataset with a colour
-        datasetFill: true,
-
-        //String - A legend template
-        legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-
-    };
-
-   // var lineCtx = document.getElementById("myGraph").getContext("2d");
-   // var myLineChart = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
-},4000);
-   
-   */
-
-    
 
 });
 
