@@ -1,0 +1,300 @@
+Bc = Bc || {};
+
+Bc.ShowForm = {
+	init: function() {
+		var t = this;
+
+		$('.js-show-hide, .js-btn-toggle-form').each(function() {
+			var $element = $(this);
+
+			if ($element.data('initialized')) {
+				return;
+			}
+
+			var
+				toggleElement_id = $element.getJsAttr('toggle-element-id'),
+				$triggers = $('.js-toggle-element-id-' + toggleElement_id),
+				$toggleElement = $('#' + toggleElement_id);
+
+			$triggers.each(function() {
+				var
+					caption = $element.attr('caption') || $element.data('caption') || 'форму поиска';
+
+				$(this)
+					.data('states', {
+						0: 'Скрыть ' + caption,
+						1: 'Показать ' + caption
+					})
+					.data('initialized' , true)
+					.data('toggleElement' , $toggleElement);
+			});
+
+			$toggleElement.data('triggers', $triggers);
+
+			t._toggleElement($element);
+			t._toggleTriggers($element);
+		});
+
+
+		$('.js-show-hide, .js-btn-toggle-form').on('click', function() {
+			t._toggle($(this));
+		});
+	},
+
+	_toggle: function ($element, state) {
+		if (this._toggleElement($element, state)) {
+			this._toggleTriggers($element, state);
+		}
+	},
+
+	show: function (selector) {
+		var
+			_t = this,
+			selector = selector || '.js-show-hide, .js-btn-toggle-form';
+		$(selector).each(function() {
+			_t._toggle($(this), 0);
+		});
+	},
+
+	hide: function(selector) {
+		var
+			_t = this,
+			selector = selector || '.js-show-hide, .js-btn-toggle-form';
+		$(selector).each(function() {
+			_t._toggle($(this), 1);
+		});
+	},
+
+	_toggleElement: function($element, forcedState) {
+		var
+			t = this,
+			$toggleElement = $element.data('toggleElement'),
+			state = (forcedState != undefined) ? forcedState : t._getNextState($element),
+			animateParams = (state) ? {height: 'hide', opacity: 'hide' } : {height: 'show', opacity: 'show' };
+
+		if (
+			(
+			state == 1 &&
+			$toggleElement.is(':hidden')
+			) ||
+			(
+			state == 0 &&
+			!$toggleElement.is(':hidden')
+			)
+		) {
+			return false;
+		}
+
+		if ($toggleElement.data('animated')) {
+			return false;
+		}
+
+		$toggleElement.data('animated' , true);
+
+		$toggleElement
+			.animate(animateParams, {
+				duration: "slow",
+				complete: function() {
+					// Хардкоооооооооооооооооооооор
+					$('.js-widget-Charts').each(function() {
+						if ($(this).data('bcWidget').length) {
+							$(this).data('bcWidget').init();
+						}
+					});
+
+					$toggleElement.data('animated' , false);
+
+					Bc.WidgetManager.initIn($toggleElement, true);
+				}
+			});
+
+		if (!state && $element.data('scroll')) {
+			$('html, body').animate({
+				scrollTop: $toggleElement.offset().top
+			}, 300);
+		}
+
+		return true;
+		//if (toggleTriggers) {
+		//	t._toggleTriggers($element);
+		//}
+	},
+
+	_getTriggers: function($element) {
+		return $element.data('toggleElement').data('triggers');
+	},
+
+	_getNextState: function($element) {
+		return ($element.data('state') || 0) ^ 1;
+	},
+
+	_toggleTriggers: function($element, forcedState) {
+		var
+			_t = this,
+			triggers = this._getTriggers($element);
+
+		if (!triggers) {
+			return;
+		}
+
+		triggers.each(function() {
+			var
+				$trigger = $(this),
+				states = $trigger.data('states'),
+				state = (forcedState != undefined) ? forcedState : _t._getNextState($trigger),
+				showIcon = $trigger.data('show-icon');
+
+			showIcon = (showIcon == undefined) ? 1 : showIcon;
+
+			if (state === 0 && $trigger.data('closedCaption')) {
+				var caption = $trigger.data('closedCaption');
+			} else if (state === 1 && $trigger.data('openedCaption')) {
+				var caption = $trigger.data('openedCaption');
+			} else {
+				var caption = states[state];
+			}
+
+			if (showIcon) {
+				caption = (state ? '<i class="icon-menu-plus"></i>' : '<i class="icon-menu-minus"></i>') + caption;
+			}
+
+			$trigger.html(caption);
+			$trigger.data('state', state);
+			$trigger.trigger('Bc-showFormTriggerToggled');
+		});
+	}
+};
+
+$(document).ready(function(){
+		//Открывалка для заголовка тендера
+		let openButton = document.querySelector('.open-buttons');
+		let tenderTitle = document.querySelector('.openHeading');
+	
+		window.addEventListener('load', function () {
+			if (tenderTitle && tenderTitle.offsetHeight > 96) {
+				tenderTitle.style.height = "96px";
+				openButton.classList.add('visible');
+				tenderTitle.classList.add('visible-before');
+				tenderTetleOpen();
+			}
+		});
+
+
+		function tenderTetleOpen() {
+			openButton.addEventListener('click', function() {
+				this.classList.toggle('active');
+				tenderTitle.classList.toggle('big');
+			});
+		}
+	$("select.js-select-link").change(function(){
+		location.replace($(this).val());
+	});
+
+    var $time = $("input.js-time");
+    if ($time.length > 0) {
+		$time.setMask({mask:"29:59",defaultValue:'____'});
+
+		$('input.js-time').keypress(function() {
+			var currentMask = $(this).data('mask').mask;
+			var newMask = $(this).val().match(/^2.*/) ? "23:59" : "29:59";
+			if (newMask != currentMask) {
+			  $(this).setMask(newMask);
+			}
+		});
+	}
+	if(location.hostname != "www1.bicotender.ru"){
+		setTimeout(function(){
+			$('iframe[src*="ads."]').each(
+					function(e) {
+						if($(this).contents().find('body').html().length < 90) {
+							var container = $(this).parent();
+							$(this).remove();
+							if (container.children().length == 0) {
+								container.remove();
+							}
+						}
+					}
+			)
+		}, 3000);
+	}
+
+
+	Bc.ShowForm.init();
+	setTimeout(showRightBlockAds, 3000);
+
+	//telegram popup message
+	$(".login-popup_close").click(function(){$(this).parents(".login-popup").fadeOut(500)});
+
+});
+
+/*
+	Скопировал с www/js/application/tc/main.js:preloader()
+ */
+function globalLoader(action) {
+	if (action === 'hide') {
+		$('#veil').hide();
+		$('#global-preloader').hide();
+		//Функциональные кнопки емеют большой индекс, поскольку их нужно отображать поверх вуали при отображении страничной помощи
+	} else {
+		$('#veil').show();
+		$('#global-preloader').show();
+	}
+}
+
+function showRightBlockAds() {
+	$('div.video-training').show('slow');
+}
+
+function number_format( number, decimals, dec_point, thousands_sep ) {	// Format a number with grouped thousands
+	//
+	// +   original by: Jonas Raoni Soares Silva (http://www.jsfromhell.com)
+	// +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+	// +	 bugfix by: Michael White (http://crestidg.com)
+
+	var i, j, kw, kd, km;
+
+	// input sanitation & defaults
+	if( isNaN(decimals = Math.abs(decimals)) ){
+		decimals = 2;
+	}
+	if( dec_point == undefined ){
+		dec_point = ",";
+	}
+	if( thousands_sep == undefined ){
+		thousands_sep = ".";
+	}
+
+	i = parseInt(number = (+number || 0).toFixed(decimals)) + "";
+
+	if( (j = i.length) > 3 ){
+		j = j % 3;
+	} else{
+		j = 0;
+	}
+
+	km = (j ? i.substr(0, j) + thousands_sep : "");
+	kw = i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands_sep);
+	//kd = (decimals ? dec_point + Math.abs(number - i).toFixed(decimals).slice(2) : "");
+	kd = (decimals ? dec_point + Math.abs(number - i).toFixed(decimals).replace(/-/, 0).slice(2) : "");
+
+
+	return km + kw + kd;
+	
+}
+
+function showNoCopyDialog() {
+	Bc.Dialog.modal({
+		width: 460,
+		title: 'Внимание!',
+		body: 'Копирование разрешено на любом активном тарифе',
+		classDialog: 'request-pre-window',
+		buttons: [
+			{
+				text: "Закрыть",
+				click: function () {
+					$(this).dialog("close");
+				}
+			}
+		]
+	});
+}

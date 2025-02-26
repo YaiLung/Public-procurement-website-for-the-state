@@ -1,0 +1,125 @@
+$(function () {
+	function hideShowAdditionalField(dialog){
+		dialog.on('change','[data-add-fields]',function(){
+			var curAddField = $(this);
+			dialog.find('[data-add-field='+curAddField.data('addFields')+']').toggle(curAddField.is(':checked'));
+		})
+	}
+
+	function getParamsSend(elem){
+		var value;
+		if (elem.attr('type') == 'number'){
+			 value = elem.data('value') + ' - ' + (elem.val() == '' ? 'Не указано' : elem.val());
+		}else if (elem.attr('type') == 'checkbox' && elem.is(':checked')){
+			if (elem.data('addFields')){
+				var addFields = [],
+					params = null;
+				Bc.Dialog.$dialog.find('[data-add-field] input').each(function(){
+					params = getParamsSend($(this));
+					if (params){
+						addFields.push(params);
+					}
+
+				});
+				return {[elem.data('value')]:addFields};
+			}else{
+				value = elem.data('value');
+			}
+		}else if (elem.attr('type') == 'radio' && elem.is(':checked')){
+			value = elem.data('value');
+		}
+
+		if (value){
+			if (value.match(/[^а-я\s\d\?\-]/ig)){
+				return;
+			}
+			return value;
+		}
+	}
+
+	$('a[class^="js-order-service-"]').on('click', function () {
+		var qualityDialogClass = 'quality-service-window',
+			classList = $(this).attr("class").split(' '),
+			tpl = '';
+
+		for(var cl in classList){
+			if (ln = classList[cl].match(/(js-)(.*)/)){
+				tpl = ln[ln.length - 1].replace(/(-.)/ig,function(a){a = a.substr(-1); return a.toUpperCase()});
+				break;
+			}
+		}
+
+		Bc.Dialog.modal({
+			width: 900,
+			title: '',
+			body: Bc.Tpl.render('index.'+tpl),
+			classDialog: qualityDialogClass,
+			open: function(){
+				$(".popup_bico").addClass("blur");
+				hideShowAdditionalField($(this));
+				$(this).find('input[data-value]').each(function(){
+					$(this).data('value',$(this).data('value')).removeAttr('data-value');
+				});
+			},
+			close: function () {
+				$("."+qualityDialogClass).removeClass("quality-status__good");
+				$("."+qualityDialogClass).removeClass("quality-status__bad");
+				$("."+qualityDialogClass).removeClass("quality-service-window__small");
+				$("."+qualityDialogClass).find(".quality-comment").val("");
+				$('.ui-dialog').removeClass('quality-service-window');
+				$(".popup_bico").removeClass("blur");
+			},
+			buttons: [
+				{
+					text: "Оставить заявку",
+					click: function () {
+						//preloader();
+						var sendData = [],
+							params = null;
+						$(this).find('input').each(function(){
+							if ($(this).parents('[data-add-field]').length) return;
+							params = getParamsSend($(this));
+							if (params){
+								sendData.push(params);
+							}
+
+						});
+
+						if (sendData.length == 0){
+							preloader('hide');
+							$(this).find('span.error').show().html('Заявка не была отправлена. Выберите хотя бы 1 услугу').css('color','red').css('background-color', 'white').css('padding', '2px').delay(3000).hide(500);
+							return;
+						}
+						try{Bc.Dialog.close()}catch(e){}
+						Bc.Ajax({
+							url: '/private/message/ajax-add-order-service-request/',
+							data: {
+								params:sendData,
+								service_id: $(this).find('[data-order-service]').length ? $(this).find('[data-order-service]').data('orderService') : null
+							},
+							success: $.proxy(function(data) {
+								preloader('hide');
+								if (data.data.error) {
+
+								} else {
+									Bc.Informer.floatMsg({ type: 'ok', body: data.data.msg, closeDelay: 15000 });
+								}
+
+							}, this)
+						});
+					},
+					class: 'quality-good'
+				},
+				{
+					text: "Отмена",
+					click: function () {
+						try{Bc.Dialog.close()}catch(e){}
+					},
+					class: 'quality-bad'
+				}
+			]
+		});
+
+	});
+});
+

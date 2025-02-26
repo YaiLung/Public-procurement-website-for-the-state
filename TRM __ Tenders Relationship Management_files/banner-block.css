@@ -1,0 +1,283 @@
+.banner-block .banner.status-normal .show-button {
+	display: none;
+}
+
+.banner-block .banner.status-hidden .hide-button {
+	display: none;
+}
+
+.banner-block .banner.status-hidden .body {
+	display: none;
+}
+
+.banner-block .banners-bico.status-responded {
+	display: none;
+}
+
+/* #content .banners-bico {
+	padding: 9px 7px 0 9px;
+} */
+#content .banners-bico .container-wrapper-banner{
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	left: 0;
+	top: 0;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	z-index: -2;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+#content .banners-bico .popapBannerActive{
+	z-index: 99999;
+	opacity: 1;
+}
+#content .banners-bico .container-wrapper-banner
+.wrapper-offer{
+	padding: 0 20px;
+	max-width: 100%;
+}
+#content .banners-bico .container-wrapper-banner
+.wrapper-offer .window-offer-banner{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 100%;
+	width: 286px;
+	height: 176px;
+	padding: 15px;
+	background: #fff;
+	border-radius: 7px;
+}
+/*#content .banners-bico .container-wrapper-banner*/
+/*.wrapper-offer .window-offer-banner .button-offer{*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	justify-content: center;*/
+/*	text-align: center;*/
+/*	max-width: 100%;*/
+/*	width: 210px;*/
+/*	height: 50px;*/
+/*	font-size: 14px;*/
+/*	line-height: 16px;*/
+/*	border-radius: 4px;*/
+/*	font-weight: 500;*/
+/*	font-family: Roboto;*/
+/*	cursor: pointer;*/
+/*	transition: 0.2s;*/
+/*}*/
+#content .banners-bico .container-wrapper-banner
+.wrapper-offer .window-offer-banner .closeBanner{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+#content .banners-bico .container-wrapper-banner
+.wrapper-offer .window-offer-banner .advantage-offer{
+	background-color: #25acfe;
+	color: #fff;
+}
+#content .banners-bico .container-wrapper-banner
+.wrapper-offer .window-offer-banner .advantage-offer:hover{
+	background-color: #9bd08c;
+}
+#content .banners-bico .container-wrapper-banner
+.wrapper-offer .window-offer-banner .cancellation-offer{
+	border: 2px solid #25acfe;
+	color: #25acfe;
+	margin-top: 10px;
+	text-transform: capitalize;
+}
+#content .banners-bico .wrapper-banner{
+	position: relative;
+	padding: 8px;
+}
+#content .banners-bico .wrapper-banner .showBanner{
+	margin-top: 8px;
+	margin-left: 6.5px;
+	width: 11px;
+}
+#content .banners-bico .wrapper-banner .banner-bico{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	/* padding: 5px 10px; */
+	margin-top: -15px;
+	background-color: #e8f3ff;
+}
+#content .banners-bico .wrapper-banner .showBanner,
+#content .banners-bico .wrapper-banner .hideBanner{
+	cursor: pointer;
+}
+#content .banners-bico .wrapper-banner .hideBanner{
+	vertical-align: top;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+#content .banners-bico.status-hidden .wrapper-banner .banner-bico{
+	display: none;
+}
+
+#content .banners-bico .wrapper-banner .banner-bico .banner-body img{
+	width: 100%;
+}
+
+.ui-dialog.banners-bico-popup{
+	border-radius: 7px;
+	max-width: 100%;
+	width: 286px;
+	height: 176px;
+}
+.banners-bico-popup .ui-dialog-buttonset .yes-button{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+.banners-bico-popup .ui-dialog-buttonset{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.banners-bico-popup .ui-dialog-buttonset .yes-button,
+.banners-bico-popup .ui-dialog-buttonset .no-button{
+	width: 210px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banners-bico-popup .ui-dialog-buttonset .no-button{
+	margin-top: 10px;
+}
+
+.banners-bico-popup .ui-dialog-buttonset .yes-button:hover {
+	background-color: #9bd08c;
+}
+
+.banners-bico-popup .ui-dialog-titlebar .ui-dialog-titlebar-close{
+	background: url(/img/banners/close.png) no-repeat;
+	top: 5px !important;
+	z-index: 1;
+}
+
+.banners-bico-popup .ui-dialog-titlebar .ui-dialog-title{
+	display: none;
+}
+
+.banners-bico-popup.ui-dialog .ui-dialog-buttonpane{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#content .funnel-bitrix24 {
+	padding: 0;
+}
+
+/* отделяем баннер автоматической воронки bitrix24 от остальных */
+#banner-auto-funnel .wrapper-banner {
+	min-height: 25px;
+}
+
+#banner-auto-funnel .banner-bico {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	margin-top: 0;
+	background-color: #e8f3ff;
+}
+
+#banner-auto-funnel .btn-banner {
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	left: auto;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	outline: none;
+}
+
+#content #banner-auto-funnel .showBanner {
+	margin-top: 8px;
+	margin-right: 4px;
+	width: 20px;
+}
+
+#banner-auto-funnel .showBanner img {
+	width: 11px;
+}
+
+#content #banner-auto-funnel .hideBanner {
+	position: absolute;
+	left: auto;
+	right: 0;
+	top: 0;
+	justify-content: flex-start;
+}
+
+#banner-auto-funnel .status-hidden {
+	display: none;
+}
+
+#banner-auto-funnel .banner-body img {
+	width: 100%;
+}
+
+#content #banner-auto-funnel .banner-bico {
+	margin: 0;
+	background: none;
+}
+
+#banner-auto-funnel a.go-to-article {
+	display: block;
+	width: 100%;
+}
+
+#banner-auto-funnel .wrapper-banner {
+	min-height: 25px;
+}
+
+#banner-auto-funnel .funnel-bitrix24 {
+	padding: 0;
+}
+
+#banner-auto-funnel .showBanner {
+	margin: 5px 8px;
+	right: 8px;
+}
+
+@media all and (max-width: 980px) {
+	#banner-auto-funnel .wrapper-banner {
+		padding: 0 0 8px;
+		min-height: 25px;
+	}
+
+	#banner-auto-funnel .showBanner {
+		margin: -4px 0 0;
+	}
+}

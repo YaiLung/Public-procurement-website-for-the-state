@@ -1,0 +1,228 @@
+$(function () {
+/*
+	$('.manager-other-rate-grade-btn').on('click', function () {
+		console.log('iamhere');
+		return false;
+	});*/
+
+    // страница описания настроек http://antenna.io/demo/jquery-bar-rating/examples/
+    function initManagerRating(callback) {
+        callback();
+    }
+
+    var hideModalButtons = function () {
+        $('button.quality-good').hide();
+        $('button.quality-bad').hide();
+    };
+
+    // обработка клика по рейтингу в персональном менеджере
+    var barRatingPersonalCallback = function () {
+        $('.manager-this-rate .manager-rating-stars').barrating({
+            theme: 'fontawesome-stars',
+            showValues: false,
+            onSelect: function (value, text, event) {
+                preloader('show');
+                $.ajax({
+                    type: 'POST',
+                    url: '/tc/manager/ajax-rate/',
+                    data: {
+                        mark: value,
+                        comment: $('textarea.quality-comment').length ? $('textarea.quality-comment').val() : null
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        var class_rating = "";
+                        if (value >= 1 && value <= 6) {
+                            class_rating = " bad";
+                        } else if (value >= 7 && value <= 8) {
+                            class_rating = " good";
+                        } else if (value >= 9 && value <= 10) {
+                            class_rating = " best";
+                        } else {
+                            class_rating = " text";
+                        }
+                        $(".manager-this-rate").attr('class', 'manager-this-rate'+class_rating);
+						$(".manager-this-rate").find('div.br-widget').show();
+						$(".manager-this-rate").find('.mark-val').html(value);
+						$(".name-manager-rate span").html(value);
+                        preloader('hide');
+						$(".manager-this-rate-btn-digit").show();
+						$(".manager-this-rate-stars-wrap").hide();
+						$(".manager-this-rate-title-value-title").text("Оценка изменена");
+                    }
+                });
+            }
+        });
+
+    };
+
+	// обработка клика по рейтингу в остальных менеджерах
+	var barRatingOtherCallback = function () {
+		$(".manager-other-rate-item").each(function(){
+			//if($(this).css("display")=="block"){
+			    var current_other_manager_item = $(this);
+				current_other_manager_item.find('.manager-rating-stars').barrating({
+					theme: 'fontawesome-stars',
+					showValues: false,
+					onSelect: function (value, text, event) {
+						preloader('show');
+							$.ajax({
+							type: 'POST',
+							url: '/tc/manager/ajax-rate/',
+							data: {
+								manager_id: current_other_manager_item.attr("other-manager-id"),
+								mark: value,
+								comment: $('textarea.quality-comment').length ? $('textarea.quality-comment').val() : null
+							},
+							success: function (data) {
+                                console.log(data);
+                                var class_rating = "";
+								if (value >= 1 && value <= 6) {
+									class_rating = " bad";
+								} else if (value >= 7 && value <= 8) {
+									class_rating = " good";
+								} else if (value >= 9 && value <= 10) {
+									class_rating = " best";
+								} else {
+									class_rating = " text";
+								}
+								current_other_manager_item.attr('class', 'manager-other-rate-item'+class_rating);
+								current_other_manager_item.find('div.br-widget').show();
+								current_other_manager_item.find('.mark-val').html(value);
+								var current_other_manager_id = current_other_manager_item.attr("data-id");
+								$(".manager-other-rate-select-list-drop-item[data-id='"+current_other_manager_id+"']").attr('class','manager-other-rate-select-list-drop-item'+class_rating);
+								preloader('hide');
+								$(".manager-other-rate-grade-btn-digit").css("display","block");
+								$(".manager-other-rate-grade-stars-wrap").hide();
+								$(".manager-other-grade-title-value-title").text("Оценка изменена");
+							}
+						});
+					}
+				});
+			//}
+		});
+	};
+
+    // обработка клика по звездочкам в модальном окне
+    var barRatingCallbackModal = function () {
+		$('.js-accept-quality-service').on('click', function(){
+			if ($(".quality-service-grade-stars").val() == '1') {
+				$('.quality-bad-error').show();
+			} else {
+				$('.quality-bad-error').hide();
+			}
+		});
+        $('.quality-service-grade-stars').barrating({
+            theme: 'fontawesome-stars',
+            showValues: false,
+            onSelect: function (value, text, event) {
+
+				var class_rating = " text";
+				var quality_grade = $(".quality-service-grade");
+				if (value >= 1 && value <= 6) {
+					class_rating = " bad";
+				} else if (value >= 7 && value <= 8) {
+					class_rating = " good";
+				} else if (value >= 9 && value <= 10) {
+					class_rating = " best";
+				} else {
+					class_rating = " text";
+				}
+
+				quality_grade.attr('class', 'quality-service-grade'+class_rating);
+				quality_grade.find(".quality-service-grade-rate-digit").text(value);
+                $('a.js-accept-quality-service').on('click', function(){
+                    preloader('show');
+                    $.ajax({
+                        type: 'POST',
+                        url: '/tc/manager/ajax-rate/',
+                        data: {
+							fromCareService: 1,
+                            mark: value,
+                            comment: $('textarea.quality-comment').length ? $('textarea.quality-comment').val() : null
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            hideModalButtons();
+							quality_grade.find('.quality-service-grade-stars-wrap').hide();
+
+                            $('.quality-service-window').addClass('quality-service-window__small');
+                            $('.quality-service-grade-rate-digit').html(value);
+                            $('textarea.quality-comment').hide();
+                            $('div.ui-dialog-content').html('<div class="quality-thanks"><img src="/img/tc/quality-thanks-icon.png"></div><div style="text-align:center;">Спасибо за обратную связь!</div>');
+                            preloader('hide');
+                        }
+                    });
+                });
+            }
+        });
+    };
+
+    initManagerRating(barRatingPersonalCallback);
+	initManagerRating(barRatingOtherCallback);
+
+    var qualityDialogClass = 'quality-service-window';
+
+    $('a.js-quality-service').on('click', function () {
+
+		var quality_service_html = Bc.Tpl.render('index.qualityService');
+
+        Bc.Dialog.modal({
+            width: 900,
+            title: '',
+            body: quality_service_html,
+            classDialog: qualityDialogClass,
+			open: function(){
+            	$(".popup_bico").addClass("blur");
+			},
+            close: function () {
+				$("."+qualityDialogClass).removeClass("quality-status__good");
+				$("."+qualityDialogClass).removeClass("quality-status__bad");
+                $("."+qualityDialogClass).removeClass("quality-service-window__small");
+
+				$("."+qualityDialogClass).find(".quality-comment").val("");
+                $('.ui-dialog').removeClass('quality-service-window');
+                $(".popup_bico").removeClass("blur");
+            },
+            buttons: [
+                {
+                    text: "Похвалить",
+                    click: function () {
+                        console.log('Похвалил');
+                        $('div.manager-rating-stars-modal-div').show();
+                        hideModalButtons();
+						$("."+qualityDialogClass).addClass("quality-status__good");
+                    },
+                    class: 'quality-good'
+                },
+                {
+                    text: "Пожаловаться",
+                    click: function () {
+                        console.log('Пожаловался');
+                        $('div.manager-rating-stars-modal-div').show();
+                        hideModalButtons();
+						$("."+qualityDialogClass).addClass("quality-status__bad");
+                    },
+                    class: 'quality-bad'
+                }
+            ]
+        });
+
+        initManagerRating(barRatingCallbackModal);
+    });
+
+	//для всех остальных менеджеров
+	$(".manager-other-rate-grade-btn-empty").click(function(){
+		$(this).parents(".manager-other-rate-grade").find(".manager-other-rate-grade-stars-wrap").slideToggle();
+		$(this).hide();
+		initManagerRating(barRatingOtherCallback);
+	});
+
+});
+
+$(document).mouseup(function (e) {
+	var container = $(".manager-this-rate-title-info-informer");
+	if (container.has(e.target).length === 0){
+		container.removeClass("active");
+	}
+});

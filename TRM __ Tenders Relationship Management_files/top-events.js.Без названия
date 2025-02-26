@@ -1,0 +1,311 @@
+Bc.events = {
+	eventGroup: [],
+	biggestTypeCount: 0,
+	eventColumnData: {},
+	totalDayInformerCount: 0,
+	eventsStep: 5,
+	onLoad: function(){
+		if ($('table.new-events').length > 0 && $('table.new-events').data('events-step') != undefined) {
+			Be.eventsStep = $('table.new-events').data('events-step');
+		}
+
+		Be.countEvents();
+		Be.readMessages();
+		Be.fillLines();
+		Be.setCounters();
+		Be.setTitleBlockSize();
+
+		$(document).on('click', 'tr.js-show-alert-message.new_msg_line', function (){
+			Be.readInformerMain(this);
+			var type_s = $(this).data('informer-type');
+			var counterPath = '.tabs_block_filter .tab-filter[data-informer-type='+ type_s +'] span.informer-count';
+			if($(counterPath).length > 0){
+				var quantity = $(counterPath).attr('data-informer-count');
+				var newCount = parseInt(quantity) - 1;
+				if(newCount == 0){
+					$(counterPath).hide();
+				} else {
+					$(counterPath).text('+' + newCount);
+					$(counterPath).attr('data-informer-count', newCount);
+					$(counterPath).show();
+				}
+			}
+		});
+		$('.infoblock .extra-buttons .show_extra_lines').click(function () {
+			Be.showExtraLines();
+		});
+		$('.infoblock .extra-buttons .hide_extra_lines').click(function () {
+			Be.hideExtraLines();
+		});
+		$('.js-show-all-event').click(function(){
+			Be.showAllEvents();
+		});
+		$('.js-refresh-events').click(function(){
+			Be.refreshEvents();
+		});
+		$('.tabs_block_filter .tab-filter.read_msg, .informer-events-column.read_msg_block').click(function () {
+			Be.selectInformerByType(this);
+		});
+
+		$('.informer-events-column').hover(function () {
+			var informerType = $(this).data('informer-type');
+			$('.event-new-application.read_msg[data-informer-type="'+informerType+'"] .unread-text').addClass('hover');
+		}, function(){
+			var informerType = $(this).data('informer-type');
+			$('.event-new-application.read_msg[data-informer-type="'+informerType+'"] .unread-text').removeClass('hover');
+		});
+	},
+	setTitleBlockSize: function(){
+		//Да, это нужно. Для верстки.
+		var maxElHeight = 0;
+		$('.tabs_block_filter .event-new-application.tab-filter').each(function(i, el){
+			var h = $(el).height();
+			if (h > maxElHeight) {
+				maxElHeight = h;
+			}
+		});
+
+		$('.tabs_block_filter .event-new-application.tab-filter').height(maxElHeight);
+	},
+	countEvents: function () {
+		$('.tabs_block_filter .tab-filter').each(function(i, el){
+			var type = $(el).data('informer-type') ? $(el).data('informer-type') : false;
+			if (type) {
+				Be.eventGroup.push(type);
+			}
+		});
+		//data-informer-type
+	},
+	readMessages: function (){
+		//Вешаем класс (признак кликабельности и активности) на те группы, которые имею сообщения
+		for(var i = 0; i < Be.eventGroup.length; i++) {
+			var all = $('.new-events .js-show-alert-message[data-informer-type="'+Be.eventGroup[i]+'"]').length;
+			if(all > 0){
+				$('.event-new-application[data-informer-type="'+Be.eventGroup[i]+'"]').addClass('read_msg');
+				$('.informer-events-column[data-informer-type="'+Be.eventGroup[i]+'"]').addClass('read_msg_block');
+			} else {
+				var emptyTitle = $('.event-new-application[data-informer-type="'+Be.eventGroup[i]+'"]').data('empty-title');
+				$('.event-new-application[data-informer-type="'+Be.eventGroup[i]+'"] .unread-text').text(emptyTitle);
+			}
+		}
+	},
+	fillLines: function() {
+		var eventColumnData = {};
+		var biggestCount = 0;
+		for(var i = 0; i < Be.eventGroup.length; i++) {
+			var type = Be.eventGroup[i];
+			var unread = $('.new-events .js-show-alert-message.new_msg_line[data-informer-type="'+type+'"]').length;
+			biggestCount = biggestCount < unread ? unread : biggestCount;
+			eventColumnData[type] = {
+				'countUnread': unread
+			};
+		}
+
+		Be.biggestTypeCount = biggestCount;
+		Be.eventColumnData = eventColumnData;
+
+		for(var i = 0; i < Be.eventGroup.length; i++) {
+			Be.fillLine(Be.eventGroup[i], false);
+		}
+	},
+	fillLine: function (eventType, isSingle) {
+		var unread = Be.eventColumnData[eventType]['countUnread'];
+		var biggest = Be.biggestTypeCount;
+		var unreadPercent = 0;
+		if (biggest != 0) {
+			unreadPercent = parseInt((unread / biggest) * 100);
+		}
+
+		$('.'+eventType+'-event-block .read-column-part').css('height', (100-unreadPercent)+'%');
+		$('.'+eventType+'-event-block .unread-column-part').css('height', unreadPercent+'%');
+
+	},
+	showAllEvents: function () {
+		Be.fillLines();
+		$('.informer-events-column').show();
+		$('.index_grafic_wrap .title.settings p.js-show-all-event').addClass('disabled');
+		$('.egoist-event-column').removeClass('egoist-event-column');
+		$('.event-new-application.selected-informer').removeClass('selected-informer');
+		$('.new-events .js-show-alert-message').removeClass('hidden');
+		$('.new-events .js-show-alert-message:gt('+(Be.eventsStep - 1)+')').addClass('extra-lines');
+
+		if ($('.new-events .js-show-alert-message').length > Be.eventsStep) {
+			$('.hide_extra_lines').hide();
+			$('.show_extra_lines').show();
+		} else {
+			$('.hide_extra_lines').hide();
+			$('.show_extra_lines').hide();
+		}
+	},
+	refreshEvents: function () {
+		var lastUpdateTime = $('.js-refresh-events').data('last-update-time');
+		$.ajax({
+			type: 'POST',
+			url: '/tc/informer/ajax-refresh-events/',
+			data:  {'lastUpdateTime': lastUpdateTime},
+			success: function (data) {
+				if (data != null && data.bc_ajax_data.length > 0) {
+					var newEvents = Bc.Tpl.render('index.newEvent', data.bc_ajax_data);
+					$('.new-events tbody').prepend(newEvents);
+					Be.fillLines();
+					Be.setCounters();
+					$('.new-events .js-show-alert-message:not(".extra-lines")').addClass('extra-lines');
+					$('.new-events .js-show-alert-message:lt('+Be.eventsStep+')').removeClass('extra-lines');
+				}
+			}
+		})
+	},
+	updateMainCounter: function (val, action) {
+		var count = $('i.ajax_count').text();
+		count  = parseInt(count || 0);
+		val = parseInt(val || 0);
+		if (action == 'dec') {
+			val = count - val;
+			val = val >= 0 ? val : 0;
+		}
+		if (action == 'add') {
+			val = count + val;
+		}
+		val = val > 0 ? val : '';
+		$('i.ajax_count').text(val);
+	},
+	setCounters: function () {
+		Be.updateMainCounter(0, 'set');
+		$('.tabs_block_filter .tab-filter.read_msg').each(function (index, el) {
+			var type = $(el).data('informer-type');
+			var isViewed = $('.js-show-alert-message[data-informer-type=' + type + '][data-quick-viewed=0]').length;
+			var $countBlock = $('.event-new-application[data-informer-type="'+type+'"] .count-container');
+			if (isViewed == 0) {
+				$countBlock.find('.count').text('');
+				$countBlock.hide();
+			} else {
+				$countBlock.find('.count').text(isViewed);
+				$countBlock.show();
+			}
+			Be.updateMainCounter(isViewed, 'add');
+		});
+	},
+	selectInformerByType: function (target) {
+		var informerType = $(target).data('informer-type');
+		var searchElement = '.new-events .js-show-alert-message[data-informer-type=' + informerType + ']';
+		if ($(target).hasClass('all-events')) {
+			searchElement = '.default.new-events .js-show-alert-message';
+		}
+		var count = $(searchElement).length;
+
+		$('.tabs_block_filter ul li').removeClass('active');
+		$(target).addClass('active');
+
+		$('.hide_extra_lines').hide();
+		$('.show_extra_lines').show();
+		$('.new-events .js-show-alert-message').addClass('hidden');
+		$('.new-events .js-show-alert-message').removeClass('extra-lines');
+		var elToShow = '.new-events .js-show-alert-message';
+		if (informerType != undefined) {
+			elToShow = '.new-events .js-show-alert-message[data-informer-type=' + informerType + ']';
+		}
+
+		//Лимитируем вывод списка событий
+		$(elToShow).each(function (i, el) {
+			$(el).removeClass('hidden');
+			if (i >= Be.eventsStep) {
+				$(el).addClass('extra-lines');
+			}
+
+			$(el).find('.numeric').text(i + 1);
+		});
+
+		//Прячем кнопку "Показать еще"
+		if (count <= Be.eventsStep) {
+			$('.extra-button').hide();
+		}
+
+		//Выводим список событий или заглушку
+		if (count != 0) {
+			$('.js-to-hide-on-empty').fadeIn(500);
+			$('.new-events-empty').hide();
+		} else {
+			$('.js-to-hide-on-empty').hide();
+			$('.new-events-empty').fadeIn(500);
+		}
+
+		//Суммируем новые и просмотренные и обновляем данные на сервере
+		var type = $(target).data('informer-type');
+		setTimeout(function () {
+			$(target).find('.informer-count').text('');
+			$(target).find('.informer-count').hide();
+		}, 300);
+
+		Be.fillLine(informerType, true);
+	},
+	readInformerMain: function(vols) {
+		var ids = $(vols).data('informer-id');
+		readInformerType = $(vols).data('informer-type');
+		$.ajax({
+			type: 'POST',
+			url: '/tc/informer/ajax-set-quick-view-by-id/',
+			data:  {'toMarkIds': [ids]},
+			success: function (data) {
+				$('.js-show-alert-message[data-informer-id=' + ids + ']').each(function (i, el) {
+					$(el).removeClass('new_msg_line');
+					$(el).attr('data-quick-viewed', '1');
+				});
+				Be.updateMainCounter(1, 'dec');
+
+				var eventFilterCounter = $('.event-new-application.tab-filter[data-informer-type="'+readInformerType+'"] .title_tab .count-container');
+				if (eventFilterCounter.find('.count').length > 0) {
+					var count = $(eventFilterCounter).find('.count').text() || 0;
+					if (count > 0) {
+						count = (count - 1) || '';
+						$(eventFilterCounter).find('.count').text(count);
+						if (count.length == 0) {
+							$(eventFilterCounter).hide();
+						}
+					}
+				}
+				Be.fillLines();
+			}
+		});
+	},
+	showExtraLines: function () {
+		$('.default.new-events .js-show-alert-message.extra-lines:lt('+Be.eventsStep+')').removeClass('extra-lines');
+		if ($('.default.new-events .js-show-alert-message.extra-lines').length == 0) {
+			$('.show_extra_lines').hide();
+			$('.hide_extra_lines').show();
+		}
+	},
+	hideExtraLines: function () {
+		$('.show_extra_lines').show();
+		$('.hide_extra_lines').hide();
+		$('.default.new-events .js-show-alert-message').removeClass('extra-lines');
+		//var type = $('.tabs_block_filter .tab-filter.active').data('informer-type');
+		var type = $('.egoist-event-column').data('informer-type');
+		if (type == undefined) {
+			//Be.selectInformerByType('.tabs_block_filter .all-events');
+			$('.new-events tr.js-show-alert-message:gt('+(Be.eventsStep - 1)+')').addClass('extra-lines');
+		} else {
+			Be.selectInformerByType('.tabs_block_filter .tab-filter[data-informer-type=' + type + ']');
+		}
+		window.scroll(0,0);
+	}
+};
+
+$(document).ready(function(){
+	Be = Bc.events;
+	Be.onLoad();
+	
+});
+
+window.addEventListener('resize', function(){
+	$('.tabs_block_filter .event-new-application.tab-filter').height('auto');
+	var el = $('.tabs_block_filter .event-new-application.tab-filter');
+	//console.log(el);
+	var heightEl = 0;
+	$('.tabs_block_filter .event-new-application.tab-filter').each(function(i, el){
+			var h = $(el).height();
+			if (h > heightEl) {
+				heightEl = h;
+			}
+		});
+   $('.tabs_block_filter .event-new-application.tab-filter').height(heightEl);
+});

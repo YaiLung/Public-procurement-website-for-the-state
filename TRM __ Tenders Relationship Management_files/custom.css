@@ -1,0 +1,2844 @@
+body {
+	min-width: 280px;
+}
+
+/* Для технических целей - удалить в финальной версии */
+
+.makeup-notice {
+	position: absolute;
+	border: 1px solid #000000;
+	padding: 5px;
+	background: #ffffff;
+	z-index: 1000;
+}
+
+/* Контролы в линию */
+/* Скрываем лейблы, т.к. в этом типе фильтров они в плейсхолдерах */
+
+.line-controls .control-group .labels,
+.line-controls .control-group .controls > label,
+.filter-block.statistic
+	form.line-controls
+	.control-group.field-name-excludeManagers
+	.labels {
+	display: none !important;
+}
+
+.line-controls .control-group .controls input {
+	width: 200px !important;
+	margin-right: 5px;
+}
+
+label {
+	white-space: normal;
+}
+
+.filter-block.show-labels form .control-group .controls label {
+	max-width: calc(100% - 20px);
+}
+
+form.line-controls .control-group .controls label.tree_item_data input {
+	/*opacity: 1;*/
+	width: 16px !important;
+	height: 16px;
+}
+
+#content
+	.filter-block
+	.tree_items_container
+	.tree_item
+	.tree_item_data
+	input[type="checkbox"]
+	+ .expand_link {
+	display: flex;
+	align-items: flex-start;
+	font-size: 14px;
+	line-height: 16px;
+	margin-left: -10px;
+	margin-right: 0;
+}
+
+/* стр. Задачи */
+
+.tc-page-task-list .filter-block.show-labels .layout-zone {
+	display: inline-block;
+}
+
+.tc-page-task-list .filter-block .line-controls .form-element-tree {
+	min-width: 255px;
+}
+
+.tc-page-task-list
+	.filter-block.show-labels.task_filter_block_wrapper
+	form.line-controls
+	.control-group.field-name-justExpired
+	.controls
+	label {
+	display: flex !important;
+	align-items: center;
+	padding: 0;
+	min-width: 200px;
+}
+
+.tc-page-task-list #justExpired {
+	margin: 10px 10px 10px 0;
+	padding: 0;
+}
+
+.tc-page-task-list .filter-block .line-controls .form-element-tree {
+	max-width: 100%;
+}
+
+.tc-page-task-list .filter-block form {
+	padding: 6px 6px 10px;
+}
+
+.tc-page-task-list #content label.tree_item_data {
+	padding-top: 0;
+	width: calc(100% - 26px);
+}
+
+.tc-page-task-list #content .tree_input {
+	min-width: auto;
+	/* opacity: 1; */
+	width: 16px !important;
+	height: 16px;
+}
+
+/* //////  */
+
+#container .infoblock:last-child {
+	overflow: hidden;
+}
+
+#container .infoblock:last-child::after {
+	display: block;
+	content: "";
+	height: 260px;
+}
+
+.filter-block {
+	background: #f6f6f6;
+	border: solid 1px #efefef;
+	margin: 6px 0 10px;
+	padding: 6px 0;
+}
+
+.filter-block form {
+	padding: 6px 0 10px;
+}
+
+.default-saver-button-tender {
+	margin: 0 7px 0 0;
+	padding: 5px 16px 6px;
+	font-size: 14px;
+	float: left;
+	cursor: pointer;
+}
+
+/* изменение стилей из-за новых полей в фильтре
+.tc-page-statistic-index для Статистика участия https://b.bicotender.ru/tc/statistic/#{%22tab%22:%22tab_1%22}
+.tc-page-ticket-list для Заявки http://b.bicotender.ru/tc/ticket/list/
+*/
+
+.tc-page-statistic-index .filter-block.show-labels .layout-zone,
+.tc-page-ticket-list .filter-block.show-labels .layout-zone {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 10px;
+}
+
+.tc-page-statistic-index .filter-block.statistic .layout-zone {
+	align-content: flex-start;
+	align-items: flex-start;
+}
+
+.filter-block.show-labels .layout-zone > div {
+	flex-basis: 48%;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.control-group
+	.controls
+	input.filter {
+	padding: 0 0.5em;
+	border-radius: 0;
+}
+
+.filter-block .tree-popup .tree_items_wrapper {
+	width: 342px;
+}
+
+.filter-block.statistic
+	.tree_items_container
+	.tree_item
+	.tree_item_data
+	input[type="checkbox"] {
+	left: 5px;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.layout-zone
+	.control-group.from-to {
+	/*min-width: auto;*/
+	/*width: 50% !important;*/
+}
+
+.filter-block.show-labels.spisok-zayavok
+	form.line-controls
+	.control-group.field-name-employee_id,
+.filter-block.show-labels.spisok-zayavok
+	form.line-controls
+	.control-group.field-name-onPage {
+	width: auto !important;
+	max-width: 100%;
+}
+
+.filter-block form .control-group .controls input {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-block.statistic form {
+	max-width: 100%;
+}
+
+.filter-block.show-labels form.line-controls .submit-block,
+.filter-block.statistic form.line-controls .submit-block {
+	display: block;
+	margin: 0;
+	position: relative;
+	top: auto;
+	left: auto;
+	background: none !important;
+	border-top: none !important;
+	padding: 0 10px 0;
+}
+
+/* новый дизайн кнопок
+.filter-block.show-labels form.line-controls .submit-block input,
+.filter-block.statistic form.line-controls .submit-block  input {
+	padding: 10px 60px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+	background: #247ADC;
+	border: 1px solid #247ADC;
+	border-radius: 4px;
+}
+
+.filter-block form.line-controls .submit-block input:hover {
+	background: #3E98FF;
+	border: 1px solid #3E98FF;
+}
+
+.filter-block form.line-controls .submit-block input:focus {
+	background: #3E98FF;
+	border: 1px solid #247ADC;
+	box-shadow: 0 0 8px #3d98f287;
+}
+
+.filter-block form.line-controls .submit-block input:active {
+	background: #3E98FF;
+	border: 1px solid #247ADC;
+}
+*/
+
+.filter-block.show-labels.spisok-zayavok form .control-group .controls {
+	text-align: left;
+	margin: 4px 20px 4px 0;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers.field-type-checkbox {
+	display: flex !important;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	float: left;
+	width: 584px !important;
+	flex-direction: column;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	.controls {
+	width: 100%;
+	margin: 0;
+}
+
+.filter-block.show-labels form.line-controls .control-group {
+	order: 1;
+}
+
+.filter-block.show-labels form.line-controls .control-group.field-name-onPage,
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-tender_name,
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-ticketShowId,
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers {
+	order: 10;
+}
+
+#ticketShowId,
+#tender_name {
+	width: 344px !important;
+	padding: 0 0.5em;
+	box-sizing: border-box;
+}
+
+.tree_info_block .selected-item {
+	padding-left: 0 !important;
+}
+
+.filter-block form.line-controls .control-group.from-to input {
+	width: auto !important;
+	padding: 0 0 0 3px;
+	min-width: 186px !important;
+	border-radius: 3px;
+}
+
+#dateCreated-to,
+#dateCreated-from {
+	width: auto !important;
+	padding: 0 0 0 10px;
+	min-width: 156px !important;
+	max-width: 344px;
+	border-radius: 3px;
+}
+
+.control-group .controls select {
+	width: auto;
+	border-radius: 3px;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	.labels,
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	.description
+	.labels {
+	display: none !important;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	.description
+	.controls {
+	width: 100%;
+	margin: 0;
+}
+
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	label,
+.layout-zone
+	label.control-group.field-name-excludeManagers.field-type-checkbox {
+	display: flex !important;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 0 0 36px;
+	margin: 0;
+	line-height: 20px;
+	position: relative;
+}
+
+.tc-page-statistic-index
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	label {
+	padding: 0 0 0 28px;
+}
+
+.layout-zone
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	label
+	.labels {
+	display: none;
+}
+
+#excludeManagers {
+	width: 20px !important;
+	min-width: 20px;
+	flex-grow: 0;
+	padding: 0;
+	margin: 0 10px 3px 0;
+	position: absolute;
+	top: 1px;
+	left: 8px;
+}
+
+.tc-page-statistic-index #excludeManagers {
+	left: 0;
+	top: 7px;
+}
+
+.layout-zone
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	.description {
+	margin: 0;
+	padding: 0 0 0 10px;
+	max-width: 344px;
+}
+
+.filter-block.show-labels.spisok-zayavok
+	form.line-controls
+	.control-group.field-name-employee_id
+	.controls,
+.filter-block.show-labels.spisok-zayavok
+	form.line-controls
+	.control-group.field-name-onPage
+	.controls,
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-type-selectTree
+	.controls,
+.filter-block.show-labels
+	form.line-controls
+	.control-group.field-name-employee_id.field-type-tcOrganizationTree
+	.controls {
+	max-width: 300px;
+}
+
+.filter-block.show-labels.spisok-zayavok form .control-group .controls,
+.filter-block.show-labels.spisok-zayavok form .control-group {
+	margin: 4px 0;
+	text-align: left;
+}
+
+.line-controls .control-group {
+	display: inline-block !important;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-name-excludeManagers {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	/*padding-left: 142px;*/
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-name-excludeManagers
+	.description {
+	padding-left: 2px;
+}
+
+.line-controls .form-element-tree {
+	width: 200px !important;
+	margin: 0;
+}
+
+.line-controls .control-group .controls {
+	/*width: 100%!important;*/
+}
+
+.line-controls .submit-block {
+	display: inline-block;
+}
+
+.line-controls .submit-block,
+.line-controls .submit-block:before,
+.line-controls .submit-block:after {
+	background: #ffffff !important;
+	border: 0 !important;
+}
+
+.filter-block.statistic form.line-controls .submit-block {
+	background: none !important;
+	border: none !important;
+}
+
+.ajax-process:after {
+	content: "";
+	position: fixed;
+	z-index: 10000;
+	top: 50%;
+	left: 50%;
+	margin: -32px 0 0 -32px;
+	width: 64px;
+	height: 64px;
+	background: url(/i/ajax-loader.gif);
+}
+
+form .description .controls {
+	font-size: 11px;
+	color: #777;
+}
+
+form .description {
+	margin-bottom: 5px;
+	margin-top: 0;
+	padding: 0 0 0 10px;
+}
+
+/* модальное окно оповещения о новой поисковой форме */
+
+.ui-dialog.pop-up-new-form {
+	width: initial !important;
+	width: auto !important;
+	padding: 0 !important;
+}
+
+.ui-dialog.pop-up-new-form .ui-dialog-content {
+	padding: 0;
+}
+
+.ui-dialog.pop-up-new-form .ui-dialog-titlebar {
+	padding: 0;
+	height: 0;
+}
+
+.ui-dialog.pop-up-new-form .ui-dialog-titlebar-close {
+	z-index: 1;
+	margin-top: 5px;
+}
+
+.ui-dialog.pop-up-new-form .pop-up_newForm {
+	width: 400px;
+	max-width: 100%;
+	height: 284px;
+	background: #fff;
+	border-radius: 7px;
+	padding: 15px 95px 15px 33px;
+	color: #000;
+	background-image: url(/i/pop-up-new-form/background.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+
+.ui-dialog.pop-up-new-form .pop-up_newForm .pop-up_newForm__title {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	margin-top: 35px;
+	max-width: 230px;
+}
+
+@media screen and (max-width: 376px) {
+	.ui-dialog.pop-up-new-form .pop-up_newForm .pop-up_newForm__title {
+		margin-top: 0;
+		font-size: 20px;
+		line-height: 23px;
+	}
+}
+
+.ui-dialog.pop-up-new-form .pop-up_newForm .pop-up_newForm__txt {
+	font-size: 13px;
+	margin-top: 15px;
+	max-width: 265px;
+}
+
+.ui-dialog.pop-up-new-form .pop-up_newForm .pop-up_newForm__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #141414 !important;
+	text-decoration: none;
+	background: #ffc700;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 13px;
+	width: 146px;
+	height: 40px;
+	margin-top: 18px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.ui-dialog.pop-up-new-form .pop-up_newForm .pop-up_newForm__button:hover {
+	background-color: #e6b300;
+}
+
+/* плашка с информацией об аккаунте пользователя */
+
+.sidebar-account__name {
+	color: #000;
+	font-size: 15px;
+	line-height: 15px;
+}
+
+.sidebar-account__login {
+	color: #000;
+	font-size: 13px;
+	margin-right: 5px;
+}
+
+.sidebar-account__login-container {
+	display: flex;
+	align-items: center;
+	margin-top: 2px;
+}
+
+.sidebar-account__login .login {
+	font-weight: bold;
+}
+
+.sidebar-account__product {
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.sidebar-account__product-list {
+	overflow: hidden;
+	text-align: center;
+}
+
+.sidebar-account__product-list {
+	display: none;
+	background: #fff;
+	z-index: 9;
+	width: 60%;
+	margin: 0 auto 0 -30%;
+	border-radius: 3px;
+	padding-bottom: 5px;
+	position: absolute;
+	left: 50%;
+	top: 30px;
+}
+
+.sidebar-account__product-main {
+	display: none;
+}
+
+.sidebar-account__product-main-btn {
+	display: inline-block;
+	background: #36c051;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 8px 25px;
+	font-size: 10px;
+	font-weight: 700;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.sidebar-account__product-main-arr {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #000;
+	content: "";
+	vertical-align: middle;
+	margin-left: 10px;
+	transition: 0.2s all ease;
+	-moz-transition: 0.2s all ease;
+	-webkit-transition: 0.2s all ease;
+}
+
+.sidebar-account__product-main-arr.open {
+	transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+}
+
+.sidebar-account__product-list-item {
+	padding: 10px 0 5px;
+	font-size: 11px;
+	transition: 0.2s all ease;
+	-moz-transition: 0.2s all ease;
+	-webkit-transition: 0.2s all ease;
+}
+
+.sidebar-account__product-list-item:hover {
+	color: #36c051;
+}
+
+.sidebar-account__product-date {
+	font-size: 12px;
+	line-height: 15px;
+	color: #727272;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.sidebar-account__price {
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	position: relative;
+	margin-top: 10px;
+	display: none;
+}
+
+.sidebar-account__price span {
+	font-weight: 700;
+	font-size: 28px;
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 10px;
+	position: relative;
+	padding-left: 40px;
+}
+
+.sidebar-account__price span:before {
+	content: "";
+	background: url("/img/tc/sidebar__bicorubl.svg") no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 7px;
+}
+
+.sidebar-account__logout-wrap {
+	text-align: center;
+}
+
+.sidebar-account__logout {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sidebar-account__logout:hover {
+	color: #fff;
+}
+
+.sidebar-account__logout .logout_left {
+	padding: 0;
+}
+
+.sidebar-account__aviable {
+	color: #000;
+}
+
+.sidebar-account__access-date {
+	margin: 0;
+}
+
+.sidebar-account__date-avaiable {
+	margin: 8px 0;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.sidebar-account__heading {
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+}
+
+.sidebar__main {
+	font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	text-align: left;
+	color: #000;
+}
+
+.sidebar__main p {
+	margin: 0;
+}
+
+.sidebar__main .sidebar-account__order {
+	min-height: 30px;
+	margin: 10px 0 14px;
+}
+
+.sidebar__main .sidebar-account__order a {
+	display: inline-block;
+	font-weight: 500;
+}
+
+.sidebar-account {
+	background: #f2f8ff;
+	position: relative;
+	z-index: 9998;
+	padding: 15px 15px 0;
+}
+
+.sidebar-account__photo {
+	background: url(/img/tc/plashka-employee.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-width: 60px;
+	width: 60px;
+	height: 60px;
+	border-radius: 80px;
+	overflow: hidden;
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.sidebar-account__photo img {
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.btn_green,
+.btn.btn_green {
+	padding: 8px 20px;
+	font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	color: #fff !important;
+	background-color: #16b169;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 4px;
+	box-shadow: none;
+}
+
+.btn_green:hover,
+.btn.btn_green:hover {
+	background-color: #31ce85;
+	box-shadow: none;
+}
+
+.control-group.add-button-group.helps-visual {
+	bottom: 26px;
+}
+
+.infoblock table.default tr td,
+table.default.application tr td {
+	white-space: normal;
+}
+
+.infoblock table.default.my-otchet tr td:nth-of-type(3) .group-button,
+table.default.search-template tr td .group-button,
+table.default.subscribe tr td .group-button {
+	white-space: nowrap;
+}
+
+table.default.application tr td.ticket-tender-table-column {
+	min-width: 33%;
+	max-width: 400px;
+}
+
+table.default.application tr td.autor_name {
+	min-width: 100px;
+}
+
+.submit-block input:not(:last-child),
+.submit-block.helps-visual #employeeEdit {
+	margin-right: 7px;
+}
+
+.submit-block.helps-visual #cancel {
+	margin-left: 8px;
+}
+
+table.default.application tr td.status-cell {
+	white-space: normal;
+	width: 10%;
+	min-width: 166px;
+}
+
+.infoblock table.default tr td.tt-comment {
+	white-space: normal;
+	width: 10%;
+	min-width: 170px;
+}
+
+.clear.mainwrapper.sbar-hidden .sidebar-hide-arr {
+	margin-left: 0 !important;
+}
+
+.clear.mainwrapper .sidebar-hide-arr {
+	margin-left: 0 !important;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to {
+	flex-grow: 0;
+	align-items: center;
+}
+
+.filter-block:before,
+.filter-block:after {
+	border: none;
+}
+
+.filter-block .line-controls .form-element-tree {
+	width: auto !important;
+	overflow: hidden;
+	min-width: 344px;
+	max-width: 344px;
+	background: #fff;
+}
+
+.filter-block.statistic .line-controls .form-element-tree {
+	/*min-width: auto;*/
+}
+
+.filter-block.statistic control-group.field-name-dateCreatedIntervals {
+	text-align: left;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-name-client_id,
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-name-client_id {
+	width: auto !important;
+	align-items: baseline;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group,
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-type-selectTree {
+	padding: 0 16px;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group
+	.labels {
+	margin-right: 7px;
+}
+
+.filter-block.show-labels.spisok-zayavok
+	form
+	.control-group
+	.controls
+	.tree_info_block {
+	height: 34px;
+}
+
+#submitTicket {
+	z-index: 100;
+}
+
+.filter-block.show-labels form .control-group .labels {
+	min-width: 135px;
+}
+
+#onPage {
+	color: #000;
+	padding: 0 18px 0 8px;
+}
+
+.filter-block
+	form.line-controls
+	.control-group
+	.controls
+	.tree_info_block
+	.selected-item
+	.i-wrapper {
+	z-index: 9;
+	top: 8px;
+	right: 5px;
+	padding: 0;
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	display: flex;
+}
+
+.i-wrapper [class^="icon"],
+.i-wrapper .high,
+.i-wrapper .low,
+.i-wrapper .mid {
+	vertical-align: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.tree_info_block .selected-item .i-wrapper .icon-close {
+	background-position: -20px -101px;
+}
+
+.tree_info_block .selected-item .i-wrapper .icon-close:hover,
+.tree_info_block .selected-item .i-wrapper .icon-close:active,
+.tree_info_block .selected-item .i-wrapper .icon-close:focus {
+	background-position: 0 -101px !important;
+}
+
+.filter-block .tree-popup .tree_items_wrapper {
+	margin-left: -1px;
+	max-width: 344px;
+}
+
+.filter-block.statistic form.line-controls .control-group .labels,
+.filter-block.statistic form.line-controls .control-group label {
+	width: 100%;
+}
+
+.filter-block.statistic form.line-controls .control-group.from-to {
+	flex-direction: row;
+}
+
+#content
+	.filter-block
+	form.line-controls
+	.control-group.field-name-dateCreatedIntervals {
+	/* min-width: 209px !important; */
+	padding-right: 0;
+	margin: 0;
+}
+
+#content .filter-block .control-group .controls ul.selected_statistic_period {
+	margin: 7px !important;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	label,
+#content .toLabel {
+	text-align: right;
+}
+
+.filter-block.show-labels.task_filter_block_wrapper
+	form.line-controls
+	.control-group
+	.controls
+	input[type="text"] {
+	padding-left: 7px;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group {
+	align-items: flex-start !important;
+}
+
+.tc-page-statistic-index
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls {
+	align-items: flex-start;
+}
+
+@media all and (max-width: 1500px) {
+	.menu-opened .filter-block.show-labels .layout-zone > div {
+		flex-basis: 100%;
+	}
+
+	.menu-opened
+		.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-excludeManagers.field-type-checkbox {
+		flex-direction: column;
+	}
+
+	.menu-opened
+		.filter-block.show-labels.spisok-zayavok
+		form
+		.control-group
+		.controls
+		.tree_info_block {
+		min-height: 34px;
+		height: auto;
+	}
+
+	.menu-opened .filter-block.show-labels form.line-controls .control-group,
+	.menu-opened
+		.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-tags,
+	.menu-opened
+		.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-onPage,
+	.menu-opened
+		.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-tender_name,
+	.menu-opened
+		.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-ticketShowId,
+	.menu-opened
+		.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-excludeManagers {
+		order: 1;
+	}
+}
+
+@media all and (max-width: 1222px) {
+	.filter-block.show-labels .layout-zone > div {
+		flex-basis: 100%;
+	}
+
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-excludeManagers.field-type-checkbox {
+		flex-direction: column;
+	}
+
+	.tc-page-statistic-index
+		.filter-block
+		form.line-controls
+		.control-group.field-name-excludeManagers {
+		flex-direction: column;
+		width: 100% !important;
+		align-items: baseline;
+	}
+
+	.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-excludeManagers.field-type-checkbox {
+		display: flex !important;
+		align-items: flex-start;
+		justify-content: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		float: left;
+		width: 584px !important;
+		max-width: 100%;
+		flex-direction: column;
+	}
+
+	.filter-block.show-labels.spisok-zayavok
+		form
+		.control-group
+		.controls
+		.tree_info_block {
+		min-height: 34px;
+		height: auto;
+	}
+
+	.filter-block.show-labels form.line-controls .control-group,
+	.filter-block.show-labels form.line-controls .control-group.field-name-tags,
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-onPage,
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-tender_name,
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-ticketShowId,
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-excludeManagers {
+		order: 1;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.filter-block.show-labels.spisok-zayavok
+		form.line-controls
+		.control-group.field-name-employee_id
+		.controls,
+	.filter-block.show-labels.spisok-zayavok
+		form.line-controls
+		.control-group.field-name-onPage.field-type-select
+		.controls,
+	.tc-page-ticket-list
+		.filter-block.show-labels.spisok-zayavok
+		form.line-controls
+		.control-group.field-name-employee_id.field-type-tcOrganizationTree
+		.controls {
+		width: auto !important;
+		max-width: 100%;
+		border-radius: 3px;
+	}
+
+	#content .tree_info_block .selected-item {
+		width: 100%;
+	}
+
+	.tc-page-task-list .filter-block.show-labels .layout-zone {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.filter-block.show-labels .layout-zone {
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.tc-page-statistic-index #excludeManagers {
+		left: 0;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to {
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-client_id {
+		width: 100% !important;
+	}
+
+	.filter-block.show-labels .layout-zone,
+	.tc-page-statistic-index .filter-block.show-labels .layout-zone,
+	.tc-page-ticket-list .filter-block.show-labels .layout-zone {
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.tc-page-ticket-list .print-block.application_block {
+		position: relative;
+		margin-top: 11px;
+		z-index: 1;
+	}
+
+	#excludeManagers {
+		/*left: 1px;*/
+	}
+
+	.layout-zone
+		.control-group.field-name-excludeManagers.field-type-checkbox
+		.description {
+		margin: 0;
+		padding: 0 0 7px 7px;
+	}
+
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.from-to
+		.controls {
+		width: auto !important;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.filter-block.show-labels.spisok-zayavok
+		form
+		.control-group.field-name-dateCreated
+		.controls
+		label,
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls
+		label,
+	#content .toLabel {
+		padding: 0;
+		text-align: left;
+	}
+
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-excludeManagers.field-type-checkbox {
+		padding-left: 0;
+	}
+
+	.filter-block.spisok-zayavok form.line-controls .control-group.from-to,
+	.filter-block.spisok-zayavok
+		form.line-controls
+		.control-group.field-name-status_id {
+		min-width: auto !important;
+	}
+
+	.tc-page-ticket-list
+		.filter-block.show-labels.spisok-zayavok
+		form.line-controls
+		.control-group.field-name-employee_id.field-type-tcOrganizationTree
+		.controls {
+		width: 100% !important;
+	}
+
+	.filter-block.show-labels
+		form.line-controls
+		.control-group.field-name-ticketShowId {
+		margin-right: 0;
+	}
+
+	#content .control-group.field-name-onPage .labels {
+		min-width: 135px;
+		width: auto !important;
+		margin-right: 10px;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to {
+		margin-top: 7px;
+		width: 100% !important;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.labels {
+		margin: 0 7px 0 0;
+		padding: 0;
+		width: auto !important;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-manager_id {
+		align-content: flex-start;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	#content .filter-block.statistic form.line-controls .submit-block,
+	#content .filter-block.statistic form.line-controls .submit-block:before,
+	#content .filter-block.statistic form.line-controls .submit-block:after {
+		background: none !important;
+	}
+
+	#content
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls
+		label {
+		padding: 0;
+	}
+
+	.filter-block.show-labels.task_filter_block_wrapper
+		form.line-controls
+		.control-group
+		.controls
+		input[type="text"] {
+		margin: 0;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group {
+		flex-direction: column;
+		width: 100% !important;
+		align-items: baseline;
+		text-align: left;
+	}
+
+	.selected_statistic_period {
+		padding-left: 10px;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group,
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group
+		.labels,
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group
+		.controls,
+	.tc-page-statistic-index
+		.filter-block
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals,
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to,
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls
+		input[type="text"] {
+		width: 100% !important;
+	}
+
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group
+		.labels,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group
+		.controls,
+	.tc-page-statistic-list
+		.filter-block
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls
+		input[type="text"] {
+		width: 100% !important;
+	}
+
+	.filter-block .tree-popup .tree_items_wrapper {
+		max-width: 100%;
+		margin-left: -1px;
+	}
+
+	.filter-block.statistic .line-controls .form-element-tree {
+		min-width: 210px;
+	}
+
+	#dateCreated-from,
+	#dateCreated-to {
+		max-width: 344px;
+		width: auto !important;
+		min-width: 156px !important;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.filter-block.statistic #dateCreated-from,
+	.filter-block.statistic #dateCreated-to {
+		width: 100% !important;
+	}
+
+	.tc-page-statistic-index
+		.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals {
+		margin: 2px 0 -10px;
+	}
+
+	#content
+		.filter-block
+		.control-group
+		.controls
+		ul.selected_statistic_period {
+		margin-bottom: -10px !important;
+		margin-left: 0 !important;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.filter-block .line-controls .form-element-tree {
+		min-width: 100%;
+	}
+
+	#ticketShowId,
+	#tender_name {
+		width: 100% !important;
+	}
+
+	.filter-block.show-labels.spisok-zayavok form .control-group .controls,
+	.filter-block.show-labels.spisok-zayavok form .control-group {
+		margin: 4px 0;
+	}
+
+	.tc-page-task-list .filter-block .line-controls .form-element-tree {
+		min-width: 200px;
+	}
+}
+
+/*  правки для http://bicotender.loc/tc/search/present/  */
+
+.js-search-client-form .tree_items_container .tree_items_container {
+	margin: 0 0 0 30px;
+}
+
+.js-search-client-form
+	.tree_items_container
+	.tree_item
+	.tree_item_data
+	input[type="checkbox"] {
+	top: 9px;
+	left: 15px;
+	width: 16px !important;
+	height: 16px;
+	margin: 0;
+}
+
+.js-search-client-form
+	.tree_items_container
+	.tree_item
+	.tree_item_data
+	input[type="checkbox"]
+	+ .expand_link {
+	align-items: flex-start;
+}
+
+.infoblock
+	.analytics-form
+	.control-group.from-to
+	.controls
+	label.currencyLabel {
+	margin: 10px 0;
+}
+
+.control-group .controls select:before {
+	content: "";
+}
+
+#searchform .labels:empty {
+	padding: 0;
+}
+
+.tc-page-analytics-calculate
+	.analytics_filter
+	.analytics-form-wrapper
+	.layout-zone:not(.button-zone)
+	.element-group
+	.field-name-onlyInSelectedCurrency
+	> .controls
+	label {
+	padding: 0;
+	font-size: 14px;
+}
+
+.tender-card-title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.logo-in-tender {
+	width: 24px;
+	height: 14px;
+	margin: auto 10px;
+}
+
+.infoblock table.default.application tr td .status-wrapp-icon .status-dot {
+	margin-right: 5px;
+}
+
+.infoblock table.default.application tr td .status-wrapp-icon i.status-name {
+	margin-left: 0;
+}
+
+.infoblock table tr td span.end_deadline_span {
+	padding-left: 0;
+	line-height: normal;
+}
+
+.only_for_print {
+	display: none !important;
+}
+
+.infoblock
+	table.default.application
+	tr
+	td
+	span.service-name-comment-additional-str {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	transition: none;
+}
+
+.tt-comment .date_comment {
+	padding: 0;
+}
+
+.tt-comment .text_comment {
+	padding: 0 0 6px;
+	white-space: normal;
+	max-width: 200px;
+}
+
+#callback-form .personal-manager .information p.info-working-hours {
+	font-size: 12px;
+	font-weight: 500;
+	color: #333333;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* заказчик или организатор (большая форма поиска в лк) */
+.detailed-search__form .form__options-card--customer .form__option-title {
+	margin-bottom: 15px;
+}
+
+.form__options-card--customer
+	.control-group.field-name-multiInitiatorId.field-type-html
+	.controls {
+	width: 100%;
+}
+
+.customer-company-tags {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.customer-company-tags .customer-company-tags-item {
+	background: #ececec;
+	padding: 6px 31px 5px 11px;
+	border-radius: 10px;
+	margin: 0 9px 12px 0;
+	border: 1px solid #ececec;
+	position: relative;
+	font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #6a707e;
+	display: flex;
+	align-items: center;
+}
+
+.customer-company-tags-item .close {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	background-image: url(/img/close_tag.svg);
+	background-position: center center;
+	background-size: 8px;
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	color: transparent;
+}
+
+.highlight,
+.text-found,
+.infoblock table tr td span.text-found,
+table.default.search-result tr td.search_name a span.text-found,
+table.default.search-result tr td.search_name a.visited span.text-found {
+	color: #f44336 !important;
+	font-weight: 700 !important;
+	font-size: inherit;
+}
+
+#tenderSearch
+	.control-group.field-type-tenderLaws
+	.controls
+	label[for^="laws-"] {
+	white-space: nowrap;
+}
+
+/* <!--выделить цветом  */
+
+.custom-select.add-color .custom-select_container {
+	width: 417px;
+}
+
+.custom-select.add-color .custom-select_container input[type="button"] {
+	margin: 4px auto 3px auto;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/*
+для всех стр. выводим палитру под кнопку вправо
+tc-page-search-advanced  https://www.bicotender.ru/tc/search/advanced/id/81288/
+tc-page-search-advanced https://www.bicotender.ru/tc/search/advanced/?compressedFilter=e2ebad33a9405492fea8661f9c8c59b6&submit=1&showTime=1
+ */
+.custom-select .custom-select_container {
+	left: 0;
+	right: auto;
+}
+
+/*
+для стр. "Избранное" - влево
+tc-page-tender-index https://www.bicotender.ru/tc/tender/
+*/
+.tc-page-tender-index .custom-select .custom-select_container {
+	left: auto;
+	right: 0;
+}
+
+@media screen and (max-width: 700px) {
+	.custom-select.add-color .custom-select_container input[type="button"] {
+		margin: 4px auto 3px auto;
+		position: static;
+		left: auto;
+		transform: none;
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.sp-container.sp-flat {
+		flex-direction: column;
+	}
+
+	.custom-select.add-color .custom-select_container {
+		width: 222px;
+	}
+
+	.sp-container.sp-flat .sp-palette-container {
+		border: none;
+	}
+}
+
+/*  выделить цветом-->  */
+
+/* результаты поиска, свиг для лотов и позиций, + зебра для строк
+* поиск в ЛК */
+.search-result tr:nth-child(2n + 2) {
+	background: #f4f7fb;
+}
+
+.search-result .search_name div > div {
+	font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	font-weight: 400;
+	padding-left: 10px;
+}
+
+.search-result .tender-find-block.two {
+	font-style: italic;
+}
+
+/* результаты поиска, свиг для лотов и позиций, + зебра для строк
+* Персональный поиск в ЛК */
+.search-personal tbody tr:nth-child(2n + 2) {
+	background-color: #f4f7fb;
+}
+
+.tender-find-block.three {
+	padding: 4px 0 4px 10px;
+	font-size: 12px;
+	line-height: normal;
+	font-style: italic;
+}
+
+/* результаты поиска, свиг для лотов и позиций, + зебра для строк
+* персональный отчет (аналитика) */
+.tender-find-block.three {
+	font-size: 12px;
+	line-height: normal;
+	font-style: italic;
+	padding: 0 0 0 10px;
+}
+
+.infoblock table.default.search-result tr td.search_name div a {
+	font-size: 12px;
+}
+
+.infoblock table.default.search-result tr td.search_name div a.mark-link {
+	font-size: 13px;
+}
+
+/* Преданализ */
+.btn-download_wrapper button {
+	margin: 0 10px 10px 0;
+	line-height: 1;
+}
+
+.btn-download_wrapper button:last-of-type {
+	margin-right: 0;
+}
+
+.tc-page .preanalyse-buttons {
+}
+
+table#preanalysis {
+	border-collapse: collapse;
+}
+
+table#preanalysis th,
+table#preanalysis td {
+	border: solid 1px #efefef;
+	padding: 6px 10px;
+	line-height: normal;
+	vertical-align: top;
+}
+
+table#preanalysis th.subtitle {
+	font-size: 18px;
+	padding: 14px 0 10px 11px;
+}
+
+#preanalysis hr {
+	border: none;
+	background-color: #efefef;
+	height: 1px;
+	clear: both;
+	margin: 6px 0;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	background: no-repeat center/20px url(/img/svg/close.svg);
+	margin: 0 10px 0 0;
+	width: 30px;
+	height: 30px;
+	z-index: 1;
+}
+
+a.jsViewTenderFile.file {
+	color: #444444 !important;
+	font-size: 14px;
+	line-height: normal;
+}
+
+.ui-dialog a.label.label-default {
+	color: #ffffff !important;
+	text-decoration: none;
+	padding: 3px 4px 4px;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 700;
+	outline: none;
+	text-align: center;
+}
+
+/* размер иконки файла (для лк) */
+a.jsViewTenderFile.file::before {
+	height: 19px;
+	background: none !important;
+}
+
+a.jsViewTenderFile.file.xlsx::before {
+	content: "";
+	display: block;
+}
+
+.tenderFileManager td {
+	vertical-align: top;
+	padding: 0;
+}
+
+.tenderFileManager .download-all {
+	border-top: 1px solid #ddd;
+	margin: 10px 0;
+	padding: 20px 0 0 20px;
+}
+
+.look {
+	padding-top: 20px;
+}
+
+.wait-report {
+	background-color: #9bd08c;
+	color: #ffffff;
+	width: 100%;
+	min-height: 80px;
+	padding: 10px 30px 10px 80px;
+	margin: 0 0 20px;
+	z-index: 999999 !important;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+}
+
+.horizontal-scroll {
+	overflow-x: auto;
+}
+
+/* кнопка "Просмотреть документацию" в табе "преданализ" */
+#tab_participationEntryReport {
+	position: relative;
+}
+
+.tc-page .preanalyse-buttons {
+	text-align: right;
+}
+
+@media all and (min-width: 1280px) {
+	.tc-page .preanalyse-buttons {
+		right: 0;
+		top: -38px;
+		z-index: 1;
+		position: absolute;
+	}
+}
+
+.tc-page .preanalyse-buttons .view-documentation.fixed {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.tc-page .preanalyse-buttons .download-excel {
+	position: absolute;
+	right: 224px;
+	top: 0;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.btn-default:focus {
+	/* фокус на кнопке показываем цветом */
+	background-color: #236d9a;
+}
+
+.prohibition,
+#preanalysis .prohibition {
+	color: #f44336;
+	font-size: inherit;
+	font-weight: 700;
+}
+
+@media all and (max-width: 980px) {
+	#container .print-block.search_page {
+		display: flex;
+	}
+
+	#container .print-block.search_page > div {
+		width: 50px;
+		height: 36px;
+	}
+
+	#container .print-block.search_page > div > a,
+	.tc-page-search-personal
+		.serp
+		.sercher-res
+		.print-block.search_page
+		#xlsFormBtn.xls
+		.xls-i {
+		width: 50px;
+		font-size: 14px;
+		height: 34px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+}
+
+.line-controls {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.filter-block.show-labels .layout-zone {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter-block.show-labels .layout-zone > div {
+	flex-basis: auto;
+}
+
+/*.filter-block.show-labels form.line-controls .submit-block.right-bottom,*/
+/*.filter-block.statistic form.line-controls .submit-block.right-bottom {*/
+/*	margin: auto 0 0 auto;*/
+/*}*/
+
+.filter-block.show-labels
+	form.line-controls
+	.layout-zone
+	.control-group.from-to {
+	width: auto;
+}
+
+.infoblock.history-dev
+	.filter-block.show-labels
+	.tree-popup
+	.tree_items_wrapper {
+	left: 0;
+}
+
+@media all and (max-width: 1376px) {
+	.filter-block.show-labels .layout-zone {
+		flex-direction: column;
+	}
+
+	.filter-block.show-labels form.line-controls .submit-block.right-bottom,
+	.filter-block.statistic form.line-controls .submit-block.right-bottom {
+		margin: 0;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.submit-block {
+		width: 100%;
+	}
+}
+
+/* breadcrumb bread-list хлебные крошки 27.06.2022 */
+
+.bread-wrap {
+	width: 100%;
+	border-bottom: 1px solid #aebfd0;
+	padding-top: 14px;
+	padding-bottom: 12px;
+}
+
+.bread-list,
+.breadcrumbs.bread-list {
+	display: flex;
+	padding-left: 20px;
+}
+
+.bread-list__item,
+.bread-list li.bread-list__item {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	margin: 0;
+	padding: 0 0 0 18px;
+	color: #3d98f2;
+	border: none;
+}
+
+.bread-list__item:first-child,
+.bread-list li.bread-list__item:first-child {
+	padding-left: 0;
+}
+
+.bread-list__link,
+.bread-list li.bread-list__link {
+	color: #5c6580;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.bread-list__link::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 13px;
+	background: #5c6580;
+	margin-left: 20px;
+}
+
+.bread-list__link:hover {
+	color: #3d98f2;
+}
+
+.modal-wrapper#ticket-list-modal .close-modal {
+	width: 16px;
+	height: 15px;
+	background-image: url(/img/svg/close.svg);
+}
+
+.modal-wrapper > .modal-inner {
+	overflow: hidden;
+	height: auto;
+	max-height: 98%;
+}
+
+.modal-scrollable-block {
+	overflow-y: auto;
+	max-height: 480px;
+}
+
+.spisok-zayavok.filter-block.show-labels form.line-controls .submit-block {
+	/* outline: #0e5aa1 solid; */
+	display: flex;
+	align-items: center;
+}
+
+.spisok-zayavok .submit-block > button:not(:last-child),
+.spisok-zayavok .submit-block > input[type="submit"]:not(:last-child) {
+	margin-right: 13px;
+	margin-bottom: 0;
+	height: 34px;
+	padding-left: 16px;
+	padding-right: 16px;
+	cursor: pointer;
+}
+
+.saving-bid-filter {
+	/*background-color: #fffde6;*/
+	text-align: left;
+	padding: 6px 0;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.saving-bid-filter ul {
+	list-style: disc;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+/*
+.tooltip {
+	position: absolute;
+	z-index: 1030;
+	display: block;
+	visibility: visible;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.tooltip.top {
+	margin-top: -3px;
+	padding: 5px 0;
+}
+
+.tooltip.right {
+	margin-left: 3px;
+	padding: 0 5px;
+}
+
+.tooltip.bottom {
+	margin-top: 3px;
+	padding: 5px 0;
+}
+
+.tooltip.left {
+	margin-left: -3px;
+	padding: 0 5px;
+}
+
+.tooltip-inner {
+	max-width: 500px;
+	padding: 5px 10px;
+	color: #53524d;
+	text-align: left;
+	text-decoration: none;
+	background-color: #fffde6;
+	border: 1px solid #DBDBDB;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 0px 10px 0px #cdcfd1;
+	-webkit-box-shadow: 0px 0px 10px 0px #cdcfd1;
+	box-shadow: 0px 0px 10px 0px #cdcfd1;
+
+}
+
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #dbdbdb;
+}
+
+.tooltip.top-left .tooltip-arrow {
+	bottom: 0;
+	left: 5px;
+	border-width: 5px 5px 0;
+	border-top-color: #dbdbdb;
+}
+
+.tooltip.top-right .tooltip-arrow {
+	bottom: 0;
+	right: 5px;
+	border-width: 5px 5px 0;
+	border-top-color: #dbdbdb;
+}
+
+.tooltip.right .tooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -5px;
+	border-width: 5px 5px 5px 0;
+	border-right-color: #444444;
+}
+
+.tooltip.left .tooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -5px;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #dbdbdb;
+}
+
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #dbdbdb;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+	top: 0;
+	left: 5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #dbdbdb;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+	top: 0;
+	right: 5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #dbdbdb;
+}
+
+.tooltip-wide .tooltip-inner {
+	min-width: 500px;
+	max-width: 700px;
+}
+*/
+@media screen and (max-width: 700px) {
+	.spisok-zayavok.filter-block.show-labels form.line-controls .submit-block {
+		flex-wrap: wrap;
+	}
+
+	.spisok-zayavok.filter-block.show-labels
+		form.line-controls
+		.submit-block
+		input[type="submit"] {
+		width: auto;
+	}
+
+	.spisok-zayavok .submit-block > button:not(:last-child),
+	.spisok-zayavok .submit-block > input[type="submit"]:not(:last-child),
+	.spisok-zayavok .submit-block > button:last-child,
+	.spisok-zayavok .submit-block > input[type="submit"]:last-child {
+		margin-bottom: 13px;
+	}
+}
+
+@media screen and (max-height: 600px) {
+	.modal-scrollable-block {
+		max-height: 300px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.modal-wrapper#ticket-list-modal > .modal-inner {
+		min-width: 266px;
+		max-width: 99%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.modal-wrapper > .modal-inner {
+	}
+
+	.flex-mobile {
+		display: block;
+	}
+
+	.flex-mobile thead {
+		display: none;
+	}
+
+	.flex-mobile tr {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex-mobile tr:nth-child(even) {
+		background-color: #f1f1f1;
+	}
+
+	table.flex-mobile td {
+		padding: 10px 0;
+	}
+
+	.flex-mobile td::before {
+		content: attr(data-title);
+		padding-right: 5px;
+		text-align: left;
+		font-weight: bold;
+	}
+}
+
+.tc-page-statistic-list .title_settings_buttuon_wrap {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	padding-top: 0;
+}
+
+#container .infoblock .settings.group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.filter-statistic-after-setting form.line-controls .control-group {
+	width: initial !important;
+	min-width: inherit !important;
+	float: none;
+	display: flex !important;
+	align-items: center;
+	margin: 7px;
+}
+
+.filter-statistic-after-setting
+	form.line-controls
+	.control-group.field-name-client_id {
+	width: auto !important;
+	align-items: baseline;
+}
+
+.filter-block.statistic {
+	display: block;
+}
+
+.filter-statistic-after-setting .layout-zone {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter-statistic-after-setting .layout-zone {
+	align-content: flex-start;
+	align-items: flex-start;
+}
+
+.filter-statistic-after-setting
+	form.line-controls
+	.control-group.field-name-client_id {
+	width: auto !important;
+	align-items: baseline;
+}
+
+.filter-block.statistic.filter-statistic-after-setting
+	form.line-controls
+	.control-group
+	.labels {
+	min-width: auto !important;
+}
+
+.filter-block.filter-statistic-after-setting .layout-zone {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 10px;
+}
+
+.filter-block.filter-statistic-after-setting .layout-zone {
+	align-content: flex-start;
+	align-items: flex-start;
+}
+
+.filter-statistic-after-setting
+	.control-group.field-name-excludeManagers.field-type-checkbox
+	label {
+	padding: 0 0 0 28px;
+}
+
+.filter-statistic-after-setting #excludeManagers {
+	left: 0;
+	top: 7px;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.field-name-excludeManagers {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.field-name-excludeManagers
+	.description {
+	padding-left: 2px;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.from-to {
+	flex-grow: 0;
+	align-items: center;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.field-name-client_id {
+	width: auto !important;
+	align-items: baseline;
+}
+
+.filter-block.filter-statistic-after-setting form.line-controls .control-group,
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.field-type-selectTree {
+	padding: 0 16px;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group
+	.labels {
+	margin-right: 7px;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.from-to
+	.controls
+	label,
+#content .toLabel {
+	text-align: right;
+}
+
+.filter-block.filter-statistic-after-setting form.line-controls .control-group {
+	align-items: flex-start !important;
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group.from-to
+	.controls {
+	align-items: flex-start;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	input[type="text"]:first-child {
+	margin-right: 7px;
+}
+
+@media all and (max-width: 1222px) {
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.field-name-excludeManagers {
+		flex-direction: column;
+		width: 100% !important;
+		align-items: baseline;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.filter-block.filter-statistic-after-setting #excludeManagers {
+		left: 0;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to {
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 700px) {
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.field-name-client_id {
+		width: 100% !important;
+	}
+
+	.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to
+		.controls
+		label {
+		padding: 0;
+		text-align: left;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to {
+		margin-top: 7px;
+		width: 100% !important;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to
+		.labels {
+		margin: 0 7px 0 0;
+		padding: 0;
+		width: auto !important;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.field-name-manager_id {
+		align-content: flex-start;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group {
+		flex-direction: column;
+		width: 100% !important;
+		align-items: baseline;
+		text-align: left;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group,
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group
+		.labels,
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group
+		.controls,
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals,
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to,
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to
+		.controls
+		input[type="text"] {
+		width: 100% !important;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.from-to
+		.controls {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.filter-block.filter-statistic-after-setting
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals {
+		margin: 2px 0 -10px;
+	}
+
+	.tc-page-statistic-list .filter-block.statistic .layout-zone {
+		flex-direction: column;
+	}
+
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-client_id {
+		width: 100% !important;
+	}
+}
+
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group
+	.labels,
+.filter-block.filter-statistic-after-setting
+	form.line-controls
+	.control-group
+	label {
+	width: initial !important;
+}
+
+.tc-page-statistic-list .filter-block.statistic .layout-zone {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group,
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group
+	.labels,
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group
+	.controls,
+.tc-page-statistic-list
+	.filter-block
+	form.line-controls
+	.control-group.field-name-dateCreatedIntervals,
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to,
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	input[type="text"] {
+	width: auto !important;
+	width: initial !important;
+	min-width: inherit !important;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-type-tcOrganizationTree
+	.controls {
+	width: 100% !important;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	input[type="text"],
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group {
+	margin: 0;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group {
+	display: flex !important;
+	align-items: center;
+	margin: 7px;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.field-name-client_id {
+	/*width: 350px !important;*/
+	max-width: 100%;
+}
+
+@media (max-width: 400px) {
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-client_id {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group
+	.labels {
+	padding: 0;
+	margin-right: 7px;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	label {
+	margin-right: 7px;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to {
+	flex-grow: 1;
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to {
+	flex-grow: 0;
+}
+
+@media (max-width: 400px) {
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	align-items: flex-start;
+}
+
+@media (max-width: 400px) {
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	input[type="text"] {
+	width: 100% !important;
+	max-width: 180px;
+	min-width: 140px !important;
+}
+
+@media (max-width: 400px) {
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls
+		input[type="text"] {
+		max-width: 100%;
+	}
+}
+
+.tc-page-statistic-list
+	.filter-block.statistic
+	form.line-controls
+	.control-group.from-to
+	.controls
+	input[type="text"]:first-child {
+	margin-right: 7px;
+}
+
+.tc-page-statistic-list
+	.filter-block
+	form.line-controls
+	.control-group.field-name-dateCreatedIntervals
+	ul.selected_statistic_period
+	li {
+	margin-right: 10px;
+}
+
+.tc-page-statistic-list
+	.filter-block
+	form.line-controls
+	.control-group.field-name-dateCreatedIntervals
+	ul.selected_statistic_period
+	li:last-child {
+	margin-right: 0;
+}
+
+.tc-page-statistic-list .print-block {
+	margin-right: 15px;
+}
+
+@media all and (max-width: 600px) {
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group
+		.labels,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group
+		.controls,
+	.tc-page-statistic-list
+		.filter-block
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to,
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.from-to
+		.controls
+		input[type="text"] {
+		width: 100% !important;
+	}
+
+	.tc-page-statistic-list
+		.filter-block.statistic
+		form.line-controls
+		.control-group.field-name-dateCreatedIntervals
+		.controls {
+		text-align: left;
+	}
+}

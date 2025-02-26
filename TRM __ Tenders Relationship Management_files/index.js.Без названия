@@ -1,0 +1,127 @@
+$(document).ready(function () {
+	setTimeout(function(){
+		$('.wave-block div.small-round').each(function(i) {
+			$(this).delay(i * 500).animate({'opacity': .4}, 800, arguments.callee);
+		});
+	}, 1000);
+	setTimeout(function(){
+		$('.wave-block div.middle-round').each(function(i) {
+			$(this).delay(i * 500).animate({'opacity': .4}, 800, arguments.callee);
+		});
+	}, 1200);
+	setTimeout(function(){
+		$('.wave-block div').each(function(i) {
+			$(this).delay(i * 500).animate({'opacity': .2}, 800, arguments.callee);
+		});
+	}, 1000);
+	setTimeout(function(){
+		$('.hi-wrap.presentation_user .hello-block .text_block p.hello-text.nt_1').fadeOut(300);
+		$('.hi-wrap.presentation_user .hello-block .text_block p.hello-text.nt_2').fadeIn(700);
+	},6500);
+	
+	/* пока что не разобрался почему не срабатывает переданный класс у блоков с текстом
+	var wd_arr = ["50px","100px", "151px", "201px", "252px", "302px", "353px", "403px",  "454px", "504px", "553px"];
+	var p_arr =[".a_1", ".a_2", ".a_3", ".a_4", ".a_5", ".a_6", ".a_7", ".a_8", ".a_9", ".a_10", ".a_11"];
+	
+	
+	
+	setTimeout(function(){
+	$('.toggler-text .a_1').fadeIn(500);	
+	for (index = 1; index < wd_arr.length; ++index) {
+		$(".blue-line-load").animate({"width":wd_arr[index-1]},1500, "linear", function(){$('.toggler-text '+p_arr[index]).fadeOut(500);$('.toggler-text '+p_arr[index+1]).fadeIn(500);});
+		console.log('.toggler-text '+p_arr[index+1]);
+	};
+	}, 3000);*/
+	
+	setTimeout(function(){
+	$('.toggler-text .a_1').fadeIn(500);
+	
+	$('.blue-line-load').animate({"width":"50.45px"},1500, "linear", function(){$('.toggler-text .a_1').fadeOut(500);$('.toggler-text .a_2').fadeIn(500);	});
+
+	$('.blue-line-load').animate({"width":"100.9px"},1500, "linear", function(){$('.toggler-text .a_2').fadeOut(500);$('.toggler-text .a_3').fadeIn(500);	});
+	
+	$('.blue-line-load').animate({"width":"151.35px"},1500, "linear", function(){$('.toggler-text .a_3').fadeOut(500);$('.toggler-text .a_4').fadeIn(500);});
+
+	$('.blue-line-load').animate({"width":"201.8px"},1500, "linear", function(){$('.toggler-text .a_4').fadeOut(500);$('.toggler-text .a_5').fadeIn(500);});
+
+	$('.blue-line-load').animate({"width":"252.25px"},1500, "linear", function(){$('.toggler-text .a_5').fadeOut(500);$('.toggler-text .a_6').fadeIn(500);});
+
+	$('.blue-line-load').animate({"width":"302.7px"},1500, "linear", function(){$('.toggler-text .a_6').fadeOut(500);$('.toggler-text .a_7').fadeIn(500);});
+
+	$('.blue-line-load').animate({"width":"353.15px"},1500, "linear", function(){$('.toggler-text .a_7').fadeOut(500);$('.toggler-text .a_8').fadeIn(500);});
+	
+	$('.blue-line-load').animate({"width":"403.6px"},1500, "linear", function(){$('.toggler-text .a_8').fadeOut(500);$('.toggler-text .a_9').fadeIn(500);});
+	
+	$('.blue-line-load').animate({"width":"454.05px"},1500, "linear", function(){$('.toggler-text .a_9').fadeOut(500);$('.toggler-text .a_10').fadeIn(500);	});
+
+	$('.blue-line-load').animate({"width":"504.5px"},1500, "linear", function(){$('.toggler-text .a_10').fadeOut(500);$('.toggler-text .a_11').fadeIn(500);	});
+
+	$('.blue-line-load').animate({"width":"553px"},1500);
+	}, 3000);
+	setTimeout(function(){
+		$('.hi-wrap.presentation_user .hello-toggle.first_slide').fadeOut(500);
+		$('.hi-wrap.presentation_user .hello-toggle.second_slide').fadeIn(1500);
+		 $(".hi-wrap.presentation_user .hello-toggle.second_slide").animate({ "background-size":"140%" }, 1500);
+		
+	},20000);
+	setTimeout(function(){
+		$('.hi-wrap.presentation_user').fadeOut(1000);
+	},24500);
+	//
+
+	setTimeout(function () {
+		$('.tender-map-info-blocks').css({'opacity': 1})
+	}, 200);
+	var nums_1 = $('.map-info-block.tender-by-month i').text();
+	$('.map-info-block.tender-by-month i').text(0);
+
+	var nums_2 = $('.map-info-block.tender-without-competitors i').text();
+	$('.map-info-block.tender-without-competitors i').text(0);
+
+	var nums_3 = $('.map-info-block.tender-average-sum i').text();
+	$('.map-info-block.tender-average-sum i').text(0);
+
+	var nums_4 = $('.map-info-block.tender-copetitors-by-tender i').text();
+	$('.map-info-block.tender-copetitors-by-tender i').text(0);
+
+	setTimeout(function () {
+		$('.map-info-block.tender-by-month .odometer').html(nums_1);
+	}, 600);
+
+	setTimeout(function () {
+		$('.map-info-block.tender-without-competitors .odometer').html(nums_2);
+	}, 900);
+
+	setTimeout(function () {
+		$('.map-info-block.tender-average-sum .odometer').html(nums_3);
+	}, 200);
+
+	setTimeout(function () {
+		$('.map-info-block.tender-copetitors-by-tender .odometer').html(nums_4);
+	}, 800);
+	
+	
+	
+	//окно первый вход обычное
+	
+	$('.hello-toggle.first_slide .btn-default, .hello-toggle.first_slide .two_press').click(function(){
+		$(this).parents('.hello-toggle.first_slide').fadeOut(500);
+		$('.hello-toggle.second_slide_page').fadeIn(800);
+	});
+	$('.hello-toggle.second_slide_page .btn-default, .hello-toggle.first_slide .free_press').click(function(){
+		$(this).parents('.hello-toggle.first_slide').fadeOut(500);
+		$(this).parents('.hello-toggle.second_slide_page').fadeOut(500);
+		$('.hello-toggle.fird_slide').fadeIn(800);
+	});
+	$('.to_index_page').click(function(){
+		$('.hi-wrap.all_user').fadeOut(800);
+	});
+});
+
+function togglePresentation() {
+	var mode = Bc.Cookie.get('tcPresentationMode');
+	mode = mode == null || parseInt(mode) == 1 ? 0 : 1;
+
+	Bc.Cookie.set('tcPresentationMode', mode);
+	window.location.reload();
+}

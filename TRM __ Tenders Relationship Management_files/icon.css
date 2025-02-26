@@ -1,0 +1,53 @@
+/* временно закоментировал */
+/*.module-tc [class^="icon"] {*/
+/*    content: '';*/
+/*    background: url(/img/tc/sprite.png) no-repeat;*/
+/*    background-position: 0px 0px;*/
+/*    display: inline-block;*/
+/*    cursor: pointer;*/
+/*}*/
+/* временно закоментировал */
+
+.module-tc .icon-plus,
+.module-tc .icon-plus.icon-size-middle {
+    background-position: -127px -22px;
+}
+
+.module-tc .icon-plus:hover,
+.module-tc .icon-plus.icon-size-middle:hover,
+.module-tc a:hover .icon-plus,
+.module-tc a:hover .icon-plus.icon-size-middle {
+    background-position: -127px -39px;
+}
+
+/*.module-tc .icon-minus,*/
+/*.module-tc .icon-minus.icon-size-middle {*/
+/*    background-position: -153px -22px;*/
+/*}*/
+
+/*.module-tc .icon-minus:hover,*/
+/*.module-tc .icon-minus.icon-size-middle:hover,*/
+/*.module-tc a:hover .icon-minus,*/
+/*.module-tc a:hover .icon-minus.icon-size-middle {*/
+/*    background-position: -153px -39px;*/
+/*}*/
+
+.module-tc .icon-plus.icon-size-large {
+    background-position: -12px -263px;
+    height: 21px;
+    width: 21px;
+}
+
+.module-tc .icon-plus.icon-size-large:hover,
+.module-tc a:hover .icon-plus.icon-size-large {
+    background-position: -12px -263px;
+}
+
+.module-tc .icon-minus.icon-size-large {
+    background-position: -12px -263px;
+}
+
+.module-tc .icon-minus.icon-size-large:hover,
+.module-tc a:hover .icon-minus.icon-size-large {
+    background-position: -12px -263px;
+}

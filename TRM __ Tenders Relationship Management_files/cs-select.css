@@ -1,0 +1,716 @@
+/* Default custom select styles */
+
+div.after-img {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	z-index: 100;
+	width: 15.625em;
+    margin: 0.625em 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.after-img:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.after-img select {
+	display: none;
+}
+
+.after-img span {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	height: 36px;
+    line-height: 36px;
+    
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    font-family: "Roboto", sans-serif;
+    padding: 0 0 0 8px;
+    font-size: 14px;
+}
+
+/* Placeholder and selected option */
+
+
+.after-img > span::after,
+.after-img .cs-selected span::after {
+	speak: none;
+	position: absolute;
+	top: 3px;
+	background-position: -8px -127px;
+}
+
+.after-img > span::after {
+	content: '';
+	right: 2px;
+}
+
+.after-img .cs-selected span::after {
+	content: '';
+	margin-left: 1em;
+}
+
+.after-img.cs-active > span::after {
+	
+}
+
+/* Options */
+.after-img .cs-options {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	visibility: hidden;
+}
+
+.after-img.cs-active .cs-options {
+	visibility: visible;
+}
+
+.after-img ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+.after-img ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.after-img li.cs-optgroup ul {
+	padding-left: 1em;
+}
+
+.after-img li.cs-optgroup > span {
+	cursor: default;
+}
+
+
+div.cs-skin-border {
+	background: white;
+}
+
+
+
+.after-img > span {
+	border: 1px solid #e2e2e2;
+	-webkit-transition: background 0.2s, border-color 0.2s;
+	transition: background 0.2s, border-color 0.2s;
+    font-family: "Roboto", sans-serif;
+}
+
+.after-img > span::after,
+.after-img .cs-selected span::after {
+	
+	content: '';
+    background:url(/img/tc/sprite.png) no-repeat;
+     background-position:-8px -127px;
+    width:27px;
+        margin-right: 2px;
+    height:27px;
+}
+
+.after-img ul span::after {
+	content: '';
+	opacity: 0;
+}
+.after-img .cs-selected {background: #ddd9c9;}
+
+
+.after-img.cs-active > span {
+	background: #fff;
+	color: #2980b9;
+	border-bottom:0px;
+}
+
+.after-img .cs-options {
+	height:0;
+	overflow-y:visible;
+	position:absolute;
+	z-index:99;
+	color: #2980b9;
+	font-size: 0.75em;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+	transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.after-img.cs-active .cs-options {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+	height:150px;
+	    border: 1px solid #e2e2e2;
+	    border-top:0px;
+
+}
+
+.after-img ul span {
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+    height:35px;
+}
+
+.after-img .cs-options li span:hover,
+.after-img li.cs-focus span {
+	background: #f5f3ec;
+	font-size: 13px;
+}
+
+/*------Правки вёрстки (Ануфриев)------*/
+#menu .employee .avatar.client {background:#596370; margin-right:8px;}
+#menu ul.submenu li a {font-family: "Roboto", sans-serif;
+	font-weight: 300;}
+#menu .menu .menu-informer-count {
+	color: #278CFA;
+	padding: 3px 4px 3px 4px;
+	border-radius: 22px;
+	line-height: 10px;
+	text-align: center;
+	font-family: "Roboto",sans-serif;
+}
+
+/*--- Расширенный поиск (на больших мониторах) 
+#tenderSearch .element-group.bottom-separator,
+#tenderSearch .field-name-inn,
+#tenderSearch .field-name-type_id,
+#tenderSearch .field-name-finishDate {
+	position:relative;
+	display:block;
+	width:50%;
+	float:left;
+}
+form .control-group .labels {padding:0 10px 0 0;}
+#tenderSearch .control-group.field-name-region_id:before {
+	content:"";
+	position:absolute;
+	top:0;
+	height:1px;
+	background:#f0f0f0;
+	width:200%;
+}
+#tenderSearch .control-group.field-name-region_id {padding:12px 0 0 0; margin:9px 0 3px 0 !important;}
+#tenderSearch .control-group.field-name-region_id,
+#tenderSearch .control-group.field-name-regionPreference,
+#tenderSearch .control-group.field-name-multiregions,
+#tenderSearch .field-name-loadTime,
+#tenderSearch .field-name-costRub {
+	position:relative;
+	display:block;
+	width:50%;
+	float:left;
+	clear:both;
+}
+.infoblock #tenderSearch .control-group.from-to .controls input {width:40%;} ---*/
+
+
+td, th {padding: 8px 10px 7px 10px;}
+
+
+/*Стили оформления новго дизайна страницы избранное(Тендеры)*/
+
+
+.sort i {
+	background: url(/img/tc/sprite.png) no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    opacity: 0.4;
+	
+}
+.sort i.up {
+	background-position: -186px -22px;
+}
+.sort i.down {
+	background-position: -186px -36px;
+}
+
+.sort:hover {
+	color:#000!important;
+}
+.sort:hover i {
+	opacity:1;
+}
+
+table.default.favorit tr td {
+	border:none;
+}
+
+.infoblock table.default tr th, .infoblock table.default.history tr th {
+	width:auto;
+}
+table.default.favorit tr td:nth-of-type(2) {
+	font-size:13px;
+	color:#000;
+	text-align:left;
+	line-height:18px;
+}
+.infoblock table.default.favorit tr th:nth-of-type(7) {
+	width:initial;
+}
+table.default.favorit tr td.price {
+	text-align:left;
+	vertical-align:top;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 600;
+}
+
+
+table.default.favorit tr td {
+	vertical-align:top;
+}
+table.default.favorit tr td b.tenderTime {
+	text-align:left;
+	display:block;
+}
+table.default.favorit tr th.period {
+	width:130px;
+}
+table.default.favorit tr td {
+	line-height:18px;
+}
+table.default.favorit tr td p.note {
+	text-align:left;
+	margin:0;
+}
+table.default.application tr td.ticket-tender-table-column a,
+table.default.favorit tr td.tender-name a,
+table.default.search-result tr td.search_name a,
+table.default.tenders-new .tender_name a{
+	text-decoration:none;
+	color:#000;
+}
+table.default.application tr td.ticket-tender-table-column a span,
+table.default.favorit tr td.tender-name a span,
+table.default.search-result tr td.search_name a span,
+table.default.tenders-new .tender_name a span {
+	font-family: 'Roboto',sans-serif;
+	text-decoration:underline;
+	color:#3487cd;
+	word-break: break-word;
+    word-wrap: break-word;
+}
+
+table.default.application tr td.ticket-tender-table-column a:visited{
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	text-decoration:underline;
+	color:#800080 !important;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+a.visited span  {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	text-decoration:underline;
+	color:#800080 !important;
+	word-break: break-word;
+    word-wrap: break-word;
+}
+
+table.default.search-result tr td.search_name a.found-text-mode {
+	font-family: 'Roboto',sans-serif;
+	font-weight: 400;
+	text-decoration:underline;
+	color:#3487cd;
+	font-size: 13px
+}
+table.default.search-result tr td.search_name a.found-text-mode span.text-found {
+	color: #f44336; /*text-shadow: 0px 0px 7px #ffff00;*/ font-weight: bold;
+}
+table.default.tenders-new td {
+	vertical-align:top!important;
+}
+table.default.tenders-new td.price_col {
+	white-space:nowrap!important;
+}
+table.default.favorit tr td {
+	text-align:left;
+}
+table.default.favorit tr td a {
+	color:#3487cd;
+}
+table.default.application tr td.ticket-tender-table-column:hover a span,
+table.default.favorit tr td.tender-name:hover a span,
+ table.default.search-result tr td.search_name:hover a span{
+	color:#fd0000;
+}
+table.default.favorit tr td .group-button .delete {
+	width:auto;
+	height:auto;
+	padding: 2px 8px;
+	font-size:13px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin:1px 0 0 0;
+}
+table.default.favorit tr td .group-button {
+	float:none;
+	display:inline;
+	width:auto;
+}
+table.default.favorit tr td.hide-for-print.tags .group-button {
+	display: flex;
+}
+table.default.favorit tr td .group-button a {
+	position:relative;
+	display:inline-block;
+}
+table.default.favorit tr td .group-button .delete.bt {
+	background:#93969d;
+}
+table.default.favorit tr td .group-button .delete.bt:hover {
+	background:#ff3434;
+	
+}
+table.default.favorit tr td .group-button .delete.bt:active {
+	background:#fe0000;
+}
+table.default.favorit tr td .group-button .bt.delete:after {
+    content: '';  
+    background: url(/img/tc/sprite.png) no-repeat;
+	background-position: -69px -238px;
+    height: 14px;
+    float: left;
+    width: 14px;
+    display: inline-block;
+    position: relative;
+	margin:2px 4px 0 0;
+} 
+.infoblock table.default.favorit tr td:nth-of-type(1) {
+	vertical-align:top;
+}
+
+.infoblock table.default.search-result tr td.favorite span.add-favorite:before {
+	content:'';
+    background: url(/img/tc/stars3.png) no-repeat;
+    top: 0;
+    position: relative;
+	opacity:1;
+    width: 15px;
+    height: 20px;
+    display: block;
+	background-position: 0 0;
+	transition:none;
+}
+.infoblock table.default.search-result tr:hover td.favorite span.add-favorite:before {
+	background-position:-18px 0;
+}
+span.added-favorite {
+	background: url(/img/tc/stars3.png) no-repeat;
+	background-position:-34px 0;
+	  
+    top: 0;
+    position: relative;
+	opacity:1;
+    width: 15px;
+    height: 20px;
+    display: block;
+	
+	transition:none;
+}
+.infoblock table.default.favorit tr:hover td.flag-favorite span {
+	background-position:-18px 0px;
+}
+.infoblock table.default.favorit tr:hover td {
+	background:rgba(0, 0, 0, 0.04);
+}
+.infoblock table.default.favorit tr.selected:hover td.flag-favorite span {
+	background-position:-34px 0px!important;
+}
+
+.infoblock table.default.search-result tr td.favorite span.forgotten:before {
+	content:'';
+	background: url(/img/tc/forgotten.png) no-repeat;
+	top: 0px;
+	position: relative;
+	opacity:1;
+	width: 15px;
+	height: 15px;
+	display: block;
+	transition:none;
+}
+
+.infoblock table.default.search-result tr td.favorite span.forgotten:hover:before,
+.infoblock table.default.search-result tr td.favorite span.forgotten.added:before{
+	background-position: -15px 0;
+}
+
+.infoblock table.default.search-result tr td.search_name .tooltip-arrow {
+    left: 20px;
+    right: auto;
+}
+
+.infoblock table.default.favorit thead tr th {
+	color:#000;
+	font-weight: 500;
+	border:none;
+	text-align:left;
+}
+.infoblock table.default.favorit thead tr th.price_right{
+	text-align:right;
+}
+
+.infoblock table.default.favorit thead tr th.price_left{
+	text-align: left;
+}
+
+.infoblock table.default.favorit thead tr th a {
+	font-size:13px;
+	border-bottom:1px dashed #000000;
+	color:#000000;
+	text-decoration:none;
+	cursor:pointer;
+}
+.infoblock table.default.favorit tr td.flag-favorite .tooltip {
+	top:-7px!important;
+	left:-8px!important;
+}
+.infoblock table.default.favorit tr .period {
+	width:1%!important;
+}
+.default.favorit .group-button .tooltip.fade.top.in .tooltip-arrow {
+	left:26px!important;
+}
+
+table.default.favorit tr td	.group-button .bt.edit {
+	font-size: 0;
+	line-height: 0;
+	white-space: nowrap;
+}
+
+/* table.default.favorit tr td	.group-button .bt.edit .edit__text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 25px;
+} */
+
+/*table.default.favorit tr td	.group-button .bt.edit:before {*/
+/*	content: '';*/
+/*	display: inline-block;*/
+/*	vertical-align: middle;*/
+/*	height: 15px;*/
+/*	width: 20px;*/
+/*	background-image: url(/img/tc/sprite.png);*/
+/*	background-repeat: no-repeat;*/
+/*    background-position: -67px -209px;*/
+/*    position: relative;*/
+/*}*/
+
+table.default.favorit tr td	.group-button .bt.edit:after {
+	content: none;
+}
+
+.favorite-page .group-btn ul li, .favorite-page .group-btns ul li {
+	line-height:23px;
+}
+.favorite-page .print-block {
+	margin-right:0;
+}
+.favorite-page .group-btn {
+	margin-top:0;
+	margin-left:5px;
+	margin-bottom: 15px;
+}
+.favorite-page .group-btn.toggle-page ul li, .favorite-page .group-btns.toggle-page ul li {
+	width:auto;
+	font-size:15px;
+	color:#93969d;
+	border:none;
+	background:transparent;
+}
+.favorite-page .group-btn.toggle-page ul li:hover,
+.favorite-page .group-btn.toggle-page ul li.active,
+.favorite-page .group-btns.toggle-page ul li:hover,
+.favorite-page .group-btns.toggle-page ul li.active {
+	background:#93969d;
+	color:#fff;
+}
+.favorite-page .group-btns.toggle-page ul {
+	overflow: hidden;
+	border-radius: 5px;
+}
+.favorite-page .group-btn.toggle-page ul li:hover a,
+.favorite-page .group-btn.toggle-page ul li.active a,
+.favorite-page .group-btns.toggle-page ul li:hover a,
+.favorite-page .group-btns.toggle-page ul li.active a {
+	color:#fff;
+	background:#25acff;
+}
+.favorite-page .group-btn.toggle-page ul li.disabled a, .favorite-page .group-btns.toggle-page ul li.disabled a {
+	background:#dfe0e2;
+	cursor: not-allowed!important;
+}
+.favorite-page .group-btn.toggle-page li a, .favorite-page .group-btns.toggle-page li a {
+	font-size:15px;
+	color:#25acff;
+	padding:3px 10px;
+	background:transparent;
+	border:2px solid #25acff;
+}
+.favorite-page .toggle-page {
+	margin-right:5px;
+}
+.favorite-page .toggle-page ul li.active a {
+	background:transparent;
+	color:#9c9ba0;
+	border:2px solid #25acff;
+	box-sizing:border-box;
+}
+.favorite-page .toggle-page ul li.active a {
+	color:#fff;
+}
+.favorite-page .group-btn.toggle-page, .favorite-page .group-btns.toggle-page {
+	border:none;
+	background:#fff;
+}
+.favorite-page .print-block ul li a {
+    line-height: 23px;
+}
+.favorite-page .print-block ul li {
+    height:23px;
+}
+#container .infoblock.favorite-page .settings {
+	border:none;
+}
+.change_important_icon_block {
+	position: absolute;
+	width: 165px;
+	padding: 8px 0;
+	text-align: center;
+	min-width: 200px;
+	background: #25acfe;
+	font-size: 14px;
+	height: 30px;
+	font-family: "Roboto", sans-serif;
+	border-radius: 3px;
+	top: 0;
+	color: #fff;
+	z-index: 999999;
+	
+}
+
+.change_important_icon_block.deleted_action {
+	color:#25acfe;
+	background:#fff;
+	border:2px solid #25acfe;
+	box-sizing:border-box;
+	padding:6px 0;
+}
+
+/*table.default.favorit tr td	.group-button .bt.edit {
+	width: auto;
+}*/
+.infoblock table.default.favorit tr td:nth-of-type(1) {
+	position:relative!important;
+}
+table.default.add-employee.favorit .group-button .bt {
+    display: inline-block;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+	font-weight: 700;
+    padding: 7px 10px;
+    width: 22px!important;
+    height: 20px;
+    line-height: 20px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+	margin:0 3px!important;
+}
+
+
+table.default.add-employee.favorit .group-button .bt:after {
+    content: '';
+    background: url(/img/tc/sprite.png) no-repeat;
+    height: 20px!important;
+    width: 20px!important;
+    display: inline-block;
+    position: absolute!important;
+    right: 0;
+    top: 0;
+	float:none!important;
+}
+table.default.add-employee tr td .group-button .bt.edit:after {
+    background-position: -66px -206px!important;
+}
+table.default.add-employee tr td .group-button .bt.edit.close:after {
+    background: url(/img/tc/icon-denied-btn.png) no-repeat;
+    background-position: -17px 0px!important;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 1;
+    background-size: auto 18px;
+}
+table.default.add-employee tr td .group-button .bt.edit.open:after {
+    background: url(/img/tc/open-dostup.png) center center no-repeat;
+    background-position: initial!important;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .4;
+    background-size: auto 18px;
+}
+
+table.default.add-employee tr td .group-button {
+	float: none!important;
+	margin:0 0 0 10px!important;
+    display: table-cell!important;
+   vertical-align:middle!important;
+    width: auto;
+	height:20px;
+}
+
+.add-employee-button,
+.client-list-manage .btn-default {
+	font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 13px 9px;
+    display: inline-block;
+    margin: 5px 0 0 0;
+}
+/*.client-list-manage .btn-default:hover,
+.add-employee-button:hover {
+	background:#bec0c3;
+}*/
+
+@media (max-width: 700px) {
+table.default.add-employee tr td .group-button {
+    display: inline-block!important;
+}
+}
+
+
+@media screen and (max-width: 30em) {
+	div.cs-skin-border { font-size: 1em; }
+}

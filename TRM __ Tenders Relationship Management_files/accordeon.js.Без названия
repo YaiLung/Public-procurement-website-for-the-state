@@ -1,0 +1,10 @@
+$('.accordion__close').click(function () {
+	$('#accordion' + $(this).attr('articleId')).hide(400);
+	$.ajax({
+		type: 'POST',
+		url: '/tc/news/ajax-mark-as-viewed-article/',
+		data: {article_id : $(this).attr('articleId')},
+		success: function (response) {}
+	});
+});
+

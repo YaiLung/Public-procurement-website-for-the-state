@@ -1,0 +1,210 @@
+$(document).ready(function () {
+
+	$('input[name="role"]').click(function () {
+		$('span.inform').remove();
+		$('.selected-main').hide();
+		if ($('input#one').is(':checked')) {
+			$(this).parent().append('<span class="inform">Руководитель в данном отделе уже назначен <a href="#">Иванов А.И.</a></span>');
+			setTimeout(function () {
+				$('span.inform').remove();
+			}, 5000);
+		}
+
+	});
+
+	$('.img-in-form-settings').html($('.img-name').html());
+	$('.user-role-name-in-form-settings').html($('.user-role-name').html());
+
+	//$('span.inform').setTimeout();
+
+
+	$('.add-site.remote-pass a').click(function () {
+		$('.edit-pass').slideToggle();
+	});
+	$('.add-sotrudnik').click(function () {
+		$('.sotrudnik-pole').slideToggle();
+	});
+	// Expand Panel
+	$(".select-group.types .toggle-type .open").click(function () {
+		$(".select-group.types .select-type").slideDown("slow");
+	});
+
+	// Collapse Panel
+	if ($(".select-group.types .select-type li").click()) {
+
+		$(".select-group.types .select-type li").click(function () {
+			$(".select-group.types .select-type").slideUp("slow");
+			$(".select-group.types .toggle-type span").toggle();
+			$(" .select-group.types .toggle-type span").empty();
+			$(".select-group.types .toggle-type span").append($(this).text());
+
+		})
+	}
+
+	$(".select-group.types .toggle-type .close").click(function () {
+		$(".select-group.types .select-type").slideUp("slow");
+	});
+
+	$(".select-group.types .toggle-type span").click(function () {
+		$(".select-group.types .toggle-type span").toggle();
+	});
+
+
+	//otdel
+	$(".select-group.otdel .toggle-type .open").click(function () {
+		$(".select-group.otdel .select-type").slideDown("slow");
+	});
+
+	// Collapse Panel
+	if ($(".select-group.otdel .select-type li").click()) {
+
+		$(".select-group.otdel .select-type li").click(function () {
+			$(".select-group.otdel .select-type").slideUp("slow");
+			$(".select-group.otdel .toggle-type span").toggle();
+			$(".select-group.otdel .toggle-type span").empty();
+			$(".select-group.otdel .toggle-type span").append($(this).text());
+
+		})
+	}
+
+	$(".select-group.otdel .toggle-type .close").click(function () {
+		$(".select-group.otdel .select-type").slideUp("slow");
+	});
+	$(".select-group.otdel .toggle-type span").click(function () {
+		$(".select-group.otdel .toggle-type span").toggle();
+	});
+
+
+	//director
+
+	$(".select-group.dir .toggle-type .open").click(function () {
+		$(".select-group.dir  .select-type").slideDown("slow");
+	});
+
+	// Collapse Panel
+	if ($(".select-group.dir  .select-type li").click()) {
+
+		$(".select-group.dir  .select-type li").click(function () {
+			$(".select-group.dir .select-type").slideUp("slow");
+			$(".select-group.dir  .toggle-type span").toggle();
+			$(".select-group.dir  .toggle-type span").empty();
+			$(".select-group.dir  .toggle-type span").append($(this).text());
+
+		})
+	}
+
+	$(".select-group.dir .toggle-type .close").click(function () {
+		$(".select-group.dir .select-type").slideUp("slow");
+	});
+
+
+	$(".select-group.dir .toggle-type span").click(function () {
+		$(".select-group.dir .toggle-type span").toggle();
+	});
+
+
+	//Событие по клику
+
+	$(".tab-group .tabular").click(function () {
+
+
+		if ($(this).attr("class") == "tab_1 tabular active") {
+			$('.structure-show-buttons').hide();
+			$('.flying-block').hide();
+		} else {
+			$('.structure-show-buttons').show();
+			$('.settings.flying-block').show();
+		}
+
+		$(".tab-group .tabular").removeClass("active"); //Удалить "active" класс
+		$(this).addClass("active"); //Добавить "active" для выбранной вкладки
+		$(".tab-item").hide(); //Скрыть контент вкладки
+		var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
+		$(activeTab).fadeIn(); //Исчезновение активного контента
+		return false;
+
+	});
+	$('.tab_1').click(function () {
+		$('.structure-show-buttons').hide();
+		$('.flying-block').hide();
+	});
+	$('.structure-show-buttons .show-structure').click(function () {
+		$(".settings.structure-company.flying-block").animate({right: '0'}, 500);
+		$(".settings.structure-company.flying-block").show();
+		$('.main-wrapper').css({'overflow': 'visible'});
+	});
+	$('.structure-show-buttons .hide-structure').click(function () {
+		$(".settings.structure-company.flying-block").animate({right: '-36%'}, 500);
+		$('.main-wrapper').css({'overflow': 'hidden'});
+		//$(".settings.structure-company.flying-block").hide(400);
+	});
+	$(".structure-show-buttons a").click(function () {
+		$(".structure-show-buttons a").toggle();
+	});
+	//selected
+	// $(".structure-company .selected-main").hide(); //скрыть весь контент
+	//$("li.select-otdel").addClass("active").show(); //Активировать первую вкладку
+	// $(".structure-company .block-otdels").show(); //Показать контент первой вкладки
+
+	//Событие по клику
+
+
+});
+
+
+$('input:checkbox').click(function () {
+	$("input:checkbox").removeAttr("checked");
+	$(this).attr("checked", "checked");
+
+
+});
+
+
+$('input[name="types"]').click(function () {
+	$('.selected-main').hide();
+	if ($('input.otdel').is(':checked')) {
+		$('.block-otdels').show();
+	}
+	if ($('input.sotrudnik').is(':checked')) {
+		$('.block-sotrudnik').show();
+	}
+});
+
+
+//стилизация input type="file"
+$(function () {
+	var wrapper = $(".file_upload"),
+		inp = wrapper.find("input"),
+		btn = wrapper.find(".buttons"),
+		lbl = wrapper.find("mark");
+
+	// Crutches for the :focus style:
+	inp.focus(function () {
+		wrapper.addClass("focus");
+	}).blur(function () {
+		wrapper.removeClass("focus");
+	});
+
+	var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+	inp.change(function () {
+		var file_name;
+		if (file_api && inp[0].files[0])
+			file_name = inp[0].files[0].name;
+		else
+			file_name = inp.val().replace("C:\\fakepath\\", '');
+
+		if (!file_name.length)
+			return;
+
+		if (lbl.is(":visible")) {
+			lbl.text(file_name);
+			btn.text("Выбрать");
+		} else
+			btn.text(file_name);
+	}).change();
+
+});
+$(window).resize(function () {
+	$(".file_upload input").triggerHandler("change");
+});

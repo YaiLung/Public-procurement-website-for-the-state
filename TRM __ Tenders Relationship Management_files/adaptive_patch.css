@@ -1,0 +1,187 @@
+@media (max-width:1365px) and (max-width:981px) {
+	.quality-service {
+		margin-left: 0;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.search-header--options .quality-service{
+		margin-bottom: 0px;
+	}
+
+	.quality-service a{
+		width: 80%;
+	}
+
+	.mainwrapper:not(.sbar-hidden) .heading-panel-title {
+		padding-left: 30px;
+	}
+
+	.mainwrapper .heading-panel-title {
+		padding-left: 30px;
+	}
+
+	.manager-callback-btn-mobile {
+		right: 8px;
+		top: 12px;
+	}
+}
+
+@media (min-width:981px) and (max-width:1365px) {
+	.mainwrapper:not(.sbar-hidden) .heading-panel-title {
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width:1024px) {
+	#container .infoblock {
+		padding:20px 10px 0 10px;
+	}
+
+	#container .infoblock.index_page .table {
+		padding:15px 0 0 6px;
+	}
+
+	.tree_info_block .selected-item {
+		width:87%;
+	}
+}
+
+@media (max-width:700px) {
+	.print-block.stat-help {
+		margin-top: 5px;
+	}
+
+	form .control-group.field-name-employee_id .labels{
+		width: initial !important;
+	}
+
+	.empty-block.uchastniki .img {
+		min-width:30px;
+		margin:0 8px 0 0;
+	}
+
+	.infoblock.client-data .tabs.subform-list-phones {
+		width:100%;
+	}
+
+	.infoblock .mCSB_horizontal.mCSB_inside > .mCSB_container {
+		width:100%!important;
+	}
+
+	.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+		display:none!important;
+	}
+
+	.infoblock.client-data .tabs .item .item-control-block.active, .infoblock.client-data .tabs .item.deleted .item-control-block {
+		width:100%;
+		text-align:center;
+
+	}
+	.tabs.subform-list-emails .item.item-emails .item-body .layout-zone .control-group .labels, .tabs.subform-list-phones .item.item-phones .item-body .control-group.phone .labels {
+		opacity:1;
+	}
+	.infoblock.client-data .tabs .item.deleted span.restore {
+		display:inline-block;
+	}
+
+	.sercher-res .print-block {
+		width:100%;
+		top:9px;
+	}
+
+	@media screen and (max-width:700px){
+		.save-subscription.btn-default{
+			margin: 15px;
+		}
+	}
+
+	.group-btns.stat {
+		margin-top: 5px;
+	}
+
+	.sercher-res {
+		margin-bottom: 10px;
+	}
+
+	.print-block.search_page {
+		display: block;
+	}
+
+	.infoblock.client-data .tabs .item .item-control-block:not(.js-subformListItemControls) {
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	.infoblock.client-data .tabs .item.deleted span.primary,
+	.infoblock.client-data .tabs:not(.subform-list-phones) .item.deleted span.delete,
+	.infoblock.client-data .tabs:not(.subform-list-phones) .item span.restore {
+		display: inline-block;
+	}
+
+	.heading-panel-title {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.header{
+		display: flex;
+		align-items: center;
+	}
+
+	.quality-service {
+		width: 100%;
+	}
+	.quality-service a {
+		width: 100%;
+	}
+
+	.header-left, .logo {
+		width: 80%;
+	}
+
+	.search-header--options .logo{
+		width: auto;
+	}
+}
+
+@media (max-width: 610px) {
+	#header .header-left .sidebar-hide,
+	.header .sidebar-hide{
+		padding: 0;
+	}
+}
+
+@media (max-width:610px) {
+	.header-left .header-left_top {
+		display: none;
+	}
+}
+@media (max-width:980px) {
+	.heading-panel-searchform {
+		order: 0;
+	}
+}
+
+@media (max-width:610px) {
+	.custom-google-translater {
+		right: 20px;
+		top: 70px;
+	}
+
+	.heading-panel-searchform {
+		margin-left: 10px;
+		margin-right: 7px;
+	}
+}
+
+@media (max-width:480px) {
+	.logo {
+		margin-top: 10px;
+	}
+}

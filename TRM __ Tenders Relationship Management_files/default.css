@@ -1,0 +1,307 @@
+.infoblock table tr th.text-align-center,
+.infoblock table tr td.text-align-center,
+.text-align-center {
+    text-align: center;
+}
+
+.infoblock table tr th.text-align-right,
+.infoblock table tr td.text-align-right,
+.text-align-right {
+    text-align: right;
+}
+
+.infoblock table tr th.text-valign-middle,
+.infoblock table tr td.text-valign-middle,
+.text-valign-middle {
+    vertical-align: middle;
+}
+
+
+/* Красный кружок с восклицательным знаком */
+
+.exclamation-point {
+    font-size: 11px;
+    font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background: #FF5252;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    border-radius: 17px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: -1px;
+    margin-right: 3px;
+}
+
+
+/* Красный баннер */
+
+.red-banner {
+    background-color: #de474b;
+    width: 99%;
+    width: calc(100% - 12px);
+    height: auto;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 9px 4px 2px 8px;
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.red-banner .red-banner__icon {
+    background: url(/img/tc/tender/close.svg) no-repeat;
+    background-size: 36px;
+    min-width: 36px;
+    max-width: 50px;
+    min-height: 36px;
+    margin: auto 18px auto 30px;
+}
+
+.red-banner .red-banner_text {
+    margin: 0 45px 10px 17px;
+    font-size: 17px;
+    line-height: normal;
+}
+
+.red-banner .red-banner__header {
+    font-size: 28px;
+    margin: 12px 0 5px;
+    display: block;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.red-banner .red-banner__text {
+    margin: 10px 0 0;
+}
+
+.red-banner .red-banner__icon {
+    background: url(/img/tc/tender/x.svg) no-repeat;
+    background-size: 36px;
+    min-width: 36px;
+    max-width: 50px;
+    min-height: 36px;
+    margin: auto 18px auto 35px;
+}
+
+.red-banner .red-banner_buttons {
+    display: flex;
+    margin-right: 25px;
+}
+
+.red-banner .red-banner_buttons button {
+    font-family: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+    height: 50px;
+    background: #DDE9F5;
+    color: #585858;
+    outline: none;
+    cursor: pointer;
+    width: auto;
+    min-width: 265px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: auto 10px;
+    font-weight: 500;
+}
+
+.red-banner .red-banner_buttons button:hover {
+    background: #E7F3FF;
+}
+
+.red-banner .red-banner_buttons .red-banner__button_color_green {
+    background: #16B169;
+    color: #fff;
+    min-width: 255px;
+}
+
+.red-banner .red-banner_buttons .red-banner__button_color_green:hover {
+    background: #31CE85;
+}
+
+@media all and (max-width: 1900px) {
+    .red-banner {
+        width: auto;
+        margin: 8px 8px 8px 9px;
+        min-width: 98%;
+    }
+
+    .red-banner .red-banner_text {
+        margin: 5px 4% 13px 10px;
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .red-banner .red-banner__header {
+        vertical-align: middle;
+        height: 36px;
+        min-height: 36px;
+        font-size: 28px;
+        padding: 0;
+        background: no-repeat;
+        margin: 0;
+        display: table-cell;
+    }
+
+    .red-banner .red-banner__text {
+        font-size: 16px;
+    }
+
+    .red-banner .red-banner_buttons {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 0;
+        min-height: 120px;
+    }
+
+    .red-banner .red-banner_buttons button {
+        height: 44px;
+        font-size: 16px;
+        min-width: 220px;
+    }
+}
+
+@media all and (max-width: 1600px) {
+    .red-banner {
+        width: auto;
+        margin: 8px 8px 8px 9px;
+        min-width: 98%;
+    }
+
+    .red-banner .red-banner__icon {
+        display: none;
+    }
+
+    .red-banner .red-banner__header {
+        font-size: 22px;
+        padding-left: 50px;
+        background: url(/img/tc/tender/x.svg) no-repeat left center;
+        background-size: 32px;
+    }
+
+}
+
+@media all and (max-width: 1280px) {
+    .red-banner {
+        width: auto;
+        margin: 8px 8px 8px 9px;
+        min-width: 98%;
+    }
+}
+
+@media all and (max-width: 980px) {
+    .red-banner {
+        margin: 0 0 8px 0;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .red-banner {
+        flex-direction: column;
+        margin: 0 0 9px 0;
+    }
+
+    .red-banner .red-banner_text {
+        margin: 3px 5px 10px;
+        font-size: 11px;
+    }
+
+    .red-banner .red-banner__header {
+        margin: 0;
+        font-size: 17px;
+        background-size: 22px;
+        padding-left: 32px;
+    }
+
+    .red-banner .red-banner_buttons {
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 12px;
+        flex-direction: row;
+        margin-right: 0;
+        margin-left: 0;
+        min-height: 40px;
+        width: 100%;
+    }
+
+    .red-banner .red-banner_buttons button {
+        flex-grow: 1;
+        margin-right: 6px;
+        margin-left: 6px;
+        font-size: 12px;
+        height: 32px;
+        min-width: 170px;
+    }
+
+    .red-banner .red-banner_buttons .red-banner__button_color_green {
+        background: #64CA87;
+        color: #fff;
+        min-width: 140px;
+        margin-left: 0;
+    }
+
+    .red-banner .red-banner_buttons button:last-child {
+        margin-right: 0;
+    }
+
+}
+
+@media all and (max-width: 380px) {
+    .red-banner .red-banner_buttons {
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+    .red-banner .red-banner_buttons button {
+        height: auto;
+        min-height: 40px;
+        min-width: 100%;
+        margin: 0 0 10px;
+        flex-glow: 1;
+    }
+
+    .red-banner .red-banner_buttons .red-banner__button_color_green {
+        min-width: 200px;
+    }
+
+    .red-banner .red-banner_buttons button:last-child {
+        margin: 0;
+
+    }
+
+}
+
+button:disabled {
+	cursor: default;
+}
+
+.scrollUp {
+	color: black;
+	width: 40px;
+	height: 40px;
+	opacity: 0.3;
+	position: fixed;
+	bottom: 50px;
+	right: 100px;
+	display: none;
+	background: #4c4c4c url(/i/icon_top.png) no-repeat;
+	background-size: contain;
+	background-origin: content-box;
+	padding: 7px;
+	border-radius: 2px;
+	left: 20px;
+	z-index: 59999;
+}

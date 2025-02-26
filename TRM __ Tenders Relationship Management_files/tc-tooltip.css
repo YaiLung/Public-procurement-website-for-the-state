@@ -1,0 +1,64 @@
+/* ТУЛТИПЫ */
+
+/* Кастомизация бутстраповских тултипов (бутстрап 4) Существуют в отдельном цсс-е только для личного кабинета, т.к.
+    бутстрап-тултипы также существуют пока что только в лк, с бутстраповским вариантом в остальных местах сайта
+    возникли сложности при внедрении на всем проекте (полный бутстрап цсс с помощью)
+    * {box-sizing: border-box} все ломал. Позже нужно будет перевнедрить выпилив лишнее из бутстрап-цсс
+*/
+
+.tooltip {
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 50000;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tooltip .tooltip-inner {
+    position: static;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 10px 15px;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.tooltip .arrow:before {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+/*Перекрываем стрелочкой кусочек рамки*/
+.bs-tooltip-top .arrow {
+    bottom: 1px;
+}
+
+.bs-tooltip-bottom .arrow {
+    top: 1px;
+}
+
+.search-tender .search_name .mark-link,
+.search-personal .search_name a,
+.search-personal [data-label="Название лота"] a {
+    display: inline-block;
+}
+
+/* @TODO Разобратьcя, как Бутстрап считает высоту тултипа и настроить плагин вместо костылей с !important  */
+/*.search-personal .search_name .tooltip {*/
+    /*top: 0 !important;*/
+/*}*/

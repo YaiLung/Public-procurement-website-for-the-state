@@ -1,0 +1,227 @@
+$(function () {
+	$('.form__tender_search_questions').on('click', function(){
+		$(this).siblings('.container-wrapper-form').css('display','flex');
+	});
+	//TODO добавить закрытие по клику в любой области .container-wrapper-form кроме .wrapper-form
+	$('.close-form-criteria').on('click', function(){
+		$('.container-wrapper-form').css('display', "none");
+	});
+
+    $('.close-video').on('click', function(){
+		//  $(this).closest('.video-bico').css('display', "none");
+		$(this).closest('.video-bico').remove();
+	});
+
+	$('.form__input-wrapper--expand [data-field-name]').on('change', function(){
+		$(this).find('.selected-item span:not([title])').toggle($(this).find('.selected-item').length == 1);
+	}).trigger('change');
+
+	try{
+		//см. избр, поиск персонал etc.
+		document.querySelector('.shape-switcher_item').addEventListener('click', fTabs);
+	}catch(e){}
+
+	var formCurrent = null;
+
+	if ($('#form-search .form-tabs').length == 0){
+		changesFormEvents(0);
+	}else{
+		//значит мы в новой версии поисковой формы
+		$('#form-search .form-tabs').each(function(index){
+			if($(this).css('display') != 'none'){
+				$('.shape-switcher_item .toggle-shape').eq(index).trigger('click');
+				//changesFormEvents(index);
+				return false;
+			}
+		});
+	}
+
+	function fTabs(event) {
+		if (event.target.className === "toggle-shape") {
+			var dataTab = event.target.getAttribute('data-tab');
+			var toggleShape = document.getElementsByClassName('toggle-shape');
+			var tabBody = document.getElementsByClassName('form-tabs');
+			for (var i = 0; i < tabBody.length; i++) {
+				if (dataTab == i) {
+					tabBody[i].style.display = 'block';
+					toggleShape[i].style.backgroundColor = '#b1d5fd';
+					if ($.browser.safari) {
+						$('body').animate({ scrollTop: 0 }, 200);
+					} else {
+						$('html').animate({ scrollTop: 0 }, 200);
+					}
+					changesFormEvents(i);
+				} else {
+					tabBody[i].style.display = 'none';
+					toggleShape[i].style.backgroundColor = 'transparent';
+				}
+			}
+		}
+	}
+
+	try{
+		var urlParams = window
+			.location
+			.search
+			.replace('?','')
+			.split('&')
+			.reduce(
+			function(p,e){
+				var a = e.split('=');
+				p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+				return p;
+			},
+			{}
+		);
+		if (Bc_tip_page_type == 'search-advanced'){
+			$('.search-header__btn-block').css('display', 'flex');
+			$('.container-wrapper-form').click(function(e){
+				if ($(e.target).hasClass('container-wrapper-form')){
+					$('.close-form-criteria').trigger('click');
+				}
+			})
+		}
+
+		if ((urlParams.submit || window.Bc_isSearchTemplate) && Bc_tip_page_type == 'search-advanced' && formCurrent){
+
+			if ($.browser.safari) {
+				$('body').animate({ scrollTop: formCurrent.find('.form__submit-block').offset().top }, 0);
+			} else {
+				$('html').animate({ scrollTop: formCurrent.find('.form__submit-block').offset().top }, 0);
+			}
+		}
+
+
+	}catch(e){}
+
+	$('button.js-video-help').on('click', function(){
+		Bc.Dialog.modal({
+			width: 900,
+			title: '',
+			body: Bc.Tpl.render('index.videoHelp'),
+			open: function(){},
+			close: function () {},
+			buttons:[]
+		});
+	});
+
+	function changesFormEvents(index){
+		try{
+			var events = [
+				{
+					findElement : 'input:not([type="checkbox"],.filter), select, textarea',
+					type : 'change keyup paste',
+					isAction : 'search-advanced',//только форма поиска
+					callBack : function(){
+						let value = $(this).val();
+						$('[name="'+$(this).attr('name')+'"]').each(function(){
+							$(this).val(value);
+							//	.trigger('input');
+						});
+					//	$('[name="'+$(this).attr('name')+'"]')
+
+					}
+				},
+				{
+					findElement : '[data-field-name][type="checkbox"]',
+					type : 'change',
+					isAction : 'search-advanced',
+					callBack : function(){
+						$('[data-field-name="'+$(this).data('fieldName')+'"]').not(this).each(function(curChangeElement){
+							return function(){
+								if ($(this).data('bcWidget')){
+									//если setValue брать, то надо учитывать, что он только текущий показывает... крч так себе
+									$(this).data('bcWidget')._loadData().done($.proxy(function () {
+										this._setItemSelection(curChangeElement.val(), curChangeElement.is(':checked'));
+										//www/js/widgets/Form.js:98
+										this.$elem.trigger('propertychange');
+									}, $(this).data('bcWidget')));
+								}else{
+									$('[id*="'+curChangeElement.data('fieldName')+'"][value="'+curChangeElement.val()+'"]').prop('checked', curChangeElement.is(":checked"));
+								}
+							}
+
+						}($(this)));
+
+					}
+				},
+				{
+					findElement : '[data-field-type*="Tree"]:not([data-field-type="tenderSortTree"], [data-field-name="region_id"], [data-field-name="field_id"], [data-field-name="applyingRegion_id"])',
+					type : 'change',
+					isAction : 'search-advanced',
+					callBack : function(){
+						$(this).find('.selected-item span:not([title])').toggle($(this).find('.selected-item').length == 1);
+						$('[data-field-name="'+$(this).data('fieldName')+'"]').not(this).each(function(curChangeElement){
+							if (!curChangeElement) return;
+							return function(){
+								if ($(this).data('bcWidget') && curChangeElement._state == 'loaded'){
+									$(this).data('bcWidget').setValue(curChangeElement.getValue());
+								}else if (!$(this).data('bcWidget') && curChangeElement._state == 'loaded'){
+									$('[id^="'+$(this).data('fieldName')+'"][id$="'+$(this).val()+'"]')
+										.prop('checked',
+											(curChangeElement._selectedItems[$(this).val()]? true :false)
+										);
+								}
+								$(this).find('.selected-item span:not([title])').toggle($(this).find('.selected-item').length == 1);
+							}
+						}($(this).data('bcWidget')));
+					}
+				},
+				{
+					findElement:'.btn--close',
+					type : 'click',
+					callBack : function(){
+						formCurrent.find('textarea[name="keywords"], input[name="keywords"]').val('').trigger('change');
+						/*if ('search-advanced' != Bc_tip_page_type){
+							formCurrent.find('input[name="keywords"]').val('');
+						}else{
+							formCurrent.find('[id=clear]').trigger('click');
+						}*/
+						return false;
+					}
+				},
+				{
+					findElement:'.btn--expand',
+					type : 'click',
+					callBack : function(){
+						if ($('#form-search .form-tabs').length == 0){
+							location.href = '/tc/search/advanced/?layoutForm=detailed';//isNewSearchTender=1&
+						}
+
+						if ($(this).closest('form').attr('layout') == 'detailed'){
+							$('.toggle-shape[data-tab="0"]').trigger('click');
+						}else{
+							$('.toggle-shape[data-tab="2"]').trigger('click');
+						}
+
+						return false;
+					}
+				},
+
+			];
+
+			//чтоб даже переходя на новую -> старую версию, вот эти обработчики удалялись
+			if (formCurrent){
+				for(var i in events){
+					if (events[i]['isAction'] && events[i]['isAction'] != Bc_tip_page_type){
+						continue;
+					}
+					formCurrent.find(events[i]['findElement']).off(events[i]['type']);
+				}
+			}
+
+
+			formCurrent = $('[data-form-id="tenderSearch"]').eq(index);
+			for(var i in events){
+				if (events[i]['isAction'] && events[i]['isAction'] != Bc_tip_page_type){
+					continue;
+				}
+				formCurrent.find(events[i]['findElement']).on(events[i]['type'],events[i]['callBack']);
+			}
+
+		} catch(e) {
+			Bc.logError(e);
+		}
+	}
+});
+

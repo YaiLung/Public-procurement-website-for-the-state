@@ -1,0 +1,364 @@
+[class^="icon"],
+.high,
+.low,
+.mid {
+	content: '';
+	background: url(/i/sprite-crm.png) no-repeat;
+	background-position: 0px 0px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+jdiv [class^="icon"]{
+	width: inherit;
+	height: inherit;
+	margin-left: 0;
+	background: none;
+}
+.main_Lb [class^="icon"]{
+	background: none;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	margin-left: 0;
+}
+.i-wrapper [class^="icon"],
+.i-wrapper .high,
+.i-wrapper .low,
+.i-wrapper .mid {
+	vertical-align: inherit;
+}
+
+.top-menu [class^="icon"] {
+	vertical-align: text-top;
+}
+
+.icon-circle-green {
+    background-image: url("/i/sprite-crm.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    vertical-align: text-bottom;
+    background-position: -2px -122px;
+}
+
+.icon-circle-red {
+    background-image: url("/i/sprite-crm.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    vertical-align: text-bottom;
+    background-position: -2px -102px;
+}
+
+.icon-exit,
+.icon-menu-plus,
+.icon-menu-minus,
+.icon-clock,
+.icon-email,
+.icon-gift,
+.icon-comment {
+    margin-right: 7px;
+}
+
+h2 [class^="icon"] {
+    margin-left: 7px;
+	vertical-align: middle;
+}
+
+
+.icon-exit {background-position: -122px -82px;}
+
+.icon-menu-plus {background-position: -121px -112px;}
+
+.icon-menu-minus {background-position: -121px -142px;}
+
+.icon-clock {background-position: -122px -172px;}
+
+.icon-email {background-position: -122px -202px;}
+
+.icon-gift {background-position: -122px -232px;}
+
+.icon-comment {background-position: -122px -262px;}
+
+
+.icon-crown {background-position: -22px -82px;}
+.i-wrapper.disabled .icon-crown:hover {background-position: -22px -82px;}
+.icon-crown:hover,
+.icon-crown.hover {background-position: -2px -82px;}
+
+.icon-close {background-position: -21px -102px;}
+.i-wrapper.disabled .icon-close:hover {background-position: -22px -102px;}
+.icon-close:hover {background-position: -3px -102px;}
+
+.icon-confirm {background-position: -22px -122px;}
+.icon-confirm:hover,
+.icon-confirm.state-on {background-position: -2px -122px;}
+
+.icon-unconfirm {background-position: -22px -142px;}
+.icon-unconfirm:hover {background-position: -2px -142px;}
+
+.icon-best  {background-position: -2px -162px;}
+a .icon-best {background-position: -22px -162px;}
+.icon-best:hover,
+a:hover .icon-best {background-position: -2px -162px;}
+
+
+.high,
+.icon-redlabel {background-position: -2px -182px;}
+
+.mid,
+.icon-greenlabel {background-position: -2px -202px;}
+
+.low,
+.icon-greylabel {background-position: -22px -182px;}
+
+.icon-eye-open {background-position: -2px -222px;}
+
+.icon-eye-close {background-position: -2px -242px;}
+
+
+
+.icon-edit {background-position: -83px -82px;}
+.icon-edit:hover {background-position: -62px -82px;}
+
+.icon-arrow-right {background-position: -82px -101px;}
+.icon-arrow-right:hover,
+a:hover .icon-arrow-right {background-position: -62px -101px;}
+
+.icon-arrow-left {background-position: -82px -121px;}
+.icon-arrow-left:hover,
+a:hover .icon-arrow-left {background-position: -62px -121px;}
+
+.icon-down {background-position: -82px -142px;}
+.icon-down:hover,
+a:hover .icon-down,
+.icon-down.hover {background-position: -62px -142px;}
+
+.icon-up {background-position: -82px -162px;}
+.icon-up:hover,
+a:hover .icon-up,
+.icon-up.hover {background-position: -62px -162px;}
+
+.icon-caret {background-position: -62px -201px;}
+.icon-caret:hover,
+a:hover .icon-caret {background-position: -62px -182px;}
+
+.icon-caret-up {background-position: -82px -202px;}
+.icon-caret-up:hover,
+a:hover .icon-caret-up {background-position: -62px -202px;}
+
+.icon-list-plus {background-position: -162px -293px;}
+.i-wrapper.disabled .icon-list-plus:hover {background-position: -162px -293px;}
+.icon-list-plus:hover,
+a:hover .icon-list-plus,
+.i-wrapper.pressed .icon-list-plus {background-position: -192px -293px;}
+
+.icon-plus {background-position: -82px -222px;}
+.i-wrapper.disabled .icon-plus:hover {background-position: -82px -222px;}
+.icon-plus:hover,
+a:hover .icon-plus,
+.i-wrapper.pressed .icon-plus {background-position: -62px -222px;}
+
+.icon-minus {background-position: -82px -242px;}
+.icon-minus:hover,
+a:hover .icon-minus {background-position: -62px -242px;}
+
+.icon-undo {background-position: -82px -262px;}
+.icon-undo:hover,
+a:hover .icon-undo {background-position: -62px -262px;}
+
+.icon-redo {background-position: -82px -282px;}
+.icon-redo:hover,
+a:hover .icon-redo {background-position: -62px -282px;}
+
+.icon-subscribe {background-position: -84px -302px;}
+.icon-subscribe:hover,
+a:hover .icon-subscribe {background-position: -62px -302px;}
+
+.icon-time {background-position: -84px -322px;}
+.icon-time:hover,
+a:hover .icon-time {background-position: -62px -322px;}
+
+.icon-info {background-position: -82px -342px;}
+.icon-info:hover,
+.icon-info.state-on,
+a:hover .icon-info {background-position: -62px -342px;}
+
+
+.icon-pack {background-position: -81px -362px;}
+.icon-pack:hover,
+a:hover .icon-pack {background-position: -61px -362px;}
+
+.icon-pack-single {background-position: -82px -382px;}
+
+.icon-pack-notconfirmed {background-position: -62px -382px;}
+
+.icon-pack-confirmed {background-position: -62px -402px;}
+
+.icon-pack-head {background-position: -82px -402px;}
+
+.icon-parking {background: none;}
+
+.icon-user {background-image: url("/img/user.gif");}
+
+
+.save-all,
+.file,
+.zip,
+.rar,
+.html,
+.doc,
+.docx,
+.rtf,
+.xls,
+.xlsx,
+.pdf,
+.txt,
+.jpg,
+.jpeg,
+.gif,
+.png,
+.bmp,
+.tiff,
+.ep {
+	position: relative;
+}
+
+.save-all:before,
+.file:before,
+.zip:before,
+.rar:before,
+.html:before,
+.doc:before,
+.docx:before,
+.rtf:before,
+.xls:before,
+.xlsx:before,
+.pdf:before,
+.txt:before,
+.jpg:before,
+.jpeg:before,
+.gif:before,
+.png:before,
+.bmp:before,
+.tiff:before,
+.ep:before {
+	content: "";
+	background-image: url("/i/sprite-crm.png");
+	background-repeat: no-repeat;
+	background-position: -160px -102px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -22px;
+	height: 20px;
+	width: 20px;
+}
+
+.save-all:before {background-position: -160px -82px;}
+
+.zip:before,
+.rar:before {background-position: -160px -122px;}
+
+.html:before {background-position: -160px -142px;}
+
+.doc:before,
+.docx:before,
+.rtf:before {background-position: -160px -162px;}
+
+.ep:before {background-position: -160px -264px;}
+
+.xls:before,
+.xlsx:before {background-position: -160px -182px;
+	display: none;}
+
+.pdf:before {background-position: -160px -202px;}
+
+.txt:before {background-position: -160px -222px;}
+
+.jpg:before,
+.jpeg:before,
+.gif:before,
+.png:before,
+.bmp:before,
+.tiff:before {background-position: -160px -242px;}
+
+.check:before {background-position: -2px -120px;}
+
+.i-wrapper {
+    background: #F7F7F7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    padding: 2px;
+   /* width: 16px;*/
+}
+
+.i-wrapper.disabled {
+	background: none repeat scroll 0 0 #E0E0E0;
+	border-color: #A9A9A9 #FEFEFE #FEFEFE #A9A9A9;
+	border-style: solid;
+	border-width: 1px;
+	opacity: 0.6;
+}
+
+.i-wrapper.pressed {
+	background: none repeat scroll 0 0 #E0E0E0;
+	border-color: #A9A9A9 #FEFEFE #FEFEFE #A9A9A9;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.i-wrapper.small {
+	padding: 0;
+}
+
+.i-wrapper.none {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.skull-text-icon {
+    display: inline-block;
+    margin: 3px 0 0 5px;
+    position: relative;
+    top: 1px;
+}
+
+#pswd-element {
+	position: relative;
+}
+span.toggle-password {
+	display: flex;
+	align-items : center;
+	height: 100%;
+	position: absolute;
+	right: 7px;
+	top: 0;
+    z-index: 2;
+}
+span.toggle-password:before,
+span.toggle-password:before{
+	content: '';
+	display: inline-block;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 7px;
+	width: 16px;
+	cursor: pointer;
+}
+span.toggle-password.icon-eye:before{
+	background-image: url("/img/icons/icon-see-hide-text.png");
+}
+span.toggle-password.icon-eye-slash:before {
+	background-image: url("/img/icons/icon-see-text.png");
+}
