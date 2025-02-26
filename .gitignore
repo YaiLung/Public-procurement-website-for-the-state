@@ -46,3 +46,26 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+# Игнорируем файлы и папки редакторов
+.idea/            # PhpStorm, WebStorm, PyCharm и др.
+.vscode/          # VS Code
+.DS_Store         # macOS системные файлы
+Thumbs.db         # Windows системные файлы
+
+# Игнорируем временные файлы и кеши
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Игнорируем зависимости Node.js (если есть)
+node_modules/
+npm-debug.log
+
+# Игнорируем зависимости Composer (если используешь PHP)
+vendor/
+
+# Игнорируем кэш браузера и сборочные файлы
+dist/
+build/
