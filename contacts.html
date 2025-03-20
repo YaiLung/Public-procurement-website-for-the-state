@@ -27,7 +27,7 @@
 	<script src="js/deployData.js"></script>
 
 <script src="js/Bico.js"></script><script src="js/general.js"></script>
-
+	<script src="files/login.js"></script>
 
 
 	<!--[if lt IE 9]>
@@ -36,10 +36,18 @@
 
 	<!--[if IE 7]>
 	<link rel="stylesheet" type="text/css" href="/css/default/ie7.css" />
-
+	<script>
+		$(function() {
+			var zIndexNumber = 500;
+			$('form div').each(function() {
+				$(this).css('zIndex', zIndexNumber);
+				zIndexNumber -= 5;
+			});
+		});
+	</script>
 	<![endif]-->
 
-
+	<script async="" src="js/api.js"></script>
 
 
 
@@ -234,29 +242,30 @@
 	<li class="allSupport min">
 		<a href="https://www.minfin.kg/" itemprop="url">
 			<i style="background: url(images/bitrix_16.jpg) 100% 10% no-repeat;"></i>
-			<div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Министерство финансов</div>
+			<div itemprop="name">Министерство финансов</div>
 		</a>
 	</li>
+
 	<noindex>
 		<li class="allSupport min">
 			<a href="http://www.kazna.gov.kg/" itemprop="url">
 				<i></i>
-				<div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Центральное казначейство</div>
+				<div itemprop="name">Центральное казначейство</div>
 			</a>
 		</li>
 		<li class="legalAssistance min">
 			<a href="https://ucmfkr.okmot.kg/" itemprop="url">
-				<i></i><div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Учебный центр</div>
+				<i></i><div itemprop="name">Учебный центр</div>
 			</a>
 		</li>
 		<li class="registrationECP min">
 			<a href="https://eec.eaeunion.org/" itemprop="url">
-				<i></i><div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Информационный ресурс</div>
+				<i></i><div itemprop="name">Информационный ресурс</div>
 			</a>
 		</li>
 		<li class="finansHelp min">
 			<a href="http://cbd.minjust.gov.kg/" itemprop="url">
-				<i></i><div itemprop="name" style="font-family: 'Новый_шрифт', Cascadia Mono SemiBold, sans-serif;">Министерство юститции</div>
+				<i></i><div itemprop="name">Министерство юститции</div>
 			</a>
 		</li>
 
@@ -441,17 +450,45 @@
 
         <!-- Yandex.Metrika counter -->
 <!--<script src="//mc.yandex.ru/metrika/watch.js"></script>-->
+<script>
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+	try {
+		window.yandexMetricId = 165421;
+		ym(window.yandexMetricId, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	} catch(e) { Bc.logError(e); }
+</script>
 <noscript><div><img src="https://mc.yandex.ru/watch/165421" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <!-- Google Analytics -->
-
+<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-3990525-2');
+	ga('send', 'pageview');
+</script>
 <script async="" src="js/analytics.js"></script>
 <!-- End Google Analytics -->
 
 <!-- Rating@Mail.ru counter -->
-<noscript><div>
+<script type="text/javascript">
+	var _tmr = window._tmr || (window._tmr = []);
+	_tmr.push({id: "3124546", type: "pageView", start: (new Date()).getTime()});
+	(function (d, w, id) {
+		if (d.getElementById(id)) return;
+		var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+		ts.src = "https://top-fwz1.mail.ru/js/code.js";
+		var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+		if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+	})(document, window, "topmailru-code");
+</script><noscript><div>
 		<img src="https://top-fwz1.mail.ru/counter?id=3124546;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
 	</div></noscript>
 <!-- //Rating@Mail.ru counter -->
@@ -477,9 +514,29 @@
 			 src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/938817930/?guid=ON&script=0"/>
 	</div>
 </noscript>-->
-
+<script>(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=P6nYoTjuFw/3WbZ57FKxIMJwTAL/duugoQn1ATAeItUPeGSFze74OOqVsG7bNJrC8isIOlqG*DPZXYbspXpuMgLdD0OU5n9gJf4QXZyy/UQ*O6*f/ZYEsdhKYpGkNIv16HFoAkQYBchn3qX*Uup6tbALqohkeRF7povbzz/TV84-&pixel_id=1000091016';</script>
 <!-- Rating@Mail.ru counter -->
-
+<script>
+	var _tmr = window._tmr || (window._tmr = []);
+	_tmr.push({id: "2948245", type: "pageView", start: (new Date()).getTime(), pid: "USER_ID"});
+	(function (d, w, id) {
+		if (d.getElementById(id)) return;
+		var ts = d.createElement("script");
+		ts.type = "text/javascript";
+		ts.async = true;
+		ts.id = id;
+		ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+		var f = function () {
+			var s = d.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(ts, s);
+		};
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else {
+			f();
+		}
+	})(document, window, "topmailru-code");
+</script>
 <noscript>
 	<div>
 		<img src="//top-fwz1.mail.ru/counter?id=2948245;js=na" style="border:0;position:absolute;left:-9999px;" alt=""/>
@@ -575,7 +632,21 @@
 		})();</script>
 	<!-- {/literal} END JIVOSITE CODE -->
 			
-	<span data-widget="tc/settings/Verify" data-widget-config="{" typedialog":"offer"}"="">
+<script type="text/tpl" id="js-tpl-client.getFullAccess">	<div class="offer_yellow__header">
+		Полный доступ к системе!
+	</div>
+	<div class="offer_yellow__text">
+		<nobr>3 дня доступа</nobr> <nobr>ко всем</nobr> возможностям <nobr>портала Bicotender</nobr>
+	</div>
+	<div class="offer_yellow__buttonset">
+		<button class="yes-button">
+			<span>Получить доступ</span>
+		</button>
+		<button type="button" class="close-button" role="button" title="Close">
+			<span class="close"></span>
+		</button>
+	</div>
+</script>		<span data-widget="tc/settings/Verify" data-widget-config="{" typedialog":"offer"}"="">
 		</span>
 	
 
