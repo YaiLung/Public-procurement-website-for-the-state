@@ -1,0 +1,56 @@
+.specify { float:right; margin-top:-50px; font-size:12px; }
+
+table.tendersCatalog {
+  width:48%;
+  float:left;
+  /*margin:0px 5px 25px 5px;*/
+  border-collapse: collapse;
+  border:2px solid #ffffff;
+}
+
+table.tendersCatalog.table100 {
+	float: none;
+	width: 100%;
+}
+
+table.tendersCatalog th {
+  padding:8px 10px 20px 7px;
+  text-align:left;
+  font-size:14px;
+  font-weight:normal;
+  color:#898989;
+}
+
+.activeColumn, .allColumn { cursor: help; border-bottom:1px dashed #898989; }
+
+
+table.tendersCatalog th, table.tendersCatalog td {
+  border:1px solid #e5e5e5;
+}
+
+table.tendersCatalog td {
+  padding:5px 12px 7px 5px;
+  font-size: 16px;
+  color: #272727;
+}
+table.tendersCatalog td:first-child {width:70%; padding:5px 7px 7px 7px;}
+table.tendersCatalog td:first-child, 
+table.tendersCatalog td:first-child a, table.tendersCatalog td:first-child table.tendersCatalog a:visited {
+  font-size:16px;
+  color:#555555;
+}
+table.tendersCatalog td:first-child a:hover {color:#0057a8;}
+table.tendersCatalog td:last-child, td:last-child a:visited {
+  font-size:11px;
+  color:#898989;
+}
+table.tendersCatalog td:nth-child a:visited { color:#0057A8; }
+
+table.tendersCatalog td .date{
+	color:#D63321;
+	font-weight:bold;
+}
+
+.tenderCatalog.tend-kard .middle {
+	padding: 20px 0px 0px 30px;
+}
