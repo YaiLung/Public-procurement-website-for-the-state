@@ -35,12 +35,7 @@ a[href] {
 
 .mark-link:visited, .mark-link a:visited, a.visited { color: #800080; }
 
-/*
-a[href]:hover {
-	color: #014d90;
-	text-decoration: underline;
-}
-*/
+
 
 .left { float: left; }
 .right { float: right; }
@@ -426,17 +421,7 @@ form.private_chat   div.labels {
 .custom-google-translater.open {
 	overflow: visible;
 }
-/*
-.custom-google-translater:after {
-	content: '';
-	top: calc(50% + 3px);
-	right: 10px;
-	position: absolute;
-	border: 5px solid transparent;
-	border-top: 5px solid #fff;
-	transform: translateY(-50%);
-}
-*/
+
 .custom-google-translater:hover {
 	cursor: pointer;
 }
@@ -583,20 +568,7 @@ form.private_chat   div.labels {
 	padding: 6px 12px;
 	font-size: 14px;
 }
-/*.ua-panel-wrapper table td.green {
-	background: rgba(7, 171, 0, 0.32941176470588235);
-}
-.ua-panel-wrapper table td.green > a {
-	color: #329a00;
-	text-decoration: none;
-}
-.ua-panel-wrapper table td.red {
-	background: rgba(234, 0, 0, 0.32941176470588235);
-}
-.ua-panel-wrapper table td.red > a {
-	color: #9a0000;
-	text-decoration: none;
-}*/
+
 .ua-panel-wrapper button.close-ua {
 	content: 'x';
 }
@@ -709,30 +681,7 @@ h1:empty {
 	padding: 10px 12px;
 }
 
-/* Новогодний логотип */
-.new-year {
-	background-image: url("../images/logo-new-year.gif");
-	background-position: center;
-	background-size: 230px auto;
-	background-repeat: no-repeat;
-}
 
-#logo-bico.new-year {
-	top: 8px;
-	left: 6px;
-	height: 73px;
-	width: 230px;
-}
-
-.logo.new-year {
-	margin: 13px 0 0 18px;
-	height: 73px;
-	width: 230px;
-}
-
-.new-year img {
-	visibility: hidden;
-}
 
 @media screen and (min-width: 751px) and (max-width: 1100px) {
 	.logo.new-year {
@@ -2163,16 +2112,6 @@ input[type="text"].hasDatepicker:disabled {
 }
 .company-picker .company-list-result-holder table thead th,
 .company-picker .company-list-result-holder table tfoot th {
-	/*background: url("../images/sep.png") no-repeat right center;
-	border: none;
-	color: #666;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 14px;
-	padding: 0 5px;
-	text-align: center;
-	vertical-align: middle;*/
-
 	height: auto;
 	font-size: 14px;
 	color: #fff;
@@ -2506,10 +2445,7 @@ div .element-group.client-requirement {
 	width: 32px;
 }
 
-/*.gridConfigurePanel table.columnList tr.active td {*/
-/*	background: #e9e7e7;*/
-/*	font-weight: bold;*/
-/*}*/
+
 
 .gridConfigurePanel table.columnList tr[data-edit-row-tr] td {
 	background: none;
@@ -2906,12 +2842,7 @@ div .element-group.client-requirement {
 	overflow-x: hidden;
 }
 
-/*.tree-popup {
-	display: block;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}*/
+
 
 .tree-popup .tree_items_list > .tree_items_container {
 	max-height: 260px;
@@ -2942,9 +2873,7 @@ div .element-group.client-requirement {
 .tree_item_data form .control-group .controls b{
 	padding: 0!important;
 }
- /*label {
-	display: inline !important;
-}*/
+
 .tree_items_container .tree_item .icon {
 	display: inline-block;
 	position: relative;
@@ -3750,16 +3679,6 @@ a.text-success:hover { color: #356635; }
 .text-nowrap {
 	white-space: nowrap;
 }
-/*!
- * Bootstrap v2.3.2
- *
- * Copyright 2013 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
-
 .pagination {
   margin: 20px 0;
 }
@@ -4164,82 +4083,4 @@ table th[class*="span"],
 
 .table thead.nowrap th {
 	white-space: nowrap;
-}
-/*!
- * Bootstrap v3.0.0
- *
- * Copyright 2013 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
-
-/* Старые тултипы сайта и ЦРМ*/
-.tooltip{position:absolute;z-index:1030;display:block;visibility:visible;font-size:12px;line-height:1.4;/*opacity:0;filter:alpha(opacity=0);}.tooltip.in{opacity:0.9;filter:alpha(opacity=90);*/}
-.tooltip.top{margin-top:-3px;padding:5px 0;}
-.tooltip.right{margin-left:3px;padding:0 5px;}
-.tooltip.bottom{margin-top:3px;padding:5px 0;}
-.tooltip.left{margin-left:-3px;padding:0 5px;}
-.tooltip-inner{max-width:500px;padding:5px 10px;color:#53524d;text-align:left;text-decoration:none;background-color:#fffde6;border: 1px solid #DBDBDB;border-radius:4px;
-	-moz-box-shadow: 0px 0px 10px 0px #cdcfd1;
-	-webkit-box-shadow: 0px 0px 10px 0px #cdcfd1;
-	box-shadow: 0px 0px 10px 0px #cdcfd1;
-
-}
-.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid;}
-.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#dbdbdb;}
-.tooltip.top-left .tooltip-arrow{bottom:0;left:5px;border-width:5px 5px 0;border-top-color:#dbdbdb;}
-.tooltip.top-right .tooltip-arrow{bottom:0;right:5px;border-width:5px 5px 0;border-top-color:#dbdbdb;}
-.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#444444;}
-.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#dbdbdb;}
-.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#dbdbdb;}
-.tooltip.bottom-left .tooltip-arrow{top:0;left:5px;border-width:0 5px 5px;border-bottom-color:#dbdbdb;}
-.tooltip.bottom-right .tooltip-arrow{top:0;right:5px;border-width:0 5px 5px;border-bottom-color:#dbdbdb;}
-
-#top_menu {position: relative;}
-
-
-#top_menu .tooltip-inner {
-	font-size: 13px;
-	border-radius: 7px;
-	padding: 9px;
-
-
-}
-
-#top_menu .tooltip-arrow {
-	border-bottom-color: #fffde6;
-	border-width: 0 9px 9px;
-	left:35%
-} 
-#top_menu .tooltip.bottom {
-	padding: 7px 0;
-
-	margin: 1px 0 0 23px;
-}
-
-.tooltip-wide .tooltip-inner {
-    min-width: 500px;
-    max-width: 700px;
-}
-
-
-
-.demo_dostup .button_demo_connect_mob{
-	display: none;
-}
-
-table.main-services-table {
-	margin: 0 0 20px 0;
-}
-
-span.main-services-label {
-	display: block;
-	margin: 10px 0;
-}
-
-table.main-services-table a {
-	display: inline-block;
-	margin-right: 15px;
 }
